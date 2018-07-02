@@ -71,13 +71,15 @@
    <attribute name="toolBarBreak">
     <bool>false</bool>
    </attribute>
+   <addaction name="New"/>
    <addaction name="action12_4"/>
+   <addaction name="action"/>
+   <addaction name="action2_2"/>
    <addaction name="action1_3"/>
    <addaction name="action1_4"/>
    <addaction name="separator"/>
    <addaction name="action2_3"/>
    <addaction name="action12_5"/>
-   <addaction name="New"/>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
   <widget class="QToolBar" name="toolBar">
@@ -93,8 +95,6 @@
    <addaction name="action21_8"/>
    <addaction name="action21_9"/>
    <addaction name="action2"/>
-   <addaction name="action"/>
-   <addaction name="action2_2"/>
    <addaction name="action1_5"/>
   </widget>
   <action name="action21">
