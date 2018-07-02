@@ -1,0 +1,20 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>ICO/circle.png</file>
+        <file>ICO/delete.png</file>
+        <file>ICO/Draw.png</file>
+        <file>ICO/goback.png</file>
+        <file>ICO/goforward.png</file>
+        <file>ICO/move.png</file>
+        <file>ICO/new.png</file>
+        <file>ICO/Pencil free icon 12.png</file>
+        <file>ICO/QPainter.ico</file>
+        <file>ICO/rectangle.png</file>
+        <file>ICO/Save.png</file>
+        <file>ICO/Simple pencil free icon 1.png</file>
+        <file>ICO/triangle.png</file>
+        <file>ICO/zoomin.png</file>
+        <file>ICO/zoomout.png</file>
+        <file>ICO/图片1.png</file>
+    </qresource>
+</RCC>

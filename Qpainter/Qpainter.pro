@@ -21,3 +21,6 @@ FORMS    += mainwindow.ui
 
 RC_FILE += 1.rc
 
+RESOURCES += \
+    source.qrc
+
