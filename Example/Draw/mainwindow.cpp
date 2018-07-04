@@ -237,3 +237,15 @@ void MainWindow::on_shapeComboBox_currentIndexChanged(const QString shape)
     else if(shape == tr("椭圆"))
         area->setShape(PaintArea::Ellipse);
 }
+
+void MainWindow::on_penStyleComboBox_currentIndexChanged(const QString &arg1)
+{
+    if(arg1 == tr("实线"))
+    {
+        area->setPenStyle(Qt::SolidLine);
+    }
+    else if(arg1 == tr("点线"))
+    {
+        area->setPenStyle(Qt::DotLine);
+    }
+}

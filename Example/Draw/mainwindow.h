@@ -54,6 +54,8 @@ private slots:
 
     void on_shapeComboBox_currentIndexChanged(const QString shape);
 
+    void on_penStyleComboBox_currentIndexChanged(const QString &arg1);
+
 private:
     Ui::MainWindow *ui;
     //图区对象
