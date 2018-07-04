@@ -6,6 +6,11 @@
 PaintArea::PaintArea()
 {
     modified = false;
+    //编辑属性的初始化
+    scale=1;
+    angle=0;
+    shear=0;
+
     image=QImage(400,300,QImage::Format_RGB32);
     backColor=qRgb(255,255,255);
     image.fill(backColor);
@@ -15,7 +20,20 @@ PaintArea::PaintArea()
 //创建了一个QPainter对象
 void PaintArea::paintEvent(QPaintEvent *){
     QPainter painter(this);
-    painter.drawImage(0,0,image);
+    //重写事件函数painter.drawImage(0,0,image);
+    painter.scale(scale,scale);
+    if(angle)
+    {
+        QPointF center(image.width()/2.0,image.height()/2.0);
+        painter.translate(center);
+        painter.rotate(angle);
+        painter.translate(-center);
+    }
+    if(shear)
+    {
+        painter.shear(shear,shear);
+    }
+    painter.drawImage(image.width()/6.0,image.height()/6.0,image);
 }
 
 //鼠标事件处理函数
@@ -94,9 +112,39 @@ QSize PaintArea::getImageSize()
     return image.size();
 }
 
+//编辑栏中的操作
 
+void PaintArea::zoomIn()
+{
+    scale*=1.2;
+    update();
+}
+void PaintArea::zoomOut()
+{
+    scale /= 1.2;
+    update();
+}
+void PaintArea::zoom_1()
+{
+    scale = 1;
+    update();
+}
 
-
+void PaintArea::doRotate()
+{
+    angle += 90;
+    update();
+}
+void PaintArea::doShear()
+{
+    shear = 0.2;
+    update();
+}
+void PaintArea::doClear()
+{
+    image.fill(backColor);
+    update();
+}
 
 
 
