@@ -46,13 +46,13 @@ void PaintArea::paintEvent(QPaintEvent *){
 void PaintArea::mousePressEvent(QMouseEvent *event)
 {
     if(event->button() == Qt::LeftButton)//左键下按
-        lastPoint=event->pos()*scale;//当前为起始
+        lastPoint=event->pos();//当前为起始
 }
 void PaintArea::mouseMoveEvent(QMouseEvent *event)
 {
     if(event->buttons()&Qt::LeftButton)//左键瞎按并拖动
     {
-        endPoint=event->pos()*scale;
+        endPoint=event->pos();
         paint(image); //??绘制图形
     }
 }
@@ -60,17 +60,61 @@ void PaintArea::mouseReleaseEvent(QMouseEvent *event)
 {
     if(event->button() == Qt::LeftButton)//左键释放
     {
-        endPoint=event->pos()*scale;
+        endPoint=event->pos();
         paint(image);
     }
 }
 void PaintArea::paint(QImage &theImage)
 {
+    /*新增画图方法
     QPainter pp(&theImage);
     pp.drawLine(lastPoint,endPoint);
     lastPoint = endPoint;
     modified = true;
     update();//进行更新界面显示
+    */
+    QPainter pp(&theImage);
+    QPen pen=QPen();
+    pen.setColor(penColor);
+    pen.setStyle(penStyle);
+    pen.setWidth(penWidth);
+
+    QBrush brush = QBrush(brushColor);
+    pp.setPen(pen);
+    pp.setBrush(brush);
+
+    int x, y, w, h;
+    x=lastPoint.x();
+    y=lastPoint.y();
+    w=endPoint.x()-x;
+    h=endPoint.y()-y;
+
+    switch(curShape)
+    {
+    case None: //不绘制特殊图形
+    {
+        pp.drawLine(lastPoint,endPoint); //由起始坐标和终止坐标绘制直线
+        lastPoint = endPoint; //让终止坐标变为起始坐标
+        break;
+    }
+    case Line: //绘制直线
+    {
+        pp.drawLine(lastPoint,endPoint);
+        break;
+    }
+    case Rectangle: //绘制矩形
+    {
+        pp.drawRect(x,y,w,h);
+        break;
+    }
+    case Ellipse: //绘制椭圆
+    {
+        pp.drawEllipse(x,y,w,h);
+        break;
+    }
+    }
+    update(); //进行更新界面显示，可引起窗口重绘事件，重绘窗口
+    modified = true;
 }
 
 void PaintArea::setImageSize(int width, int height)
@@ -153,8 +197,26 @@ void PaintArea::doClear()
 }
 
 //菜单工具栏中提供的功能
-
-
+void PaintArea::setPenStyle(Qt::PenStyle style)
+{
+    penStyle=style;
+}
+void PaintArea::setPenWidth(int width)
+{
+    penWidth=width;
+}
+void PaintArea::setPenColor(QColor color)
+{
+    penColor=color;
+}
+void PaintArea::setBrushColor(QColor color)
+{
+    brushColor=color;
+}
+void PaintArea::setShape(ShapeType shape)
+{
+    curShape = shape;
+}
 
 
 

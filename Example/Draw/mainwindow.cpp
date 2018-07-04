@@ -225,3 +225,15 @@ void MainWindow::createColorComboBox(QComboBox *comboBox)
 
     comboBox->addItem(tr("无颜色"),QColor(Qt::transparent));
 }
+
+void MainWindow::on_shapeComboBox_currentIndexChanged(const QString shape)
+{
+    if(shape == tr("无"))
+        area->setShape(PaintArea::None); //利用 PaintArea 类中的枚举变量
+    else if(shape == tr("矩形"))
+        area->setShape(PaintArea::Rectangle);
+    else if(shape == tr("直线"))
+        area->setShape(PaintArea::Line);
+    else if(shape == tr("椭圆"))
+        area->setShape(PaintArea::Ellipse);
+}

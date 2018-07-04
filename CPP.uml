@@ -1806,14 +1806,17 @@
 <XPD:ATTR name="#Attributes" type="integer">4</XPD:ATTR>
 <XPD:OBJ name="Attributes[0]" type="UMLAttribute" guid="qOLx84aEEEuuucfiMnmHWwAA">
 <XPD:ATTR name="Name" type="string">X</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">double</XPD:ATTR>
 <XPD:REF name="Owner">RK4BPkFdLEGbwJD0qqtSrgAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="Attributes[1]" type="UMLAttribute" guid="DJP3dfjIzk6hAugDDG/GrwAA">
 <XPD:ATTR name="Name" type="string">Y</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">double</XPD:ATTR>
 <XPD:REF name="Owner">RK4BPkFdLEGbwJD0qqtSrgAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="Attributes[2]" type="UMLAttribute" guid="iketVWYRBUmsWqcUM+rGFgAA">
 <XPD:ATTR name="Name" type="string">Height</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">double</XPD:ATTR>
 <XPD:REF name="Owner">RK4BPkFdLEGbwJD0qqtSrgAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="Attributes[3]" type="UMLAttribute" guid="+mzrzNmR7EugdNcq5DtGPwAA">
@@ -2272,8 +2275,8 @@
 <XPD:REF name="Participant">mNacgy7foE+1bg+hcOdwsQAA</XPD:REF>
 <XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
 <XPD:REF name="Views[0]">pn+pQYcrGUOHCyF/gQwSUQAA</XPD:REF>
-<XPD:REF name="Views[1]">riGicYLlW0mQLp/Vt/eeMQAA</XPD:REF>
-<XPD:REF name="Views[2]">Kbs8Dk1vS0eMm7mQ9Tc7lAAA</XPD:REF>
+<XPD:REF name="Views[1]">Kbs8Dk1vS0eMm7mQ9Tc7lAAA</XPD:REF>
+<XPD:REF name="Views[2]">riGicYLlW0mQLp/Vt/eeMQAA</XPD:REF>
 <XPD:REF name="Views[3]">8YFcPeBFukqO/mNkTNvkJgAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="Connections[1]" type="UMLAssociationEnd" guid="or+Xtrf8ukmDUkt0hSqlkQAA">
@@ -2282,8 +2285,8 @@
 <XPD:REF name="Participant">2NmjfbNITUup/WykxqfleQAA</XPD:REF>
 <XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
 <XPD:REF name="Views[0]">BvPc0B7Ojk2IclZSg8HOBAAA</XPD:REF>
-<XPD:REF name="Views[1]">2ipVnpzwdEK0qeIGcsO1GgAA</XPD:REF>
-<XPD:REF name="Views[2]">c9nwi7WOBkudLh5WUqmINgAA</XPD:REF>
+<XPD:REF name="Views[1]">c9nwi7WOBkudLh5WUqmINgAA</XPD:REF>
+<XPD:REF name="Views[2]">2ipVnpzwdEK0qeIGcsO1GgAA</XPD:REF>
 <XPD:REF name="Views[3]">AeZmoUglv0mTX9ZAI3Q2kgAA</XPD:REF>
 </XPD:OBJ>
 </XPD:OBJ>

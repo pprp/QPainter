@@ -109,7 +109,7 @@
      </item>
      <item>
       <property name="text">
-       <string>实线</string>
+       <string>直线</string>
       </property>
      </item>
     </widget>

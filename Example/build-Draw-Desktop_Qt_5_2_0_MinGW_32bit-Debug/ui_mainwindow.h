@@ -245,7 +245,7 @@ public:
          << QApplication::translate("MainWindow", "\346\227\240", 0)
          << QApplication::translate("MainWindow", "\347\237\251\345\275\242", 0)
          << QApplication::translate("MainWindow", "\346\244\255\345\234\206", 0)
-         << QApplication::translate("MainWindow", "\345\256\236\347\272\277", 0)
+         << QApplication::translate("MainWindow", "\347\233\264\347\272\277", 0)
         );
         penStyleComboBox->clear();
         penStyleComboBox->insertItems(0, QStringList()

@@ -52,6 +52,8 @@ private slots:
 
     void on_actionAbout_Draw_triggered();
 
+    void on_shapeComboBox_currentIndexChanged(const QString shape);
+
 private:
     Ui::MainWindow *ui;
     //图区对象
