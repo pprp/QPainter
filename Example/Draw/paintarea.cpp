@@ -84,22 +84,22 @@ void PaintArea::paint(QImage &theImage)
     pp.setBrush(brush);
 
     int x, y, w, h;
-    x=lastPoint.x();
-    y=lastPoint.y();
-    w=endPoint.x()-x;
-    h=endPoint.y()-y;
+    x=lastPoint.x()/scale;
+    y=lastPoint.y()/scale;
+    w=endPoint.x()/scale-x;
+    h=endPoint.y()/scale-y;
 
     switch(curShape)
     {
     case None: //不绘制特殊图形
     {
-        pp.drawLine(lastPoint,endPoint); //由起始坐标和终止坐标绘制直线
+        pp.drawLine(lastPoint/scale,endPoint/scale); //由起始坐标和终止坐标绘制直线
         lastPoint = endPoint; //让终止坐标变为起始坐标
         break;
     }
     case Line: //绘制直线
     {
-        pp.drawLine(lastPoint,endPoint);
+        pp.drawLine(lastPoint/scale,endPoint/scale);
         break;
     }
     case Rectangle: //绘制矩形
@@ -156,10 +156,10 @@ bool PaintArea::openImage(const QString &fileName)
     return true;
 }
 
-
+//解决放大的时候出现的问题
 QSize PaintArea::getImageSize()
 {
-    return image.size();
+    return image.size()*scale;
 }
 
 //编辑栏中的操作
