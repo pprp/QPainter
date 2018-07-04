@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>721</width>
-    <height>471</height>
+    <height>454</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -71,13 +71,14 @@
    <attribute name="toolBarBreak">
     <bool>false</bool>
    </attribute>
-   <addaction name="action12_4"/>
-   <addaction name="action1_3"/>
-   <addaction name="action1_4"/>
+   <addaction name="New"/>
+   <addaction name="SaveAs"/>
+   <addaction name="delete_2"/>
    <addaction name="separator"/>
+   <addaction name="action"/>
+   <addaction name="action2_2"/>
    <addaction name="action2_3"/>
    <addaction name="action12_5"/>
-   <addaction name="New"/>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
   <widget class="QToolBar" name="toolBar">
@@ -90,12 +91,10 @@
    <attribute name="toolBarBreak">
     <bool>false</bool>
    </attribute>
-   <addaction name="action21_8"/>
+   <addaction name="action1_5"/>
+   <addaction name="triangle"/>
    <addaction name="action21_9"/>
    <addaction name="action2"/>
-   <addaction name="action"/>
-   <addaction name="action2_2"/>
-   <addaction name="action1_5"/>
   </widget>
   <action name="action21">
    <property name="text">
@@ -162,7 +161,7 @@
     <string>关于QPainter</string>
    </property>
   </action>
-  <action name="action21_8">
+  <action name="triangle">
    <property name="icon">
     <iconset>
      <normaloff>../build-Qpainter-Desktop_Qt_5_2_0_MinGW_32bit-Debug/LOGO/LogoMaker_20180702112603.png</normaloff>../build-Qpainter-Desktop_Qt_5_2_0_MinGW_32bit-Debug/LOGO/LogoMaker_20180702112603.png</iconset>
@@ -189,13 +188,13 @@
     <string>矩形</string>
    </property>
   </action>
-  <action name="action12_4">
+  <action name="SaveAs">
    <property name="icon">
     <iconset>
      <normaloff>../build-Qpainter-Desktop_Qt_5_2_0_MinGW_32bit-Debug/LOGO/LogoMaker_20180702110320.png</normaloff>../build-Qpainter-Desktop_Qt_5_2_0_MinGW_32bit-Debug/LOGO/LogoMaker_20180702110320.png</iconset>
    </property>
    <property name="text">
-    <string>新建</string>
+    <string>保存</string>
    </property>
   </action>
   <action name="action">
@@ -216,15 +215,6 @@
     <string>右箭头</string>
    </property>
   </action>
-  <action name="action1_3">
-   <property name="icon">
-    <iconset>
-     <normaloff>../build-Qpainter-Desktop_Qt_5_2_0_MinGW_32bit-Debug/LOGO/LogoMaker_20180701101649.png</normaloff>../build-Qpainter-Desktop_Qt_5_2_0_MinGW_32bit-Debug/LOGO/LogoMaker_20180701101649.png</iconset>
-   </property>
-   <property name="text">
-    <string>撤销</string>
-   </property>
-  </action>
   <action name="action2_3">
    <property name="icon">
     <iconset>
@@ -243,13 +233,16 @@
     <string>缩小</string>
    </property>
   </action>
-  <action name="action1_4">
+  <action name="delete_2">
    <property name="icon">
     <iconset>
      <normaloff>../build-Qpainter-Desktop_Qt_5_2_0_MinGW_32bit-Debug/LOGO/LogoMaker_20180702110910.png</normaloff>../build-Qpainter-Desktop_Qt_5_2_0_MinGW_32bit-Debug/LOGO/LogoMaker_20180702110910.png</iconset>
    </property>
    <property name="text">
-    <string>丢弃</string>
+    <string>删除</string>
+   </property>
+   <property name="toolTip">
+    <string>删除</string>
    </property>
   </action>
   <action name="action1_5">
