@@ -66,10 +66,10 @@ public:
         heightSpinBox->setMaximum(10000);
         toolButton = new QToolButton(DoNewDialog);
         toolButton->setObjectName(QStringLiteral("toolButton"));
-        toolButton->setGeometry(QRect(190, 180, 37, 18));
+        toolButton->setGeometry(QRect(220, 180, 21, 18));
         textBrowser = new QTextBrowser(DoNewDialog);
         textBrowser->setObjectName(QStringLiteral("textBrowser"));
-        textBrowser->setGeometry(QRect(150, 170, 31, 31));
+        textBrowser->setGeometry(QRect(150, 170, 61, 31));
 
         retranslateUi(DoNewDialog);
         QObject::connect(buttonBox, SIGNAL(accepted()), DoNewDialog, SLOT(accept()));

@@ -36,5 +36,18 @@
         <file>up.png</file>
         <file>zoomin.png</file>
         <file>zoomout.png</file>
+        <file>circle.png</file>
+        <file>delete.png</file>
+        <file>Draw.png</file>
+        <file>goback.png</file>
+        <file>goforward.png</file>
+        <file>move.png</file>
+        <file>new.png</file>
+        <file>Pencil free icon 12.png</file>
+        <file>QPainter.ico</file>
+        <file>Save.png</file>
+        <file>Simple pencil free icon 1.png</file>
+        <file>triangle.png</file>
+        <file>图片1.png</file>
     </qresource>
 </RCC>

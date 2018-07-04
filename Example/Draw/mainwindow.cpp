@@ -1,9 +1,11 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "donewdialog.h"
+#include "helpshowdialog.h"
 
 #include <QMessageBox>
 #include <QFileDialog>
+#include <QPainter>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -20,6 +22,9 @@ MainWindow::MainWindow(QWidget *parent) :
     //设置画布大小
     scrollArea->widget()->setMinimumSize(800,600);
     setCentralWidget(scrollArea);
+    //对两个颜色组合框进行初始化
+    createColorComboBox(ui->penColorComboBox);
+    createColorComboBox(ui->brushColorComboBox);
 }
 
 MainWindow::~MainWindow()
@@ -154,25 +159,69 @@ void MainWindow::closeEvent(QCloseEvent *event)
 
 
 
+void MainWindow::on_actionZoomIn_triggered()
+{
+    area->zoomIn();
+    scrollArea->widget()->resize(area->getImageSize());
+}
 
+void MainWindow::on_actionReturn_triggered()
+{
+    area->zoom_1();
+    scrollArea->widget()->resize(area->getImageSize());
+}
 
+void MainWindow::on_actionRotate_triggered()
+{
+    area->doRotate();
+}
+void MainWindow::on_actionZoomOut_triggered()
+{
+    area->zoomOut();
+    scrollArea->widget()->resize(area->getImageSize());
+}
+void MainWindow::on_actionClear_triggered()
+{
+    area->doClear();
+}
 
+void MainWindow::on_actionStretch_triggered()
+{
+    area->doShear();
+}
 
+void MainWindow::on_actionDrawingToolbar_triggered()
+{
+    ui->DrawTools->show();
+}
 
+void MainWindow::on_actionAbout_Draw_triggered()
+{
+    HelpShowDialog hsd;
+    if(hsd.exec() == QDialog::Accepted)
+    {
+        hsd.show();
+    }
+}
+void MainWindow::createColorComboBox(QComboBox *comboBox)
+{
+    QPixmap pix(16,16);
+    QPainter painter(&pix);
 
+    painter.fillRect(0,0,16,16,QColor(Qt::black));
+    comboBox->addItem(QIcon(pix),tr("黑色"),QColor(Qt::black));
 
+    painter.fillRect(0,0,16,16,Qt::white);
+    comboBox->addItem(QIcon(pix),tr("白色"),QColor(Qt::white));
 
+    painter.fillRect(0,0,16,16,Qt::red);
+    comboBox->addItem(QIcon(pix),tr("红色"),QColor(Qt::red));
 
+    painter.fillRect(0,0,16,16,Qt::green);
+    comboBox->addItem(QIcon(pix),tr("绿色"),QColor(Qt::green));
 
+    painter.fillRect(0,0,16,16,Qt::yellow);
+    comboBox->addItem(QIcon(pix),tr("黄色"),QColor(Qt::yellow));
 
-
-
-
-
-
-
-
-
-
-
-
+    comboBox->addItem(tr("无颜色"),QColor(Qt::transparent));
+}

@@ -19,8 +19,8 @@
 
 QT_BEGIN_MOC_NAMESPACE
 struct qt_meta_stringdata_MainWindow_t {
-    QByteArrayData data[7];
-    char stringdata[134];
+    QByteArrayData data[16];
+    char stringdata[383];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -35,12 +35,30 @@ QT_MOC_LITERAL(2, 34, 0),
 QT_MOC_LITERAL(3, 35, 23),
 QT_MOC_LITERAL(4, 59, 23),
 QT_MOC_LITERAL(5, 83, 25),
-QT_MOC_LITERAL(6, 109, 23)
+QT_MOC_LITERAL(6, 109, 23),
+QT_MOC_LITERAL(7, 133, 25),
+QT_MOC_LITERAL(8, 159, 25),
+QT_MOC_LITERAL(9, 185, 25),
+QT_MOC_LITERAL(10, 211, 27),
+QT_MOC_LITERAL(11, 239, 26),
+QT_MOC_LITERAL(12, 266, 24),
+QT_MOC_LITERAL(13, 291, 26),
+QT_MOC_LITERAL(14, 318, 33),
+QT_MOC_LITERAL(15, 352, 29)
     },
     "MainWindow\0on_actionNew_triggered\0\0"
     "on_actionOpen_triggered\0on_actionSave_triggered\0"
     "on_actionSaveAs_triggered\0"
     "on_actionExit_triggered\0"
+    "on_actionZoomIn_triggered\0"
+    "on_actionReturn_triggered\0"
+    "on_actionRotate_triggered\0"
+    "on_actionZoomIn_2_triggered\0"
+    "on_actionZoomOut_triggered\0"
+    "on_actionClear_triggered\0"
+    "on_actionStretch_triggered\0"
+    "on_actionDrawingToolbar_triggered\0"
+    "on_actionAbout_Draw_triggered\0"
 };
 #undef QT_MOC_LITERAL
 
@@ -50,7 +68,7 @@ static const uint qt_meta_data_MainWindow[] = {
        7,       // revision
        0,       // classname
        0,    0, // classinfo
-       5,   14, // methods
+      14,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -58,13 +76,31 @@ static const uint qt_meta_data_MainWindow[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags
-       1,    0,   39,    2, 0x08,
-       3,    0,   40,    2, 0x08,
-       4,    0,   41,    2, 0x08,
-       5,    0,   42,    2, 0x08,
-       6,    0,   43,    2, 0x08,
+       1,    0,   84,    2, 0x08,
+       3,    0,   85,    2, 0x08,
+       4,    0,   86,    2, 0x08,
+       5,    0,   87,    2, 0x08,
+       6,    0,   88,    2, 0x08,
+       7,    0,   89,    2, 0x08,
+       8,    0,   90,    2, 0x08,
+       9,    0,   91,    2, 0x08,
+      10,    0,   92,    2, 0x08,
+      11,    0,   93,    2, 0x08,
+      12,    0,   94,    2, 0x08,
+      13,    0,   95,    2, 0x08,
+      14,    0,   96,    2, 0x08,
+      15,    0,   97,    2, 0x08,
 
  // slots: parameters
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
@@ -84,6 +120,14 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 2: _t->on_actionSave_triggered(); break;
         case 3: _t->on_actionSaveAs_triggered(); break;
         case 4: _t->on_actionExit_triggered(); break;
+        case 5: _t->on_actionZoomIn_triggered(); break;
+        case 6: _t->on_actionReturn_triggered(); break;
+        case 7: _t->on_actionRotate_triggered(); break;
+        case 9: _t->on_actionZoomOut_triggered(); break;
+        case 10: _t->on_actionClear_triggered(); break;
+        case 11: _t->on_actionStretch_triggered(); break;
+        case 12: _t->on_actionDrawingToolbar_triggered(); break;
+        case 13: _t->on_actionAbout_Draw_triggered(); break;
         default: ;
         }
     }
@@ -115,13 +159,13 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 5)
+        if (_id < 14)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 5;
+        _id -= 14;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 5)
+        if (_id < 14)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 5;
+        _id -= 14;
     }
     return _id;
 }

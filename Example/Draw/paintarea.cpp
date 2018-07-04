@@ -14,6 +14,12 @@ PaintArea::PaintArea()
     image=QImage(400,300,QImage::Format_RGB32);
     backColor=qRgb(255,255,255);
     image.fill(backColor);
+    //菜单工具栏的初始化
+    penColor=QColor(Qt::black);
+    brushColor=QColor(Qt::black);
+    penWidth=1;
+    penStyle=Qt::SolidLine;
+    curShape=None;
 }
 
 //事件处理函数
@@ -33,20 +39,20 @@ void PaintArea::paintEvent(QPaintEvent *){
     {
         painter.shear(shear,shear);
     }
-    painter.drawImage(image.width()/6.0,image.height()/6.0,image);
+    painter.drawImage(0,0,image);
 }
 
 //鼠标事件处理函数
 void PaintArea::mousePressEvent(QMouseEvent *event)
 {
     if(event->button() == Qt::LeftButton)//左键下按
-        lastPoint=event->pos();//当前为起始
+        lastPoint=event->pos()*scale;//当前为起始
 }
 void PaintArea::mouseMoveEvent(QMouseEvent *event)
 {
     if(event->buttons()&Qt::LeftButton)//左键瞎按并拖动
     {
-        endPoint=event->pos();
+        endPoint=event->pos()*scale;
         paint(image); //??绘制图形
     }
 }
@@ -54,7 +60,7 @@ void PaintArea::mouseReleaseEvent(QMouseEvent *event)
 {
     if(event->button() == Qt::LeftButton)//左键释放
     {
-        endPoint=event->pos();
+        endPoint=event->pos()*scale;
         paint(image);
     }
 }
@@ -146,6 +152,7 @@ void PaintArea::doClear()
     update();
 }
 
+//菜单工具栏中提供的功能
 
 
 

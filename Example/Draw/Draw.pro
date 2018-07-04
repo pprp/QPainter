@@ -15,14 +15,17 @@ TEMPLATE = app
 SOURCES += main.cpp\
         mainwindow.cpp \
     paintarea.cpp \
-    donewdialog.cpp
+    donewdialog.cpp \
+    helpshowdialog.cpp
 
 HEADERS  += mainwindow.h \
     paintarea.h \
-    donewdialog.h
+    donewdialog.h \
+    helpshowdialog.h
 
 FORMS    += mainwindow.ui \
-    donewdialog.ui
+    donewdialog.ui \
+    helpshowdialog.ui
 
 RESOURCES += \
     ../ourico/ourico/ico.qrc

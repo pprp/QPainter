@@ -23,8 +23,10 @@
    </attribute>
    <addaction name="actionStretch"/>
    <addaction name="actionZoomIn"/>
-   <addaction name="actionZoomIn_2"/>
+   <addaction name="actionZoomOut"/>
    <addaction name="actionRotate"/>
+   <addaction name="actionReturn"/>
+   <addaction name="actionClear"/>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
   <widget class="QDockWidget" name="DrawTools">
@@ -202,7 +204,6 @@
     <property name="title">
      <string>Edit</string>
     </property>
-    <addaction name="actionReturn"/>
    </widget>
    <widget class="QMenu" name="menuTool">
     <property name="title">
@@ -286,15 +287,6 @@
     <string>Ctrl+X</string>
    </property>
   </action>
-  <action name="actionZoomOut">
-   <property name="icon">
-    <iconset resource="../ourico/ourico/ico.qrc">
-     <normaloff>:/image/zoomout.png</normaloff>:/image/zoomout.png</iconset>
-   </property>
-   <property name="text">
-    <string>ZoomOut</string>
-   </property>
-  </action>
   <action name="actionZoomIn">
    <property name="icon">
     <iconset resource="../ourico/ourico/ico.qrc">
@@ -305,6 +297,10 @@
    </property>
   </action>
   <action name="actionReturn">
+   <property name="icon">
+    <iconset resource="../ourico/ourico/ico.qrc">
+     <normaloff>:/image/cursor-openhand.png</normaloff>:/image/cursor-openhand.png</iconset>
+   </property>
    <property name="text">
     <string>Return</string>
    </property>
@@ -328,6 +324,10 @@
    </property>
   </action>
   <action name="actionDrawingToolbar">
+   <property name="icon">
+    <iconset resource="../ourico/ourico/ico.qrc">
+     <normaloff>:/image/line.png</normaloff>:/image/line.png</iconset>
+   </property>
    <property name="text">
     <string>DrawingToolbar</string>
    </property>
@@ -337,13 +337,25 @@
     <string>About Draw</string>
    </property>
   </action>
-  <action name="actionZoomIn_2">
+  <action name="actionZoomOut">
    <property name="icon">
     <iconset resource="../ourico/ourico/ico.qrc">
      <normaloff>:/image/zoomin.png</normaloff>:/image/zoomin.png</iconset>
    </property>
    <property name="text">
-    <string>ZoomIn</string>
+    <string>ZoomOut</string>
+   </property>
+   <property name="toolTip">
+    <string>ZoomOut</string>
+   </property>
+  </action>
+  <action name="actionClear">
+   <property name="icon">
+    <iconset resource="../ourico/ourico/ico.qrc">
+     <normaloff>:/image/cursor-forbidden.png</normaloff>:/image/cursor-forbidden.png</iconset>
+   </property>
+   <property name="text">
+    <string>Clear</string>
    </property>
   </action>
  </widget>

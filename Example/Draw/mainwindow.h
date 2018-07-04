@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include "paintarea.h"
 #include <QScrollArea>
+#include <QComboBox>
 
 namespace Ui {
 class MainWindow;
@@ -22,7 +23,8 @@ public:
     void doOpen();
     bool doFileSave();
     bool doFileSaveAs();
-
+    //完成绘图工具栏的功能
+    void createColorComboBox(QComboBox*comboBox);//创建颜色组合
 protected:
     void closeEvent(QCloseEvent *);
 
@@ -32,6 +34,24 @@ private slots:
     void on_actionSave_triggered();
     void on_actionSaveAs_triggered();
     void on_actionExit_triggered();
+    void on_actionZoomIn_triggered();
+
+    void on_actionReturn_triggered();
+
+    void on_actionRotate_triggered();
+
+    void on_actionZoomIn_2_triggered();
+
+    void on_actionZoomOut_triggered();
+
+    void on_actionClear_triggered();
+
+    void on_actionStretch_triggered();
+
+    void on_actionDrawingToolbar_triggered();
+
+    void on_actionAbout_Draw_triggered();
+
 private:
     Ui::MainWindow *ui;
     //图区对象
