@@ -129,7 +129,7 @@
      </item>
      <item>
       <property name="text">
-       <string>曲线</string>
+       <string>点线</string>
       </property>
      </item>
     </widget>

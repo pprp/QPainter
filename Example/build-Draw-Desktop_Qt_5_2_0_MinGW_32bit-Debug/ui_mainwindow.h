@@ -250,7 +250,7 @@ public:
         penStyleComboBox->clear();
         penStyleComboBox->insertItems(0, QStringList()
          << QApplication::translate("MainWindow", "\345\256\236\347\272\277", 0)
-         << QApplication::translate("MainWindow", "\346\233\262\347\272\277", 0)
+         << QApplication::translate("MainWindow", "\347\202\271\347\272\277", 0)
         );
         label_4->setText(QApplication::translate("MainWindow", "\347\224\273\347\254\224\351\242\234\350\211\262", 0));
         label_5->setText(QApplication::translate("MainWindow", "\345\241\253\345\205\205\351\242\234\350\211\262", 0));

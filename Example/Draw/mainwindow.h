@@ -35,26 +35,20 @@ private slots:
     void on_actionSaveAs_triggered();
     void on_actionExit_triggered();
     void on_actionZoomIn_triggered();
-
     void on_actionReturn_triggered();
-
     void on_actionRotate_triggered();
-
-    void on_actionZoomIn_2_triggered();
-
     void on_actionZoomOut_triggered();
-
     void on_actionClear_triggered();
-
     void on_actionStretch_triggered();
-
     void on_actionDrawingToolbar_triggered();
-
     void on_actionAbout_Draw_triggered();
-
     void on_shapeComboBox_currentIndexChanged(const QString shape);
-
     void on_penStyleComboBox_currentIndexChanged(const QString &arg1);
+    void on_penWidthspinBox_valueChanged(int);
+
+    void on_penColorComboBox_currentIndexChanged(int);
+
+    void on_brushColorComboBox_currentIndexChanged(int );
 
 private:
     Ui::MainWindow *ui;

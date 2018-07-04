@@ -249,3 +249,22 @@ void MainWindow::on_penStyleComboBox_currentIndexChanged(const QString &arg1)
         area->setPenStyle(Qt::DotLine);
     }
 }
+
+void MainWindow::on_penWidthspinBox_valueChanged(int width)
+{
+    area->setPenWidth(width);
+}
+
+void MainWindow::on_penColorComboBox_currentIndexChanged(int index)
+{
+    QColor color = ui->penColorComboBox->itemData(index,Qt::UserRole).value<QColor>();
+
+    area->setPenColor(color);
+}
+
+void MainWindow::on_brushColorComboBox_currentIndexChanged(int index)
+{
+    QColor color = ui->brushColorComboBox->itemData(index,Qt::UserRole).value<QColor>();
+
+    area->setBrushColor(color);
+}
