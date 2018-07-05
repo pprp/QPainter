@@ -115,15 +115,23 @@ bool MainWindow::saveFile(QString fileName)
         return false;
 }
 
-bool MainWindow::doFileSaveAs()
+/*bool MainWindow::doFileSaveAs()
 {
     QString fileName = QFileDialog::getSaveFileName(this,tr("另存为"),curFile);
     if(fileName.isEmpty())
         return false;
     else
         return saveFile(fileName);
+}*/
+bool MainWindow::doFileSaveAs()
+{
+    //QString fileName = QFileDialog::getSaveFileName(this,tr("另存为"),curFile);
+    QString fileName = QFileDialog::getSaveFileName(this,tr("另存为"),curFile,"png file(*.png);;bmp file(*.bmp);;jpg file(*.jpg)");
+    if(fileName.isEmpty())
+        return false;
+    else
+        return saveFile(fileName);
 }
-
 
 void MainWindow::on_actionOpen_triggered()
 {
