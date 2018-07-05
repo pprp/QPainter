@@ -2,8 +2,8 @@
 #define PAINTAREA_H
 
 #include <QWidget>
-#include <QMOuseEvent>
 #include <QPoint>
+#include <QMouseEvent>
 
 
 class PaintArea : public QWidget
