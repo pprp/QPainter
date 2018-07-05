@@ -6,27 +6,14 @@
 #include <QMessageBox>
 #include <QFileDialog>
 #include <QPainter>
-#include <QGraphicsScene>
-#include <QGraphicsView>
-#include <QGraphicsLineItem>
-#include <QColorDialog>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    resize(700,500);
+    resize(1200,960);
     area=new PaintArea;
-    //add view
-    QGraphicsView *view = new QGraphicsView(area,this);
-    view->resize(800,600);
-    area->setSceneRect(view->rect());
-    view->setMouseTracking(true);
-    setCentralWidget(view);
-    view->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
-    view->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
-    /*
     scrollArea=new QScrollArea;
     //设置背景色
     scrollArea->setBackgroundRole(QPalette::Dark);
@@ -38,7 +25,6 @@ MainWindow::MainWindow(QWidget *parent) :
     //对两个颜色组合框进行初始化
     createColorComboBox(ui->penColorComboBox);
     createColorComboBox(ui->brushColorComboBox);
-    */
 }
 
 MainWindow::~MainWindow()
@@ -107,6 +93,7 @@ bool MainWindow::maybeSave()
     }
     return true;
 }
+
 bool MainWindow::doFileSave()
 {
     if(isSaved)
@@ -116,6 +103,7 @@ bool MainWindow::doFileSave()
     else
         return doFileSaveAs();
 }
+
 bool MainWindow::saveFile(QString fileName)
 {
     if(area->saveImage(fileName,"png"))
@@ -126,6 +114,15 @@ bool MainWindow::saveFile(QString fileName)
     else
         return false;
 }
+
+/*bool MainWindow::doFileSaveAs()
+{
+    QString fileName = QFileDialog::getSaveFileName(this,tr("另存为"),curFile);
+    if(fileName.isEmpty())
+        return false;
+    else
+        return saveFile(fileName);
+}*/
 bool MainWindow::doFileSaveAs()
 {
     //QString fileName = QFileDialog::getSaveFileName(this,tr("另存为"),curFile);
@@ -140,21 +137,26 @@ void MainWindow::on_actionOpen_triggered()
 {
     doOpen();
 }
+
 void MainWindow::on_actionSave_triggered()
 {
     doFileSave();
 }
+
 void MainWindow::on_actionSaveAs_triggered()
 {
     doFileSaveAs();
 }
+
 void MainWindow::on_actionExit_triggered()
 {
     if(maybeSave())
         qApp->quit();
 }
 
+
 //重写窗口关闭的事件函数
+
 void MainWindow::closeEvent(QCloseEvent *event)
 {
     if(maybeSave())
@@ -162,16 +164,21 @@ void MainWindow::closeEvent(QCloseEvent *event)
     else
         event->ignore();
 }
+
+
+
 void MainWindow::on_actionZoomIn_triggered()
 {
     area->zoomIn();
     scrollArea->widget()->resize(area->getImageSize());
 }
+
 void MainWindow::on_actionReturn_triggered()
 {
     area->zoom_1();
     scrollArea->widget()->resize(area->getImageSize());
 }
+
 void MainWindow::on_actionRotate_triggered()
 {
     area->doRotate();
@@ -185,14 +192,17 @@ void MainWindow::on_actionClear_triggered()
 {
     area->doClear();
 }
+
 void MainWindow::on_actionStretch_triggered()
 {
     area->doShear();
 }
+
 void MainWindow::on_actionDrawingToolbar_triggered()
 {
     ui->DrawTools->show();
 }
+
 void MainWindow::on_actionAbout_Draw_triggered()
 {
     HelpShowDialog hsd;
@@ -224,6 +234,7 @@ void MainWindow::createColorComboBox(QComboBox *comboBox)
 
     comboBox->addItem(tr("无颜色"),QColor(Qt::transparent));
 }
+
 void MainWindow::on_shapeComboBox_currentIndexChanged(const QString shape)
 {
     if(shape == tr("无"))
@@ -234,9 +245,8 @@ void MainWindow::on_shapeComboBox_currentIndexChanged(const QString shape)
         area->setShape(PaintArea::Line);
     else if(shape == tr("椭圆"))
         area->setShape(PaintArea::Ellipse);
-    else if(shape == tr("多边形"))
-        area->setShape(PaintArea::Polygon);
 }
+
 void MainWindow::on_penStyleComboBox_currentIndexChanged(const QString &arg1)
 {
     if(arg1 == tr("实线"))
@@ -248,33 +258,22 @@ void MainWindow::on_penStyleComboBox_currentIndexChanged(const QString &arg1)
         area->setPenStyle(Qt::DotLine);
     }
 }
+
 void MainWindow::on_penWidthspinBox_valueChanged(int width)
 {
     area->setPenWidth(width);
 }
+
 void MainWindow::on_penColorComboBox_currentIndexChanged(int index)
 {
     QColor color = ui->penColorComboBox->itemData(index,Qt::UserRole).value<QColor>();
 
     area->setPenColor(color);
 }
+
 void MainWindow::on_brushColorComboBox_currentIndexChanged(int index)
 {
     QColor color = ui->brushColorComboBox->itemData(index,Qt::UserRole).value<QColor>();
 
     area->setBrushColor(color);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-

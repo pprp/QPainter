@@ -4,14 +4,9 @@
 #include <QWidget>
 #include <QPoint>
 #include <QMouseEvent>
-#include <QPen>
-#include <QGraphicsScene>
-#include <QMouseEvent>
-#include <QLabel>
-#include <QGraphicsSceneEvent>
 
 
-class PaintArea : public QGraphicsScene
+class PaintArea : public QWidget
 {
 
 public:
@@ -36,7 +31,7 @@ public:
     void setBrushColor(QColor color);
     enum ShapeType
     {
-        None,Line,Rectangle,Ellipse,Polygon
+        None,Line,Rectangle,Ellipse
     };
     void setShape(ShapeType shape);//选择要绘制的图形
 
@@ -68,25 +63,8 @@ private:
     //添加临时绘图区，解决多个图形的不停画图的问题
     QImage tempImage;
     bool isDrawing;//是否再绘制特殊图形，初始化为 false;
-    //记录点坐标
-    QVector<QPointF> points;    //绘制的图形对应的坐标
-    QVector<QGraphicsItem*> shapes;
-    QVector<QGraphicsItem*> tempShapes;
 
 
-    //鼠标事件处理
-    void mousePressDraw(QGraphicsSceneMouseEvent *);
-    void mousePressMove(QGraphicsSceneMouseEvent *);
-    void mousePressEdit(QGraphicsSceneMouseEvent *);
-
-    void mouseMoveDraw(QGraphicsSceneMouseEvent *);
-    void mouseMoveMove(QGraphicsSceneMouseEvent *);
-    void mouseMoveEdit(QGraphicsSceneMouseEvent *);
-
-    void mouseReleaseDraw(QGraphicsSceneMouseEvent *);
-    void mouseReleaseMove(QGraphicsSceneMouseEvent *);
-    void mouseReleaseEdit(QGraphicsSceneMouseEvent *);
-    void setPen();
 };
 
 #endif // PAINTAREA_H
