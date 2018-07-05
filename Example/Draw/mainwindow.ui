@@ -99,6 +99,11 @@
      </item>
      <item>
       <property name="text">
+       <string>多边形</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
        <string>矩形</string>
       </property>
      </item>

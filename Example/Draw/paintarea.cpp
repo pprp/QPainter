@@ -1,11 +1,15 @@
 #include "paintarea.h"
 #include <QPainter>
+#include <QMessageBox>
+#include <math.h>
+#include <QPainterPath>
 
 
 //构造函数
-PaintArea::PaintArea()
+PaintArea::PaintArea(QWidget *parent):QGraphicsScene(parent)
 {
     modified = false;
+    pen=new QPen();
     //编辑属性的初始化
     scale=1;
     angle=0;
@@ -24,30 +28,68 @@ PaintArea::PaintArea()
     isDrawing=false;
 }
 
+void PaintArea::mousePressDraw(QGraphicsSceneMouseEvent *event)
+{
+    setPen();
+    if(curShape == this->Line)
+    {
+        if(event->button() == Qt::LeftButton && this->isDrawing)
+        {
+            points.append(event->scenePos());
+            QPainterPath * path=new QPainterPath(points[0]);
+            for(int i = 1 ; i < points.count(); i++){
+                path->lineTo(points[i]);
+            }
+            QGraphicsPathItem *cur=new QGraphicsPathItem();
+            cur->setPath(*path);
+            tempShapes=shapes;
+            tempShapes.append(cur);
+            showShape(tempShapes);
+        }
+        else if(event->button() == Qt::LeftButton && !this->isDrawing)
+        {
+            points.clear();
+            points.append(event->scenePos());
+            isDrawing=true;
+        }
+        else if(event->button() == Qt::RightButton && this->isDrawing)
+        {
+            QPainterPath * path = new QPainterPath(points[0]);
+            for(int i=1;i<points.count();++i)
+            {
+                path->lineTo(points[i]);
+            }
+            QGraphicsPathItem *cur=new QGraphicsPathItem();
+            cur->setPath(*path);
+            //QGraphicsPolylineItem *cur=new QGraphicsPolylineItem(points);
+            cur->setFlag(QGraphicsItem::ItemIsMovable,true);
+            cur->setFlag(QGraphicsItem::ItemIsSelectable,true);
+            cur->setPen(*pen);
+            shapes.append(cur);
+            showShape(shapes);
+            isDrawing=false;
+        }
+    }
+    else if(curShape == this->Rectangle)
+    {
+
+    }
+    else if(curShape == this->Ellipse)
+    {
+
+    }
+    else if(curShape == this->Polygon)
+    {
+
+    }
+
+}
+
 //事件处理函数
 //创建了一个QPainter对象
 //对旋转的操作，先复制再传回
 void PaintArea::paintEvent(QPaintEvent *){
-    /*QPainter painter(this);
 
-    painter.setRenderHint(QPainter::Antialiasing,true);
-    painter.setRenderHint(QPainter::SmoothPixmapTransform,true);
-
-    //重写事件函数painter.drawImage(0,0,image);
-    painter.scale(scale,scale);
-    if(angle)
-    {
-        QPointF center(image.width()/2.0,image.height()/2.0);
-        painter.translate(center);
-        painter.rotate(angle);
-        painter.translate(-center);
-    }
-    if(shear)
-    {
-        painter.shear(shear,shear);
-    }
-    painter.drawImage(0,0,image);
-    */
     QPainter painter(this);
 
     //重写事件函数painter.drawImage(0,0,image);
@@ -140,10 +182,7 @@ void PaintArea::paint(QImage &theImage)
     QPainter pp(&theImage);
     pp.setRenderHint(QPainter::Antialiasing,true);
     pp.setRenderHint(QPainter::SmoothPixmapTransform,true);
-    QPen pen=QPen();
-    pen.setColor(penColor);
-    pen.setStyle(penStyle);
-    pen.setWidth(penWidth);
+    setPen();
 
     QBrush brush = QBrush(brushColor);
     pp.setPen(pen);
@@ -181,6 +220,13 @@ void PaintArea::paint(QImage &theImage)
     }
     update(); //进行更新界面显示，可引起窗口重绘事件，重绘窗口
     modified = true;
+}
+
+void PaintArea::setPen()
+{
+    pen.setColor(penColor);
+    pen.setStyle(penStyle);
+    pen.setWidth(penWidth);
 }
 
 void PaintArea::setImageSize(int width, int height)
@@ -229,7 +275,6 @@ QSize PaintArea::getImageSize()
 }
 
 //编辑栏中的操作
-
 void PaintArea::zoomIn()
 {
     scale*=1.2;
