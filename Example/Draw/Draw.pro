@@ -16,16 +16,19 @@ SOURCES += main.cpp\
         mainwindow.cpp \
     paintarea.cpp \
     donewdialog.cpp \
-    helpshowdialog.cpp
+    helpshowdialog.cpp \
+    donewtextdialog.cpp
 
 HEADERS  += mainwindow.h \
     paintarea.h \
     donewdialog.h \
-    helpshowdialog.h
+    helpshowdialog.h \
+    donewtextdialog.h
 
 FORMS    += mainwindow.ui \
     donewdialog.ui \
-    helpshowdialog.ui
+    helpshowdialog.ui \
+    donewtextdialog.ui
 
 RESOURCES += \
     ../ourico/ourico/ico.qrc

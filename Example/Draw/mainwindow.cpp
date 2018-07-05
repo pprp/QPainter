@@ -207,6 +207,7 @@ void MainWindow::createColorComboBox(QComboBox *comboBox)
 {
     QPixmap pix(16,16);
     QPainter painter(&pix);
+    painter.setRenderHint(QPainter::Antialiasing,true);
 
     painter.fillRect(0,0,16,16,QColor(Qt::black));
     comboBox->addItem(QIcon(pix),tr("黑色"),QColor(Qt::black));

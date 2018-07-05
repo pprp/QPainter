@@ -166,6 +166,7 @@ Makefile: ../Draw/Draw.pro D:/Qt/5.2.0/mingw48_32/mkspecs/win32-g++/qmake.conf D
 		D:/Qt/5.2.0/mingw48_32/mkspecs/features/yacc.prf \
 		D:/Qt/5.2.0/mingw48_32/mkspecs/features/lex.prf \
 		../Draw/Draw.pro \
+		D:/Qt/5.2.0/mingw48_32/lib/Qt5Svg.prl \
 		D:/Qt/5.2.0/mingw48_32/lib/Qt5Widgets.prl \
 		D:/Qt/5.2.0/mingw48_32/lib/Qt5Gui.prl \
 		D:/Qt/5.2.0/mingw48_32/lib/Qt5Core.prl
@@ -277,6 +278,7 @@ D:\Qt\5.2.0\mingw48_32\mkspecs\features\exceptions.prf:
 D:\Qt\5.2.0\mingw48_32\mkspecs\features\yacc.prf:
 D:\Qt\5.2.0\mingw48_32\mkspecs\features\lex.prf:
 ..\Draw\Draw.pro:
+D:/Qt/5.2.0/mingw48_32/lib/Qt5Svg.prl:
 D:/Qt/5.2.0/mingw48_32/lib/Qt5Widgets.prl:
 D:/Qt/5.2.0/mingw48_32/lib/Qt5Gui.prl:
 D:/Qt/5.2.0/mingw48_32/lib/Qt5Core.prl:

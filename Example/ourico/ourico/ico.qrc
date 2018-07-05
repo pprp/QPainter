@@ -49,5 +49,34 @@
         <file>Simple pencil free icon 1.png</file>
         <file>triangle.png</file>
         <file>图片1.png</file>
+        <file>笔.png</file>
+        <file>放大.png</file>
+        <file>放大1.png</file>
+        <file>工具.png</file>
+        <file>矩形.png</file>
+        <file>曲线.png</file>
+        <file>三角形.png</file>
+        <file>删除操作.png</file>
+        <file>删除操作1.png</file>
+        <file>刷子.png</file>
+        <file>缩小1.png</file>
+        <file>椭圆.png</file>
+        <file>文本框.png</file>
+        <file>文件保存.png</file>
+        <file>文件保存1.png</file>
+        <file>文件打开.png</file>
+        <file>文件打开2.png</file>
+        <file>文件打开3.png</file>
+        <file>文件另存.png</file>
+        <file>文件另存1.png</file>
+        <file>文件删除.png</file>
+        <file>文件删除1.png</file>
+        <file>文件新建.png</file>
+        <file>新建文件.png</file>
+        <file>旋转.png</file>
+        <file>旋转1.png</file>
+        <file>圆1.png</file>
+        <file>圆角矩形.png</file>
+        <file>直线.png</file>
     </qresource>
 </RCC>

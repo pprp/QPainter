@@ -60,6 +60,9 @@ private:
     Qt::PenStyle penStyle;//画笔风格
 
     ShapeType curShape;
+    //添加临时绘图区，解决多个图形的不停画图的问题
+    QImage tempImage;
+    bool isDrawing;//是否再绘制特殊图形，初始化为 false;
 
 
 };

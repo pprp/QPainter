@@ -1,0 +1,13 @@
+INPUT(
+./release\main.o
+./release\mainwindow.o
+./release\paintarea.o
+./release\donewdialog.o
+./release\helpshowdialog.o
+./release\donewtextdialog.o
+./release\qrc_ico.o
+./release\moc_mainwindow.o
+./release\moc_donewdialog.o
+./release\moc_helpshowdialog.o
+./release\moc_donewtextdialog.o
+);
