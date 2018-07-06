@@ -1,0 +1,19 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icon/cursor.png</file>
+        <file>icon/eraser.png</file>
+        <file>icon/mover.png</file>
+        <file>icon/pen.png</file>
+        <file>icon/redo.png</file>
+        <file>icon/undo.png</file>
+        <file>icon/zoomin.png</file>
+        <file>icon/zoomout.png</file>
+        <file>icon/zoomzero.png</file>
+        <file>translate/zh_CN.qm</file>
+        <file>icon/hand.png</file>
+        <file>translate/qtbase_zh_CN.qm</file>
+        <file>icon/PolyLine.png</file>
+        <file>icon/Bezier.png</file>
+        <file>icon/marquee.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,3714 @@
+{
+    "shapes": [
+        {
+            "name": "九七巧板",
+            "shapes": [
+                {
+                    "name": "七巧板",
+                    "pen": {
+                        "capStyle": 16,
+                        "color": "#ff000000",
+                        "joinStyle": 64,
+                        "style": 0,
+                        "width": 1
+                    },
+                    "shapes": [
+                        {
+                            "brush": {
+                                "color": "#ffff0000",
+                                "style": 1
+                            },
+                            "name": "三角形",
+                            "pen": {
+                                "capStyle": 16,
+                                "color": "#ff000000",
+                                "joinStyle": 64,
+                                "style": 0,
+                                "width": 1
+                            },
+                            "points": [
+                                {
+                                    "x": -40,
+                                    "y": -40
+                                },
+                                {
+                                    "x": 40,
+                                    "y": -40
+                                },
+                                {
+                                    "x": -40,
+                                    "y": 40
+                                }
+                            ],
+                            "transform": [
+                                1,
+                                0,
+                                0,
+                                0,
+                                1,
+                                0,
+                                -40,
+                                -40,
+                                1
+                            ],
+                            "type": "Polygon"
+                        },
+                        {
+                            "brush": {
+                                "color": "#ff800080",
+                                "style": 1
+                            },
+                            "name": "三角形",
+                            "pen": {
+                                "capStyle": 16,
+                                "color": "#ff000000",
+                                "joinStyle": 64,
+                                "style": 0,
+                                "width": 1
+                            },
+                            "points": [
+                                {
+                                    "x": 0,
+                                    "y": -40
+                                },
+                                {
+                                    "x": 80,
+                                    "y": 40
+                                },
+                                {
+                                    "x": -80,
+                                    "y": 40
+                                }
+                            ],
+                            "transform": [
+                                1,
+                                0,
+                                0,
+                                0,
+                                1,
+                                0,
+                                0,
+                                40,
+                                1
+                            ],
+                            "type": "Polygon"
+                        },
+                        {
+                            "brush": {
+                                "color": "#ff008000",
+                                "style": 1
+                            },
+                            "name": "三角形",
+                            "pen": {
+                                "capStyle": 16,
+                                "color": "#ff000000",
+                                "joinStyle": 64,
+                                "style": 0,
+                                "width": 1
+                            },
+                            "points": [
+                                {
+                                    "x": -40,
+                                    "y": 0
+                                },
+                                {
+                                    "x": 40,
+                                    "y": 80
+                                },
+                                {
+                                    "x": 40,
+                                    "y": -80
+                                }
+                            ],
+                            "transform": [
+                                1,
+                                0,
+                                0,
+                                0,
+                                1,
+                                0,
+                                40,
+                                0,
+                                1
+                            ],
+                            "type": "Polygon"
+                        },
+                        {
+                            "brush": {
+                                "color": "#ffffa500",
+                                "style": 1
+                            },
+                            "name": "三角形",
+                            "pen": {
+                                "capStyle": 16,
+                                "color": "#ff000000",
+                                "joinStyle": 64,
+                                "style": 0,
+                                "width": 1
+                            },
+                            "points": [
+                                {
+                                    "x": 20,
+                                    "y": 0
+                                },
+                                {
+                                    "x": -20,
+                                    "y": -40
+                                },
+                                {
+                                    "x": -20,
+                                    "y": 40
+                                }
+                            ],
+                            "transform": [
+                                1,
+                                0,
+                                0,
+                                0,
+                                1,
+                                0,
+                                -60,
+                                40,
+                                1
+                            ],
+                            "type": "Polygon"
+                        },
+                        {
+                            "brush": {
+                                "color": "#ffa52a2a",
+                                "style": 1
+                            },
+                            "name": "三角形",
+                            "pen": {
+                                "capStyle": 16,
+                                "color": "#ff000000",
+                                "joinStyle": 64,
+                                "style": 0,
+                                "width": 1
+                            },
+                            "points": [
+                                {
+                                    "x": 40,
+                                    "y": -20
+                                },
+                                {
+                                    "x": -40,
+                                    "y": -20
+                                },
+                                {
+                                    "x": 0,
+                                    "y": 20
+                                }
+                            ],
+                            "transform": [
+                                1,
+                                0,
+                                0,
+                                0,
+                                1,
+                                0,
+                                0,
+                                -20,
+                                1
+                            ],
+                            "type": "Polygon"
+                        },
+                        {
+                            "brush": {
+                                "color": "#ffffff00",
+                                "style": 1
+                            },
+                            "name": "正方形",
+                            "pen": {
+                                "capStyle": 16,
+                                "color": "#ff000000",
+                                "joinStyle": 64,
+                                "style": 0,
+                                "width": 1
+                            },
+                            "points": [
+                                {
+                                    "x": -40,
+                                    "y": 0
+                                },
+                                {
+                                    "x": 0,
+                                    "y": -40
+                                },
+                                {
+                                    "x": 40,
+                                    "y": 0
+                                },
+                                {
+                                    "x": 0,
+                                    "y": 40
+                                }
+                            ],
+                            "transform": [
+                                1,
+                                0,
+                                0,
+                                0,
+                                1,
+                                0,
+                                -40,
+                                0,
+                                1
+                            ],
+                            "type": "Polygon"
+                        },
+                        {
+                            "brush": {
+                                "color": "#ff0000ff",
+                                "style": 1
+                            },
+                            "name": "平行四边形",
+                            "pen": {
+                                "capStyle": 16,
+                                "color": "#ff000000",
+                                "joinStyle": 64,
+                                "style": 0,
+                                "width": 1
+                            },
+                            "points": [
+                                {
+                                    "x": -60,
+                                    "y": 20
+                                },
+                                {
+                                    "x": -20,
+                                    "y": -20
+                                },
+                                {
+                                    "x": 60,
+                                    "y": -20
+                                },
+                                {
+                                    "x": 20,
+                                    "y": 20
+                                }
+                            ],
+                            "transform": [
+                                1,
+                                0,
+                                0,
+                                0,
+                                1,
+                                0,
+                                20,
+                                -60,
+                                1
+                            ],
+                            "type": "Polygon"
+                        }
+                    ],
+                    "transform": [
+                        1,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        -160.00179836063012,
+                        -159.88086131451018,
+                        1
+                    ],
+                    "type": "GroupShape"
+                },
+                {
+                    "name": "七巧板",
+                    "pen": {
+                        "capStyle": 16,
+                        "color": "#ff000000",
+                        "joinStyle": 64,
+                        "style": 0,
+                        "width": 1
+                    },
+                    "shapes": [
+                        {
+                            "brush": {
+                                "color": "#ffff0000",
+                                "style": 1
+                            },
+                            "name": "三角形",
+                            "pen": {
+                                "capStyle": 16,
+                                "color": "#ff000000",
+                                "joinStyle": 64,
+                                "style": 0,
+                                "width": 1
+                            },
+                            "points": [
+                                {
+                                    "x": -40,
+                                    "y": -40
+                                },
+                                {
+                                    "x": 40,
+                                    "y": -40
+                                },
+                                {
+                                    "x": -40,
+                                    "y": 40
+                                }
+                            ],
+                            "transform": [
+                                1,
+                                0,
+                                0,
+                                0,
+                                1,
+                                0,
+                                -40,
+                                -40,
+                                1
+                            ],
+                            "type": "Polygon"
+                        },
+                        {
+                            "brush": {
+                                "color": "#ff800080",
+                                "style": 1
+                            },
+                            "name": "三角形",
+                            "pen": {
+                                "capStyle": 16,
+                                "color": "#ff000000",
+                                "joinStyle": 64,
+                                "style": 0,
+                                "width": 1
+                            },
+                            "points": [
+                                {
+                                    "x": 0,
+                                    "y": -40
+                                },
+                                {
+                                    "x": 80,
+                                    "y": 40
+                                },
+                                {
+                                    "x": -80,
+                                    "y": 40
+                                }
+                            ],
+                            "text": {
+                                "name": "",
+                                "text": "",
+                                "transform": [
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1
+                                ],
+                                "type": "Text"
+                            },
+                            "transform": [
+                                1,
+                                0,
+                                0,
+                                0,
+                                1,
+                                0,
+                                0,
+                                40,
+                                1
+                            ],
+                            "type": "Polygon"
+                        },
+                        {
+                            "brush": {
+                                "color": "#ff008000",
+                                "style": 1
+                            },
+                            "name": "三角形",
+                            "pen": {
+                                "capStyle": 16,
+                                "color": "#ff000000",
+                                "joinStyle": 64,
+                                "style": 0,
+                                "width": 1
+                            },
+                            "points": [
+                                {
+                                    "x": -40,
+                                    "y": 0
+                                },
+                                {
+                                    "x": 40,
+                                    "y": 80
+                                },
+                                {
+                                    "x": 40,
+                                    "y": -80
+                                }
+                            ],
+                            "text": {
+                                "name": "",
+                                "text": "",
+                                "transform": [
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1
+                                ],
+                                "type": "Text"
+                            },
+                            "transform": [
+                                1,
+                                0,
+                                0,
+                                0,
+                                1,
+                                0,
+                                40,
+                                0,
+                                1
+                            ],
+                            "type": "Polygon"
+                        },
+                        {
+                            "brush": {
+                                "color": "#ffffa500",
+                                "style": 1
+                            },
+                            "name": "三角形",
+                            "pen": {
+                                "capStyle": 16,
+                                "color": "#ff000000",
+                                "joinStyle": 64,
+                                "style": 0,
+                                "width": 1
+                            },
+                            "points": [
+                                {
+                                    "x": 20,
+                                    "y": 0
+                                },
+                                {
+                                    "x": -20,
+                                    "y": -40
+                                },
+                                {
+                                    "x": -20,
+                                    "y": 40
+                                }
+                            ],
+                            "text": {
+                                "name": "",
+                                "text": "",
+                                "transform": [
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1
+                                ],
+                                "type": "Text"
+                            },
+                            "transform": [
+                                1,
+                                0,
+                                0,
+                                0,
+                                1,
+                                0,
+                                -60,
+                                40,
+                                1
+                            ],
+                            "type": "Polygon"
+                        },
+                        {
+                            "brush": {
+                                "color": "#ffa52a2a",
+                                "style": 1
+                            },
+                            "name": "三角形",
+                            "pen": {
+                                "capStyle": 16,
+                                "color": "#ff000000",
+                                "joinStyle": 64,
+                                "style": 0,
+                                "width": 1
+                            },
+                            "points": [
+                                {
+                                    "x": 40,
+                                    "y": -20
+                                },
+                                {
+                                    "x": -40,
+                                    "y": -20
+                                },
+                                {
+                                    "x": 0,
+                                    "y": 20
+                                }
+                            ],
+                            "text": {
+                                "name": "",
+                                "text": "",
+                                "transform": [
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1
+                                ],
+                                "type": "Text"
+                            },
+                            "transform": [
+                                1,
+                                0,
+                                0,
+                                0,
+                                1,
+                                0,
+                                0,
+                                -20,
+                                1
+                            ],
+                            "type": "Polygon"
+                        },
+                        {
+                            "brush": {
+                                "color": "#ffffff00",
+                                "style": 1
+                            },
+                            "name": "正方形",
+                            "pen": {
+                                "capStyle": 16,
+                                "color": "#ff000000",
+                                "joinStyle": 64,
+                                "style": 0,
+                                "width": 1
+                            },
+                            "points": [
+                                {
+                                    "x": -40,
+                                    "y": 0
+                                },
+                                {
+                                    "x": 0,
+                                    "y": -40
+                                },
+                                {
+                                    "x": 40,
+                                    "y": 0
+                                },
+                                {
+                                    "x": 0,
+                                    "y": 40
+                                }
+                            ],
+                            "text": {
+                                "name": "",
+                                "text": "",
+                                "transform": [
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1
+                                ],
+                                "type": "Text"
+                            },
+                            "transform": [
+                                1,
+                                0,
+                                0,
+                                0,
+                                1,
+                                0,
+                                -40,
+                                0,
+                                1
+                            ],
+                            "type": "Polygon"
+                        },
+                        {
+                            "brush": {
+                                "color": "#ff0000ff",
+                                "style": 1
+                            },
+                            "name": "平行四边形",
+                            "pen": {
+                                "capStyle": 16,
+                                "color": "#ff000000",
+                                "joinStyle": 64,
+                                "style": 0,
+                                "width": 1
+                            },
+                            "points": [
+                                {
+                                    "x": -60,
+                                    "y": 20
+                                },
+                                {
+                                    "x": -20,
+                                    "y": -20
+                                },
+                                {
+                                    "x": 60,
+                                    "y": -20
+                                },
+                                {
+                                    "x": 20,
+                                    "y": 20
+                                }
+                            ],
+                            "text": {
+                                "name": "",
+                                "text": "",
+                                "transform": [
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1
+                                ],
+                                "type": "Text"
+                            },
+                            "transform": [
+                                1,
+                                0,
+                                0,
+                                0,
+                                1,
+                                0,
+                                20,
+                                -60,
+                                1
+                            ],
+                            "type": "Polygon"
+                        }
+                    ],
+                    "transform": [
+                        1,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        159.82225534927073,
+                        159.89164362824118,
+                        1
+                    ],
+                    "type": "GroupShape"
+                },
+                {
+                    "name": "七巧板",
+                    "pen": {
+                        "capStyle": 16,
+                        "color": "#ff000000",
+                        "joinStyle": 64,
+                        "style": 0,
+                        "width": 1
+                    },
+                    "shapes": [
+                        {
+                            "brush": {
+                                "color": "#ffff0000",
+                                "style": 1
+                            },
+                            "name": "三角形",
+                            "pen": {
+                                "capStyle": 16,
+                                "color": "#ff000000",
+                                "joinStyle": 64,
+                                "style": 0,
+                                "width": 1
+                            },
+                            "points": [
+                                {
+                                    "x": -40,
+                                    "y": -40
+                                },
+                                {
+                                    "x": 40,
+                                    "y": -40
+                                },
+                                {
+                                    "x": -40,
+                                    "y": 40
+                                }
+                            ],
+                            "text": {
+                                "name": "",
+                                "text": "",
+                                "transform": [
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1
+                                ],
+                                "type": "Text"
+                            },
+                            "transform": [
+                                1,
+                                0,
+                                0,
+                                0,
+                                1,
+                                0,
+                                -40,
+                                -40,
+                                1
+                            ],
+                            "type": "Polygon"
+                        },
+                        {
+                            "brush": {
+                                "color": "#ff800080",
+                                "style": 1
+                            },
+                            "name": "三角形",
+                            "pen": {
+                                "capStyle": 16,
+                                "color": "#ff000000",
+                                "joinStyle": 64,
+                                "style": 0,
+                                "width": 1
+                            },
+                            "points": [
+                                {
+                                    "x": 0,
+                                    "y": -40
+                                },
+                                {
+                                    "x": 80,
+                                    "y": 40
+                                },
+                                {
+                                    "x": -80,
+                                    "y": 40
+                                }
+                            ],
+                            "text": {
+                                "name": "",
+                                "text": "",
+                                "transform": [
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1
+                                ],
+                                "type": "Text"
+                            },
+                            "transform": [
+                                1,
+                                0,
+                                0,
+                                0,
+                                1,
+                                0,
+                                0,
+                                40,
+                                1
+                            ],
+                            "type": "Polygon"
+                        },
+                        {
+                            "brush": {
+                                "color": "#ff008000",
+                                "style": 1
+                            },
+                            "name": "三角形",
+                            "pen": {
+                                "capStyle": 16,
+                                "color": "#ff000000",
+                                "joinStyle": 64,
+                                "style": 0,
+                                "width": 1
+                            },
+                            "points": [
+                                {
+                                    "x": -40,
+                                    "y": 0
+                                },
+                                {
+                                    "x": 40,
+                                    "y": 80
+                                },
+                                {
+                                    "x": 40,
+                                    "y": -80
+                                }
+                            ],
+                            "text": {
+                                "name": "",
+                                "text": "",
+                                "transform": [
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1
+                                ],
+                                "type": "Text"
+                            },
+                            "transform": [
+                                1,
+                                0,
+                                0,
+                                0,
+                                1,
+                                0,
+                                40,
+                                0,
+                                1
+                            ],
+                            "type": "Polygon"
+                        },
+                        {
+                            "brush": {
+                                "color": "#ffffa500",
+                                "style": 1
+                            },
+                            "name": "三角形",
+                            "pen": {
+                                "capStyle": 16,
+                                "color": "#ff000000",
+                                "joinStyle": 64,
+                                "style": 0,
+                                "width": 1
+                            },
+                            "points": [
+                                {
+                                    "x": 20,
+                                    "y": 0
+                                },
+                                {
+                                    "x": -20,
+                                    "y": -40
+                                },
+                                {
+                                    "x": -20,
+                                    "y": 40
+                                }
+                            ],
+                            "text": {
+                                "name": "",
+                                "text": "",
+                                "transform": [
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1
+                                ],
+                                "type": "Text"
+                            },
+                            "transform": [
+                                1,
+                                0,
+                                0,
+                                0,
+                                1,
+                                0,
+                                -60,
+                                40,
+                                1
+                            ],
+                            "type": "Polygon"
+                        },
+                        {
+                            "brush": {
+                                "color": "#ffa52a2a",
+                                "style": 1
+                            },
+                            "name": "三角形",
+                            "pen": {
+                                "capStyle": 16,
+                                "color": "#ff000000",
+                                "joinStyle": 64,
+                                "style": 0,
+                                "width": 1
+                            },
+                            "points": [
+                                {
+                                    "x": 40,
+                                    "y": -20
+                                },
+                                {
+                                    "x": -40,
+                                    "y": -20
+                                },
+                                {
+                                    "x": 0,
+                                    "y": 20
+                                }
+                            ],
+                            "text": {
+                                "name": "",
+                                "text": "",
+                                "transform": [
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1
+                                ],
+                                "type": "Text"
+                            },
+                            "transform": [
+                                1,
+                                0,
+                                0,
+                                0,
+                                1,
+                                0,
+                                0,
+                                -20,
+                                1
+                            ],
+                            "type": "Polygon"
+                        },
+                        {
+                            "brush": {
+                                "color": "#ffffff00",
+                                "style": 1
+                            },
+                            "name": "正方形",
+                            "pen": {
+                                "capStyle": 16,
+                                "color": "#ff000000",
+                                "joinStyle": 64,
+                                "style": 0,
+                                "width": 1
+                            },
+                            "points": [
+                                {
+                                    "x": -40,
+                                    "y": 0
+                                },
+                                {
+                                    "x": 0,
+                                    "y": -40
+                                },
+                                {
+                                    "x": 40,
+                                    "y": 0
+                                },
+                                {
+                                    "x": 0,
+                                    "y": 40
+                                }
+                            ],
+                            "text": {
+                                "name": "",
+                                "text": "",
+                                "transform": [
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1
+                                ],
+                                "type": "Text"
+                            },
+                            "transform": [
+                                1,
+                                0,
+                                0,
+                                0,
+                                1,
+                                0,
+                                -40,
+                                0,
+                                1
+                            ],
+                            "type": "Polygon"
+                        },
+                        {
+                            "brush": {
+                                "color": "#ff0000ff",
+                                "style": 1
+                            },
+                            "name": "平行四边形",
+                            "pen": {
+                                "capStyle": 16,
+                                "color": "#ff000000",
+                                "joinStyle": 64,
+                                "style": 0,
+                                "width": 1
+                            },
+                            "points": [
+                                {
+                                    "x": -60,
+                                    "y": 20
+                                },
+                                {
+                                    "x": -20,
+                                    "y": -20
+                                },
+                                {
+                                    "x": 60,
+                                    "y": -20
+                                },
+                                {
+                                    "x": 20,
+                                    "y": 20
+                                }
+                            ],
+                            "text": {
+                                "name": "",
+                                "text": "",
+                                "transform": [
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1
+                                ],
+                                "type": "Text"
+                            },
+                            "transform": [
+                                1,
+                                0,
+                                0,
+                                0,
+                                1,
+                                0,
+                                20,
+                                -60,
+                                1
+                            ],
+                            "type": "Polygon"
+                        }
+                    ],
+                    "transform": [
+                        1,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0.00038217669912654628,
+                        0.036203051026994615,
+                        1
+                    ],
+                    "type": "GroupShape"
+                },
+                {
+                    "name": "七巧板",
+                    "pen": {
+                        "capStyle": 16,
+                        "color": "#ff000000",
+                        "joinStyle": 64,
+                        "style": 0,
+                        "width": 1
+                    },
+                    "shapes": [
+                        {
+                            "brush": {
+                                "color": "#ffff0000",
+                                "style": 1
+                            },
+                            "name": "三角形",
+                            "pen": {
+                                "capStyle": 16,
+                                "color": "#ff000000",
+                                "joinStyle": 64,
+                                "style": 0,
+                                "width": 1
+                            },
+                            "points": [
+                                {
+                                    "x": -40,
+                                    "y": -40
+                                },
+                                {
+                                    "x": 40,
+                                    "y": -40
+                                },
+                                {
+                                    "x": -40,
+                                    "y": 40
+                                }
+                            ],
+                            "text": {
+                                "name": "",
+                                "text": "",
+                                "transform": [
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1
+                                ],
+                                "type": "Text"
+                            },
+                            "transform": [
+                                1,
+                                0,
+                                0,
+                                0,
+                                1,
+                                0,
+                                -40,
+                                -40,
+                                1
+                            ],
+                            "type": "Polygon"
+                        },
+                        {
+                            "brush": {
+                                "color": "#ff800080",
+                                "style": 1
+                            },
+                            "name": "三角形",
+                            "pen": {
+                                "capStyle": 16,
+                                "color": "#ff000000",
+                                "joinStyle": 64,
+                                "style": 0,
+                                "width": 1
+                            },
+                            "points": [
+                                {
+                                    "x": 0,
+                                    "y": -40
+                                },
+                                {
+                                    "x": 80,
+                                    "y": 40
+                                },
+                                {
+                                    "x": -80,
+                                    "y": 40
+                                }
+                            ],
+                            "text": {
+                                "name": "",
+                                "text": "",
+                                "transform": [
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1
+                                ],
+                                "type": "Text"
+                            },
+                            "transform": [
+                                1,
+                                0,
+                                0,
+                                0,
+                                1,
+                                0,
+                                0,
+                                40,
+                                1
+                            ],
+                            "type": "Polygon"
+                        },
+                        {
+                            "brush": {
+                                "color": "#ff008000",
+                                "style": 1
+                            },
+                            "name": "三角形",
+                            "pen": {
+                                "capStyle": 16,
+                                "color": "#ff000000",
+                                "joinStyle": 64,
+                                "style": 0,
+                                "width": 1
+                            },
+                            "points": [
+                                {
+                                    "x": -40,
+                                    "y": 0
+                                },
+                                {
+                                    "x": 40,
+                                    "y": 80
+                                },
+                                {
+                                    "x": 40,
+                                    "y": -80
+                                }
+                            ],
+                            "text": {
+                                "name": "",
+                                "text": "",
+                                "transform": [
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1
+                                ],
+                                "type": "Text"
+                            },
+                            "transform": [
+                                1,
+                                0,
+                                0,
+                                0,
+                                1,
+                                0,
+                                40,
+                                0,
+                                1
+                            ],
+                            "type": "Polygon"
+                        },
+                        {
+                            "brush": {
+                                "color": "#ffffa500",
+                                "style": 1
+                            },
+                            "name": "三角形",
+                            "pen": {
+                                "capStyle": 16,
+                                "color": "#ff000000",
+                                "joinStyle": 64,
+                                "style": 0,
+                                "width": 1
+                            },
+                            "points": [
+                                {
+                                    "x": 20,
+                                    "y": 0
+                                },
+                                {
+                                    "x": -20,
+                                    "y": -40
+                                },
+                                {
+                                    "x": -20,
+                                    "y": 40
+                                }
+                            ],
+                            "text": {
+                                "name": "",
+                                "text": "",
+                                "transform": [
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1
+                                ],
+                                "type": "Text"
+                            },
+                            "transform": [
+                                1,
+                                0,
+                                0,
+                                0,
+                                1,
+                                0,
+                                -60,
+                                40,
+                                1
+                            ],
+                            "type": "Polygon"
+                        },
+                        {
+                            "brush": {
+                                "color": "#ffa52a2a",
+                                "style": 1
+                            },
+                            "name": "三角形",
+                            "pen": {
+                                "capStyle": 16,
+                                "color": "#ff000000",
+                                "joinStyle": 64,
+                                "style": 0,
+                                "width": 1
+                            },
+                            "points": [
+                                {
+                                    "x": 40,
+                                    "y": -20
+                                },
+                                {
+                                    "x": -40,
+                                    "y": -20
+                                },
+                                {
+                                    "x": 0,
+                                    "y": 20
+                                }
+                            ],
+                            "text": {
+                                "name": "",
+                                "text": "",
+                                "transform": [
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1
+                                ],
+                                "type": "Text"
+                            },
+                            "transform": [
+                                1,
+                                0,
+                                0,
+                                0,
+                                1,
+                                0,
+                                0,
+                                -20,
+                                1
+                            ],
+                            "type": "Polygon"
+                        },
+                        {
+                            "brush": {
+                                "color": "#ffffff00",
+                                "style": 1
+                            },
+                            "name": "正方形",
+                            "pen": {
+                                "capStyle": 16,
+                                "color": "#ff000000",
+                                "joinStyle": 64,
+                                "style": 0,
+                                "width": 1
+                            },
+                            "points": [
+                                {
+                                    "x": -40,
+                                    "y": 0
+                                },
+                                {
+                                    "x": 0,
+                                    "y": -40
+                                },
+                                {
+                                    "x": 40,
+                                    "y": 0
+                                },
+                                {
+                                    "x": 0,
+                                    "y": 40
+                                }
+                            ],
+                            "text": {
+                                "name": "",
+                                "text": "",
+                                "transform": [
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1
+                                ],
+                                "type": "Text"
+                            },
+                            "transform": [
+                                1,
+                                0,
+                                0,
+                                0,
+                                1,
+                                0,
+                                -40,
+                                0,
+                                1
+                            ],
+                            "type": "Polygon"
+                        },
+                        {
+                            "brush": {
+                                "color": "#ff0000ff",
+                                "style": 1
+                            },
+                            "name": "平行四边形",
+                            "pen": {
+                                "capStyle": 16,
+                                "color": "#ff000000",
+                                "joinStyle": 64,
+                                "style": 0,
+                                "width": 1
+                            },
+                            "points": [
+                                {
+                                    "x": -60,
+                                    "y": 20
+                                },
+                                {
+                                    "x": -20,
+                                    "y": -20
+                                },
+                                {
+                                    "x": 60,
+                                    "y": -20
+                                },
+                                {
+                                    "x": 20,
+                                    "y": 20
+                                }
+                            ],
+                            "text": {
+                                "name": "",
+                                "text": "",
+                                "transform": [
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1
+                                ],
+                                "type": "Text"
+                            },
+                            "transform": [
+                                1,
+                                0,
+                                0,
+                                0,
+                                1,
+                                0,
+                                20,
+                                -60,
+                                1
+                            ],
+                            "type": "Polygon"
+                        }
+                    ],
+                    "transform": [
+                        1,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        160.03122328502656,
+                        -159.95909809050104,
+                        1
+                    ],
+                    "type": "GroupShape"
+                },
+                {
+                    "name": "七巧板",
+                    "pen": {
+                        "capStyle": 16,
+                        "color": "#ff000000",
+                        "joinStyle": 64,
+                        "style": 0,
+                        "width": 1
+                    },
+                    "shapes": [
+                        {
+                            "brush": {
+                                "color": "#ffff0000",
+                                "style": 1
+                            },
+                            "name": "三角形",
+                            "pen": {
+                                "capStyle": 16,
+                                "color": "#ff000000",
+                                "joinStyle": 64,
+                                "style": 0,
+                                "width": 1
+                            },
+                            "points": [
+                                {
+                                    "x": -40,
+                                    "y": -40
+                                },
+                                {
+                                    "x": 40,
+                                    "y": -40
+                                },
+                                {
+                                    "x": -40,
+                                    "y": 40
+                                }
+                            ],
+                            "text": {
+                                "name": "",
+                                "text": "",
+                                "transform": [
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1
+                                ],
+                                "type": "Text"
+                            },
+                            "transform": [
+                                1,
+                                0,
+                                0,
+                                0,
+                                1,
+                                0,
+                                -40,
+                                -40,
+                                1
+                            ],
+                            "type": "Polygon"
+                        },
+                        {
+                            "brush": {
+                                "color": "#ff800080",
+                                "style": 1
+                            },
+                            "name": "三角形",
+                            "pen": {
+                                "capStyle": 16,
+                                "color": "#ff000000",
+                                "joinStyle": 64,
+                                "style": 0,
+                                "width": 1
+                            },
+                            "points": [
+                                {
+                                    "x": 0,
+                                    "y": -40
+                                },
+                                {
+                                    "x": 80,
+                                    "y": 40
+                                },
+                                {
+                                    "x": -80,
+                                    "y": 40
+                                }
+                            ],
+                            "text": {
+                                "name": "",
+                                "text": "",
+                                "transform": [
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1
+                                ],
+                                "type": "Text"
+                            },
+                            "transform": [
+                                1,
+                                0,
+                                0,
+                                0,
+                                1,
+                                0,
+                                0,
+                                40,
+                                1
+                            ],
+                            "type": "Polygon"
+                        },
+                        {
+                            "brush": {
+                                "color": "#ff008000",
+                                "style": 1
+                            },
+                            "name": "三角形",
+                            "pen": {
+                                "capStyle": 16,
+                                "color": "#ff000000",
+                                "joinStyle": 64,
+                                "style": 0,
+                                "width": 1
+                            },
+                            "points": [
+                                {
+                                    "x": -40,
+                                    "y": 0
+                                },
+                                {
+                                    "x": 40,
+                                    "y": 80
+                                },
+                                {
+                                    "x": 40,
+                                    "y": -80
+                                }
+                            ],
+                            "text": {
+                                "name": "",
+                                "text": "",
+                                "transform": [
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1
+                                ],
+                                "type": "Text"
+                            },
+                            "transform": [
+                                1,
+                                0,
+                                0,
+                                0,
+                                1,
+                                0,
+                                40,
+                                0,
+                                1
+                            ],
+                            "type": "Polygon"
+                        },
+                        {
+                            "brush": {
+                                "color": "#ffffa500",
+                                "style": 1
+                            },
+                            "name": "三角形",
+                            "pen": {
+                                "capStyle": 16,
+                                "color": "#ff000000",
+                                "joinStyle": 64,
+                                "style": 0,
+                                "width": 1
+                            },
+                            "points": [
+                                {
+                                    "x": 20,
+                                    "y": 0
+                                },
+                                {
+                                    "x": -20,
+                                    "y": -40
+                                },
+                                {
+                                    "x": -20,
+                                    "y": 40
+                                }
+                            ],
+                            "text": {
+                                "name": "",
+                                "text": "",
+                                "transform": [
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1
+                                ],
+                                "type": "Text"
+                            },
+                            "transform": [
+                                1,
+                                0,
+                                0,
+                                0,
+                                1,
+                                0,
+                                -60,
+                                40,
+                                1
+                            ],
+                            "type": "Polygon"
+                        },
+                        {
+                            "brush": {
+                                "color": "#ffa52a2a",
+                                "style": 1
+                            },
+                            "name": "三角形",
+                            "pen": {
+                                "capStyle": 16,
+                                "color": "#ff000000",
+                                "joinStyle": 64,
+                                "style": 0,
+                                "width": 1
+                            },
+                            "points": [
+                                {
+                                    "x": 40,
+                                    "y": -20
+                                },
+                                {
+                                    "x": -40,
+                                    "y": -20
+                                },
+                                {
+                                    "x": 0,
+                                    "y": 20
+                                }
+                            ],
+                            "text": {
+                                "name": "",
+                                "text": "",
+                                "transform": [
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1
+                                ],
+                                "type": "Text"
+                            },
+                            "transform": [
+                                1,
+                                0,
+                                0,
+                                0,
+                                1,
+                                0,
+                                0,
+                                -20,
+                                1
+                            ],
+                            "type": "Polygon"
+                        },
+                        {
+                            "brush": {
+                                "color": "#ffffff00",
+                                "style": 1
+                            },
+                            "name": "正方形",
+                            "pen": {
+                                "capStyle": 16,
+                                "color": "#ff000000",
+                                "joinStyle": 64,
+                                "style": 0,
+                                "width": 1
+                            },
+                            "points": [
+                                {
+                                    "x": -40,
+                                    "y": 0
+                                },
+                                {
+                                    "x": 0,
+                                    "y": -40
+                                },
+                                {
+                                    "x": 40,
+                                    "y": 0
+                                },
+                                {
+                                    "x": 0,
+                                    "y": 40
+                                }
+                            ],
+                            "text": {
+                                "name": "",
+                                "text": "",
+                                "transform": [
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1
+                                ],
+                                "type": "Text"
+                            },
+                            "transform": [
+                                1,
+                                0,
+                                0,
+                                0,
+                                1,
+                                0,
+                                -40,
+                                0,
+                                1
+                            ],
+                            "type": "Polygon"
+                        },
+                        {
+                            "brush": {
+                                "color": "#ff0000ff",
+                                "style": 1
+                            },
+                            "name": "平行四边形",
+                            "pen": {
+                                "capStyle": 16,
+                                "color": "#ff000000",
+                                "joinStyle": 64,
+                                "style": 0,
+                                "width": 1
+                            },
+                            "points": [
+                                {
+                                    "x": -60,
+                                    "y": 20
+                                },
+                                {
+                                    "x": -20,
+                                    "y": -20
+                                },
+                                {
+                                    "x": 60,
+                                    "y": -20
+                                },
+                                {
+                                    "x": 20,
+                                    "y": 20
+                                }
+                            ],
+                            "text": {
+                                "name": "",
+                                "text": "",
+                                "transform": [
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1
+                                ],
+                                "type": "Text"
+                            },
+                            "transform": [
+                                1,
+                                0,
+                                0,
+                                0,
+                                1,
+                                0,
+                                20,
+                                -60,
+                                1
+                            ],
+                            "type": "Polygon"
+                        }
+                    ],
+                    "transform": [
+                        1,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        -160.03122328502656,
+                        0.097404930569131132,
+                        1
+                    ],
+                    "type": "GroupShape"
+                },
+                {
+                    "name": "七巧板",
+                    "pen": {
+                        "capStyle": 16,
+                        "color": "#ff000000",
+                        "joinStyle": 64,
+                        "style": 0,
+                        "width": 1
+                    },
+                    "shapes": [
+                        {
+                            "brush": {
+                                "color": "#ffff0000",
+                                "style": 1
+                            },
+                            "name": "三角形",
+                            "pen": {
+                                "capStyle": 16,
+                                "color": "#ff000000",
+                                "joinStyle": 64,
+                                "style": 0,
+                                "width": 1
+                            },
+                            "points": [
+                                {
+                                    "x": -40,
+                                    "y": -40
+                                },
+                                {
+                                    "x": 40,
+                                    "y": -40
+                                },
+                                {
+                                    "x": -40,
+                                    "y": 40
+                                }
+                            ],
+                            "text": {
+                                "name": "",
+                                "text": "",
+                                "transform": [
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1
+                                ],
+                                "type": "Text"
+                            },
+                            "transform": [
+                                1,
+                                0,
+                                0,
+                                0,
+                                1,
+                                0,
+                                -40,
+                                -40,
+                                1
+                            ],
+                            "type": "Polygon"
+                        },
+                        {
+                            "brush": {
+                                "color": "#ff800080",
+                                "style": 1
+                            },
+                            "name": "三角形",
+                            "pen": {
+                                "capStyle": 16,
+                                "color": "#ff000000",
+                                "joinStyle": 64,
+                                "style": 0,
+                                "width": 1
+                            },
+                            "points": [
+                                {
+                                    "x": 0,
+                                    "y": -40
+                                },
+                                {
+                                    "x": 80,
+                                    "y": 40
+                                },
+                                {
+                                    "x": -80,
+                                    "y": 40
+                                }
+                            ],
+                            "text": {
+                                "name": "",
+                                "text": "",
+                                "transform": [
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1
+                                ],
+                                "type": "Text"
+                            },
+                            "transform": [
+                                1,
+                                0,
+                                0,
+                                0,
+                                1,
+                                0,
+                                0,
+                                40,
+                                1
+                            ],
+                            "type": "Polygon"
+                        },
+                        {
+                            "brush": {
+                                "color": "#ff008000",
+                                "style": 1
+                            },
+                            "name": "三角形",
+                            "pen": {
+                                "capStyle": 16,
+                                "color": "#ff000000",
+                                "joinStyle": 64,
+                                "style": 0,
+                                "width": 1
+                            },
+                            "points": [
+                                {
+                                    "x": -40,
+                                    "y": 0
+                                },
+                                {
+                                    "x": 40,
+                                    "y": 80
+                                },
+                                {
+                                    "x": 40,
+                                    "y": -80
+                                }
+                            ],
+                            "text": {
+                                "name": "",
+                                "text": "",
+                                "transform": [
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1
+                                ],
+                                "type": "Text"
+                            },
+                            "transform": [
+                                1,
+                                0,
+                                0,
+                                0,
+                                1,
+                                0,
+                                40,
+                                0,
+                                1
+                            ],
+                            "type": "Polygon"
+                        },
+                        {
+                            "brush": {
+                                "color": "#ffffa500",
+                                "style": 1
+                            },
+                            "name": "三角形",
+                            "pen": {
+                                "capStyle": 16,
+                                "color": "#ff000000",
+                                "joinStyle": 64,
+                                "style": 0,
+                                "width": 1
+                            },
+                            "points": [
+                                {
+                                    "x": 20,
+                                    "y": 0
+                                },
+                                {
+                                    "x": -20,
+                                    "y": -40
+                                },
+                                {
+                                    "x": -20,
+                                    "y": 40
+                                }
+                            ],
+                            "text": {
+                                "name": "",
+                                "text": "",
+                                "transform": [
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1
+                                ],
+                                "type": "Text"
+                            },
+                            "transform": [
+                                1,
+                                0,
+                                0,
+                                0,
+                                1,
+                                0,
+                                -60,
+                                40,
+                                1
+                            ],
+                            "type": "Polygon"
+                        },
+                        {
+                            "brush": {
+                                "color": "#ffa52a2a",
+                                "style": 1
+                            },
+                            "name": "三角形",
+                            "pen": {
+                                "capStyle": 16,
+                                "color": "#ff000000",
+                                "joinStyle": 64,
+                                "style": 0,
+                                "width": 1
+                            },
+                            "points": [
+                                {
+                                    "x": 40,
+                                    "y": -20
+                                },
+                                {
+                                    "x": -40,
+                                    "y": -20
+                                },
+                                {
+                                    "x": 0,
+                                    "y": 20
+                                }
+                            ],
+                            "text": {
+                                "name": "",
+                                "text": "",
+                                "transform": [
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1
+                                ],
+                                "type": "Text"
+                            },
+                            "transform": [
+                                1,
+                                0,
+                                0,
+                                0,
+                                1,
+                                0,
+                                0,
+                                -20,
+                                1
+                            ],
+                            "type": "Polygon"
+                        },
+                        {
+                            "brush": {
+                                "color": "#ffffff00",
+                                "style": 1
+                            },
+                            "name": "正方形",
+                            "pen": {
+                                "capStyle": 16,
+                                "color": "#ff000000",
+                                "joinStyle": 64,
+                                "style": 0,
+                                "width": 1
+                            },
+                            "points": [
+                                {
+                                    "x": -40,
+                                    "y": 0
+                                },
+                                {
+                                    "x": 0,
+                                    "y": -40
+                                },
+                                {
+                                    "x": 40,
+                                    "y": 0
+                                },
+                                {
+                                    "x": 0,
+                                    "y": 40
+                                }
+                            ],
+                            "text": {
+                                "name": "",
+                                "text": "",
+                                "transform": [
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1
+                                ],
+                                "type": "Text"
+                            },
+                            "transform": [
+                                1,
+                                0,
+                                0,
+                                0,
+                                1,
+                                0,
+                                -40,
+                                0,
+                                1
+                            ],
+                            "type": "Polygon"
+                        },
+                        {
+                            "brush": {
+                                "color": "#ff0000ff",
+                                "style": 1
+                            },
+                            "name": "平行四边形",
+                            "pen": {
+                                "capStyle": 16,
+                                "color": "#ff000000",
+                                "joinStyle": 64,
+                                "style": 0,
+                                "width": 1
+                            },
+                            "points": [
+                                {
+                                    "x": -60,
+                                    "y": 20
+                                },
+                                {
+                                    "x": -20,
+                                    "y": -20
+                                },
+                                {
+                                    "x": 60,
+                                    "y": -20
+                                },
+                                {
+                                    "x": 20,
+                                    "y": 20
+                                }
+                            ],
+                            "text": {
+                                "name": "",
+                                "text": "",
+                                "transform": [
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1
+                                ],
+                                "type": "Text"
+                            },
+                            "transform": [
+                                1,
+                                0,
+                                0,
+                                0,
+                                1,
+                                0,
+                                20,
+                                -60,
+                                1
+                            ],
+                            "type": "Polygon"
+                        }
+                    ],
+                    "transform": [
+                        1,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        -0.07382918104235614,
+                        159.95909809050104,
+                        1
+                    ],
+                    "type": "GroupShape"
+                },
+                {
+                    "name": "七巧板",
+                    "pen": {
+                        "capStyle": 16,
+                        "color": "#ff000000",
+                        "joinStyle": 64,
+                        "style": 0,
+                        "width": 1
+                    },
+                    "shapes": [
+                        {
+                            "brush": {
+                                "color": "#ffff0000",
+                                "style": 1
+                            },
+                            "name": "三角形",
+                            "pen": {
+                                "capStyle": 16,
+                                "color": "#ff000000",
+                                "joinStyle": 64,
+                                "style": 0,
+                                "width": 1
+                            },
+                            "points": [
+                                {
+                                    "x": -40,
+                                    "y": -40
+                                },
+                                {
+                                    "x": 40,
+                                    "y": -40
+                                },
+                                {
+                                    "x": -40,
+                                    "y": 40
+                                }
+                            ],
+                            "text": {
+                                "name": "",
+                                "text": "",
+                                "transform": [
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1
+                                ],
+                                "type": "Text"
+                            },
+                            "transform": [
+                                1,
+                                0,
+                                0,
+                                0,
+                                1,
+                                0,
+                                -40,
+                                -40,
+                                1
+                            ],
+                            "type": "Polygon"
+                        },
+                        {
+                            "brush": {
+                                "color": "#ff800080",
+                                "style": 1
+                            },
+                            "name": "三角形",
+                            "pen": {
+                                "capStyle": 16,
+                                "color": "#ff000000",
+                                "joinStyle": 64,
+                                "style": 0,
+                                "width": 1
+                            },
+                            "points": [
+                                {
+                                    "x": 0,
+                                    "y": -40
+                                },
+                                {
+                                    "x": 80,
+                                    "y": 40
+                                },
+                                {
+                                    "x": -80,
+                                    "y": 40
+                                }
+                            ],
+                            "text": {
+                                "name": "",
+                                "text": "",
+                                "transform": [
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1
+                                ],
+                                "type": "Text"
+                            },
+                            "transform": [
+                                1,
+                                0,
+                                0,
+                                0,
+                                1,
+                                0,
+                                0,
+                                40,
+                                1
+                            ],
+                            "type": "Polygon"
+                        },
+                        {
+                            "brush": {
+                                "color": "#ff008000",
+                                "style": 1
+                            },
+                            "name": "三角形",
+                            "pen": {
+                                "capStyle": 16,
+                                "color": "#ff000000",
+                                "joinStyle": 64,
+                                "style": 0,
+                                "width": 1
+                            },
+                            "points": [
+                                {
+                                    "x": -40,
+                                    "y": 0
+                                },
+                                {
+                                    "x": 40,
+                                    "y": 80
+                                },
+                                {
+                                    "x": 40,
+                                    "y": -80
+                                }
+                            ],
+                            "text": {
+                                "name": "",
+                                "text": "",
+                                "transform": [
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1
+                                ],
+                                "type": "Text"
+                            },
+                            "transform": [
+                                1,
+                                0,
+                                0,
+                                0,
+                                1,
+                                0,
+                                40,
+                                0,
+                                1
+                            ],
+                            "type": "Polygon"
+                        },
+                        {
+                            "brush": {
+                                "color": "#ffffa500",
+                                "style": 1
+                            },
+                            "name": "三角形",
+                            "pen": {
+                                "capStyle": 16,
+                                "color": "#ff000000",
+                                "joinStyle": 64,
+                                "style": 0,
+                                "width": 1
+                            },
+                            "points": [
+                                {
+                                    "x": 20,
+                                    "y": 0
+                                },
+                                {
+                                    "x": -20,
+                                    "y": -40
+                                },
+                                {
+                                    "x": -20,
+                                    "y": 40
+                                }
+                            ],
+                            "text": {
+                                "name": "",
+                                "text": "",
+                                "transform": [
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1
+                                ],
+                                "type": "Text"
+                            },
+                            "transform": [
+                                1,
+                                0,
+                                0,
+                                0,
+                                1,
+                                0,
+                                -60,
+                                40,
+                                1
+                            ],
+                            "type": "Polygon"
+                        },
+                        {
+                            "brush": {
+                                "color": "#ffa52a2a",
+                                "style": 1
+                            },
+                            "name": "三角形",
+                            "pen": {
+                                "capStyle": 16,
+                                "color": "#ff000000",
+                                "joinStyle": 64,
+                                "style": 0,
+                                "width": 1
+                            },
+                            "points": [
+                                {
+                                    "x": 40,
+                                    "y": -20
+                                },
+                                {
+                                    "x": -40,
+                                    "y": -20
+                                },
+                                {
+                                    "x": 0,
+                                    "y": 20
+                                }
+                            ],
+                            "text": {
+                                "name": "",
+                                "text": "",
+                                "transform": [
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1
+                                ],
+                                "type": "Text"
+                            },
+                            "transform": [
+                                1,
+                                0,
+                                0,
+                                0,
+                                1,
+                                0,
+                                0,
+                                -20,
+                                1
+                            ],
+                            "type": "Polygon"
+                        },
+                        {
+                            "brush": {
+                                "color": "#ffffff00",
+                                "style": 1
+                            },
+                            "name": "正方形",
+                            "pen": {
+                                "capStyle": 16,
+                                "color": "#ff000000",
+                                "joinStyle": 64,
+                                "style": 0,
+                                "width": 1
+                            },
+                            "points": [
+                                {
+                                    "x": -40,
+                                    "y": 0
+                                },
+                                {
+                                    "x": 0,
+                                    "y": -40
+                                },
+                                {
+                                    "x": 40,
+                                    "y": 0
+                                },
+                                {
+                                    "x": 0,
+                                    "y": 40
+                                }
+                            ],
+                            "text": {
+                                "name": "",
+                                "text": "",
+                                "transform": [
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1
+                                ],
+                                "type": "Text"
+                            },
+                            "transform": [
+                                1,
+                                0,
+                                0,
+                                0,
+                                1,
+                                0,
+                                -40,
+                                0,
+                                1
+                            ],
+                            "type": "Polygon"
+                        },
+                        {
+                            "brush": {
+                                "color": "#ff0000ff",
+                                "style": 1
+                            },
+                            "name": "平行四边形",
+                            "pen": {
+                                "capStyle": 16,
+                                "color": "#ff000000",
+                                "joinStyle": 64,
+                                "style": 0,
+                                "width": 1
+                            },
+                            "points": [
+                                {
+                                    "x": -60,
+                                    "y": 20
+                                },
+                                {
+                                    "x": -20,
+                                    "y": -20
+                                },
+                                {
+                                    "x": 60,
+                                    "y": -20
+                                },
+                                {
+                                    "x": 20,
+                                    "y": 20
+                                }
+                            ],
+                            "text": {
+                                "name": "",
+                                "text": "",
+                                "transform": [
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1
+                                ],
+                                "type": "Text"
+                            },
+                            "transform": [
+                                1,
+                                0,
+                                0,
+                                0,
+                                1,
+                                0,
+                                20,
+                                -60,
+                                1
+                            ],
+                            "type": "Polygon"
+                        }
+                    ],
+                    "transform": [
+                        1,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        -159.96428523057995,
+                        159.9009911765184,
+                        1
+                    ],
+                    "type": "GroupShape"
+                },
+                {
+                    "name": "七巧板",
+                    "pen": {
+                        "capStyle": 16,
+                        "color": "#ff000000",
+                        "joinStyle": 64,
+                        "style": 0,
+                        "width": 1
+                    },
+                    "shapes": [
+                        {
+                            "brush": {
+                                "color": "#ffff0000",
+                                "style": 1
+                            },
+                            "name": "三角形",
+                            "pen": {
+                                "capStyle": 16,
+                                "color": "#ff000000",
+                                "joinStyle": 64,
+                                "style": 0,
+                                "width": 1
+                            },
+                            "points": [
+                                {
+                                    "x": -40,
+                                    "y": -40
+                                },
+                                {
+                                    "x": 40,
+                                    "y": -40
+                                },
+                                {
+                                    "x": -40,
+                                    "y": 40
+                                }
+                            ],
+                            "text": {
+                                "name": "",
+                                "text": "",
+                                "transform": [
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1
+                                ],
+                                "type": "Text"
+                            },
+                            "transform": [
+                                1,
+                                0,
+                                0,
+                                0,
+                                1,
+                                0,
+                                -40,
+                                -40,
+                                1
+                            ],
+                            "type": "Polygon"
+                        },
+                        {
+                            "brush": {
+                                "color": "#ff800080",
+                                "style": 1
+                            },
+                            "name": "三角形",
+                            "pen": {
+                                "capStyle": 16,
+                                "color": "#ff000000",
+                                "joinStyle": 64,
+                                "style": 0,
+                                "width": 1
+                            },
+                            "points": [
+                                {
+                                    "x": 0,
+                                    "y": -40
+                                },
+                                {
+                                    "x": 80,
+                                    "y": 40
+                                },
+                                {
+                                    "x": -80,
+                                    "y": 40
+                                }
+                            ],
+                            "text": {
+                                "name": "",
+                                "text": "",
+                                "transform": [
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1
+                                ],
+                                "type": "Text"
+                            },
+                            "transform": [
+                                1,
+                                0,
+                                0,
+                                0,
+                                1,
+                                0,
+                                0,
+                                40,
+                                1
+                            ],
+                            "type": "Polygon"
+                        },
+                        {
+                            "brush": {
+                                "color": "#ff008000",
+                                "style": 1
+                            },
+                            "name": "三角形",
+                            "pen": {
+                                "capStyle": 16,
+                                "color": "#ff000000",
+                                "joinStyle": 64,
+                                "style": 0,
+                                "width": 1
+                            },
+                            "points": [
+                                {
+                                    "x": -40,
+                                    "y": 0
+                                },
+                                {
+                                    "x": 40,
+                                    "y": 80
+                                },
+                                {
+                                    "x": 40,
+                                    "y": -80
+                                }
+                            ],
+                            "text": {
+                                "name": "",
+                                "text": "",
+                                "transform": [
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1
+                                ],
+                                "type": "Text"
+                            },
+                            "transform": [
+                                1,
+                                0,
+                                0,
+                                0,
+                                1,
+                                0,
+                                40,
+                                0,
+                                1
+                            ],
+                            "type": "Polygon"
+                        },
+                        {
+                            "brush": {
+                                "color": "#ffffa500",
+                                "style": 1
+                            },
+                            "name": "三角形",
+                            "pen": {
+                                "capStyle": 16,
+                                "color": "#ff000000",
+                                "joinStyle": 64,
+                                "style": 0,
+                                "width": 1
+                            },
+                            "points": [
+                                {
+                                    "x": 20,
+                                    "y": 0
+                                },
+                                {
+                                    "x": -20,
+                                    "y": -40
+                                },
+                                {
+                                    "x": -20,
+                                    "y": 40
+                                }
+                            ],
+                            "text": {
+                                "name": "",
+                                "text": "",
+                                "transform": [
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1
+                                ],
+                                "type": "Text"
+                            },
+                            "transform": [
+                                1,
+                                0,
+                                0,
+                                0,
+                                1,
+                                0,
+                                -60,
+                                40,
+                                1
+                            ],
+                            "type": "Polygon"
+                        },
+                        {
+                            "brush": {
+                                "color": "#ffa52a2a",
+                                "style": 1
+                            },
+                            "name": "三角形",
+                            "pen": {
+                                "capStyle": 16,
+                                "color": "#ff000000",
+                                "joinStyle": 64,
+                                "style": 0,
+                                "width": 1
+                            },
+                            "points": [
+                                {
+                                    "x": 40,
+                                    "y": -20
+                                },
+                                {
+                                    "x": -40,
+                                    "y": -20
+                                },
+                                {
+                                    "x": 0,
+                                    "y": 20
+                                }
+                            ],
+                            "text": {
+                                "name": "",
+                                "text": "",
+                                "transform": [
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1
+                                ],
+                                "type": "Text"
+                            },
+                            "transform": [
+                                1,
+                                0,
+                                0,
+                                0,
+                                1,
+                                0,
+                                0,
+                                -20,
+                                1
+                            ],
+                            "type": "Polygon"
+                        },
+                        {
+                            "brush": {
+                                "color": "#ffffff00",
+                                "style": 1
+                            },
+                            "name": "正方形",
+                            "pen": {
+                                "capStyle": 16,
+                                "color": "#ff000000",
+                                "joinStyle": 64,
+                                "style": 0,
+                                "width": 1
+                            },
+                            "points": [
+                                {
+                                    "x": -40,
+                                    "y": 0
+                                },
+                                {
+                                    "x": 0,
+                                    "y": -40
+                                },
+                                {
+                                    "x": 40,
+                                    "y": 0
+                                },
+                                {
+                                    "x": 0,
+                                    "y": 40
+                                }
+                            ],
+                            "text": {
+                                "name": "",
+                                "text": "",
+                                "transform": [
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1
+                                ],
+                                "type": "Text"
+                            },
+                            "transform": [
+                                1,
+                                0,
+                                0,
+                                0,
+                                1,
+                                0,
+                                -40,
+                                0,
+                                1
+                            ],
+                            "type": "Polygon"
+                        },
+                        {
+                            "brush": {
+                                "color": "#ff0000ff",
+                                "style": 1
+                            },
+                            "name": "平行四边形",
+                            "pen": {
+                                "capStyle": 16,
+                                "color": "#ff000000",
+                                "joinStyle": 64,
+                                "style": 0,
+                                "width": 1
+                            },
+                            "points": [
+                                {
+                                    "x": -60,
+                                    "y": 20
+                                },
+                                {
+                                    "x": -20,
+                                    "y": -20
+                                },
+                                {
+                                    "x": 60,
+                                    "y": -20
+                                },
+                                {
+                                    "x": 20,
+                                    "y": 20
+                                }
+                            ],
+                            "text": {
+                                "name": "",
+                                "text": "",
+                                "transform": [
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1
+                                ],
+                                "type": "Text"
+                            },
+                            "transform": [
+                                1,
+                                0,
+                                0,
+                                0,
+                                1,
+                                0,
+                                20,
+                                -60,
+                                1
+                            ],
+                            "type": "Polygon"
+                        }
+                    ],
+                    "transform": [
+                        1,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        159.81734419520359,
+                        -0.08485548606080684,
+                        1
+                    ],
+                    "type": "GroupShape"
+                },
+                {
+                    "name": "七巧板",
+                    "pen": {
+                        "capStyle": 16,
+                        "color": "#ff000000",
+                        "joinStyle": 64,
+                        "style": 0,
+                        "width": 1
+                    },
+                    "shapes": [
+                        {
+                            "brush": {
+                                "color": "#ffff0000",
+                                "style": 1
+                            },
+                            "name": "三角形",
+                            "pen": {
+                                "capStyle": 16,
+                                "color": "#ff000000",
+                                "joinStyle": 64,
+                                "style": 0,
+                                "width": 1
+                            },
+                            "points": [
+                                {
+                                    "x": -40,
+                                    "y": -40
+                                },
+                                {
+                                    "x": 40,
+                                    "y": -40
+                                },
+                                {
+                                    "x": -40,
+                                    "y": 40
+                                }
+                            ],
+                            "text": {
+                                "name": "",
+                                "text": "",
+                                "transform": [
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1
+                                ],
+                                "type": "Text"
+                            },
+                            "transform": [
+                                1,
+                                0,
+                                0,
+                                0,
+                                1,
+                                0,
+                                -40,
+                                -40,
+                                1
+                            ],
+                            "type": "Polygon"
+                        },
+                        {
+                            "brush": {
+                                "color": "#ff800080",
+                                "style": 1
+                            },
+                            "name": "三角形",
+                            "pen": {
+                                "capStyle": 16,
+                                "color": "#ff000000",
+                                "joinStyle": 64,
+                                "style": 0,
+                                "width": 1
+                            },
+                            "points": [
+                                {
+                                    "x": 0,
+                                    "y": -40
+                                },
+                                {
+                                    "x": 80,
+                                    "y": 40
+                                },
+                                {
+                                    "x": -80,
+                                    "y": 40
+                                }
+                            ],
+                            "text": {
+                                "name": "",
+                                "text": "",
+                                "transform": [
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1
+                                ],
+                                "type": "Text"
+                            },
+                            "transform": [
+                                1,
+                                0,
+                                0,
+                                0,
+                                1,
+                                0,
+                                0,
+                                40,
+                                1
+                            ],
+                            "type": "Polygon"
+                        },
+                        {
+                            "brush": {
+                                "color": "#ff008000",
+                                "style": 1
+                            },
+                            "name": "三角形",
+                            "pen": {
+                                "capStyle": 16,
+                                "color": "#ff000000",
+                                "joinStyle": 64,
+                                "style": 0,
+                                "width": 1
+                            },
+                            "points": [
+                                {
+                                    "x": -40,
+                                    "y": 0
+                                },
+                                {
+                                    "x": 40,
+                                    "y": 80
+                                },
+                                {
+                                    "x": 40,
+                                    "y": -80
+                                }
+                            ],
+                            "text": {
+                                "name": "",
+                                "text": "",
+                                "transform": [
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1
+                                ],
+                                "type": "Text"
+                            },
+                            "transform": [
+                                1,
+                                0,
+                                0,
+                                0,
+                                1,
+                                0,
+                                40,
+                                0,
+                                1
+                            ],
+                            "type": "Polygon"
+                        },
+                        {
+                            "brush": {
+                                "color": "#ffffa500",
+                                "style": 1
+                            },
+                            "name": "三角形",
+                            "pen": {
+                                "capStyle": 16,
+                                "color": "#ff000000",
+                                "joinStyle": 64,
+                                "style": 0,
+                                "width": 1
+                            },
+                            "points": [
+                                {
+                                    "x": 20,
+                                    "y": 0
+                                },
+                                {
+                                    "x": -20,
+                                    "y": -40
+                                },
+                                {
+                                    "x": -20,
+                                    "y": 40
+                                }
+                            ],
+                            "text": {
+                                "name": "",
+                                "text": "",
+                                "transform": [
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1
+                                ],
+                                "type": "Text"
+                            },
+                            "transform": [
+                                1,
+                                0,
+                                0,
+                                0,
+                                1,
+                                0,
+                                -60,
+                                40,
+                                1
+                            ],
+                            "type": "Polygon"
+                        },
+                        {
+                            "brush": {
+                                "color": "#ffa52a2a",
+                                "style": 1
+                            },
+                            "name": "三角形",
+                            "pen": {
+                                "capStyle": 16,
+                                "color": "#ff000000",
+                                "joinStyle": 64,
+                                "style": 0,
+                                "width": 1
+                            },
+                            "points": [
+                                {
+                                    "x": 40,
+                                    "y": -20
+                                },
+                                {
+                                    "x": -40,
+                                    "y": -20
+                                },
+                                {
+                                    "x": 0,
+                                    "y": 20
+                                }
+                            ],
+                            "text": {
+                                "name": "",
+                                "text": "",
+                                "transform": [
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1
+                                ],
+                                "type": "Text"
+                            },
+                            "transform": [
+                                1,
+                                0,
+                                0,
+                                0,
+                                1,
+                                0,
+                                0,
+                                -20,
+                                1
+                            ],
+                            "type": "Polygon"
+                        },
+                        {
+                            "brush": {
+                                "color": "#ffffff00",
+                                "style": 1
+                            },
+                            "name": "正方形",
+                            "pen": {
+                                "capStyle": 16,
+                                "color": "#ff000000",
+                                "joinStyle": 64,
+                                "style": 0,
+                                "width": 1
+                            },
+                            "points": [
+                                {
+                                    "x": -40,
+                                    "y": 0
+                                },
+                                {
+                                    "x": 0,
+                                    "y": -40
+                                },
+                                {
+                                    "x": 40,
+                                    "y": 0
+                                },
+                                {
+                                    "x": 0,
+                                    "y": 40
+                                }
+                            ],
+                            "text": {
+                                "name": "",
+                                "text": "",
+                                "transform": [
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1
+                                ],
+                                "type": "Text"
+                            },
+                            "transform": [
+                                1,
+                                0,
+                                0,
+                                0,
+                                1,
+                                0,
+                                -40,
+                                0,
+                                1
+                            ],
+                            "type": "Polygon"
+                        },
+                        {
+                            "brush": {
+                                "color": "#ff0000ff",
+                                "style": 1
+                            },
+                            "name": "平行四边形",
+                            "pen": {
+                                "capStyle": 16,
+                                "color": "#ff000000",
+                                "joinStyle": 64,
+                                "style": 0,
+                                "width": 1
+                            },
+                            "points": [
+                                {
+                                    "x": -60,
+                                    "y": 20
+                                },
+                                {
+                                    "x": -20,
+                                    "y": -20
+                                },
+                                {
+                                    "x": 60,
+                                    "y": -20
+                                },
+                                {
+                                    "x": 20,
+                                    "y": 20
+                                }
+                            ],
+                            "text": {
+                                "name": "",
+                                "text": "",
+                                "transform": [
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    1
+                                ],
+                                "type": "Text"
+                            },
+                            "transform": [
+                                1,
+                                0,
+                                0,
+                                0,
+                                1,
+                                0,
+                                20,
+                                -60,
+                                1
+                            ],
+                            "type": "Polygon"
+                        }
+                    ],
+                    "transform": [
+                        1,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        -0.033559677719928516,
+                        -159.90755664937879,
+                        1
+                    ],
+                    "type": "GroupShape"
+                }
+            ],
+            "transform": [
+                1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                25.265742223359439,
+                9.614301664633377,
+                1
+            ],
+            "type": "GroupShape"
+        }
+    ],
+    "size": {
+        "height": 600,
+        "width": 800
+    },
+    "type": "canvas"
+}
