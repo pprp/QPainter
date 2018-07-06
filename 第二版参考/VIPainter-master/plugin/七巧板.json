@@ -1,0 +1,97 @@
+[
+	{
+		"name": "三角形",
+		"points": [
+			{"x":   0,"y":   0},
+			{"x":   80,"y":   0},
+			{"x":   0,"y":   80}
+		],
+		"brush":{
+			"style": 1,
+			"color":"red"
+		},
+		"type": "Polygon"
+	},
+	{
+		"name": "三角形",
+		"points": [
+			{"x":   80,"y":   80},
+			{"x":   160,"y":   160},
+			{"x":   0,"y":   160}
+		],
+		"brush":{
+			"style": 1,
+			"color":"purple"
+		},
+		"type": "Polygon"
+	},
+	{
+		"name": "三角形",
+		"points": [
+			{"x":   80,"y":   80},
+			{"x":   160,"y":   160},
+			{"x":   160,"y":   0}
+		],
+		"brush":{
+			"style": 1,
+			"color":"green"
+		},
+		"type": "Polygon"
+	},
+	{
+		"name": "三角形",
+		"points": [
+			{"x":   40,"y":   120},
+			{"x":   0,"y":   80},
+			{"x":   0,"y":   160}
+		],
+		"brush":{
+			"style": 1,
+			"color":"orange"
+		},
+		"type": "Polygon"
+	},
+	{
+		"name": "三角形",
+		"points": [
+			{"x":   120,"y":   40},
+			{"x":   40,"y":   40},
+			{"x":   80,"y":   80}
+		],
+		"brush":{
+			"style": 1,
+			"color":"brown"
+		},
+		"type": "Polygon"
+	},
+	{
+		"name": "正方形",
+		"points": [
+			{"x":   0,"y":   80},
+			{"x":   40,"y":   40},
+			{"x":   80,"y":   80},
+			{"x":   40,"y":   120}
+		],
+		"brush":{
+			"style": 1,
+			"color":"yellow"
+		},
+		"type": "Polygon"
+	},
+	{
+		"name": "平行四边形",
+		"points": [
+			{"x":   40,"y":   40},
+			{"x":   80,"y":   0},
+			{"x":   160,"y":   0},
+			{"x":   120,"y":   40}
+		],
+		"brush":{
+			"style": 1,
+			"color":"blue"
+		},
+		"type": "Polygon"
+	}
+
+
+]

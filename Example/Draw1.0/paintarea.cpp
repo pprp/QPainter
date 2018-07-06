@@ -11,6 +11,7 @@ PaintArea::PaintArea()
     shear=0;
 
     image=QImage(1000,800,QImage::Format_RGB32);
+
     backColor=qRgb(255,255,255);
     image.fill(backColor);
     //菜单工具栏的初始化
@@ -148,7 +149,7 @@ void PaintArea::paint(QImage &theImage)
     pp.setPen(pen);
     pp.setBrush(brush);
 
-    int x, y, w, h;
+    double x, y, w, h;
     x=lastPoint.x()/scale;
     y=lastPoint.y()/scale;
     w=endPoint.x()/scale-x;

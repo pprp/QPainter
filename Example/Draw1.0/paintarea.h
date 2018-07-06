@@ -3,6 +3,7 @@
 
 #include <QWidget>
 #include <QPoint>
+#include <QPointF>
 #include <QMouseEvent>
 
 
@@ -46,7 +47,7 @@ protected:
 private:
     QImage image;
     QRgb backColor;
-    QPoint lastPoint,endPoint;
+    QPointF lastPoint,endPoint;
     bool modified;//是否被更改标志
     //编辑菜单中需要的属性
     qreal scale;//所放量
