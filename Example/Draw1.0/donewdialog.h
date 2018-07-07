@@ -15,8 +15,8 @@ class DoNewDialog : public QDialog
 public:
     explicit DoNewDialog(QWidget *parent = 0);
     ~DoNewDialog();
-    int getWidth();//画布的宽
-    int getHeight();//画布的高
+    double getWidth();//画布的宽
+    double getHeight();//画布的高
     QColor getBackColor();//返回画布背景颜色
 
 private slots:

@@ -290,7 +290,7 @@
   <action name="actionZoomIn">
    <property name="icon">
     <iconset resource="../ourico/ourico/ico.qrc">
-     <normaloff>:/image/zoomout.png</normaloff>:/image/zoomout.png</iconset>
+     <normaloff>:/image/zoomin.png</normaloff>:/image/zoomin.png</iconset>
    </property>
    <property name="text">
     <string>ZoomIn</string>
@@ -340,7 +340,7 @@
   <action name="actionZoomOut">
    <property name="icon">
     <iconset resource="../ourico/ourico/ico.qrc">
-     <normaloff>:/image/zoomin.png</normaloff>:/image/zoomin.png</iconset>
+     <normaloff>:/image/zoomout.png</normaloff>:/image/zoomout.png</iconset>
    </property>
    <property name="text">
     <string>ZoomOut</string>

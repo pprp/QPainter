@@ -12,7 +12,7 @@ class PaintArea : public QWidget
 
 public:
     PaintArea();//构造函数
-    void setImageSize(int width, int height);
+    void setImageSize(double width, double height);
     void setImageColor(QColor color);
     bool isModified()const{return modified;}
     bool saveImage(const QString & fileName,const char*fileFormat);
@@ -27,7 +27,7 @@ public:
     void doClear();
     //进行绘图工具函数声明
     void setPenStyle(Qt::PenStyle);
-    void setPenWidth(int width);
+    void setPenWidth(double width);
     void setPenColor(QColor color);
     void setBrushColor(QColor color);
     enum ShapeType
@@ -51,13 +51,13 @@ private:
     bool modified;//是否被更改标志
     //编辑菜单中需要的属性
     qreal scale;//所放量
-    int angle;//角度
+    double angle;//角度
     qreal shear;//拉伸量
 
     //绘图工具栏所需要的属性
     QColor penColor;
     QColor brushColor;
-    int penWidth;
+    double penWidth;
     Qt::PenStyle penStyle;//画笔风格
 
     ShapeType curShape;

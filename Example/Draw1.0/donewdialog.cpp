@@ -14,14 +14,14 @@ DoNewDialog::~DoNewDialog()
     delete ui;
 }
 
-int DoNewDialog::getWidth()
+double DoNewDialog::getWidth()
 {
-    return ui->widthSpinBox->text().toInt();
+    return ui->widthSpinBox->text().toDouble();
 }
 
-int DoNewDialog::getHeight()
+double DoNewDialog::getHeight()
 {
-    return ui->heightSpinBox->text().toInt();
+    return ui->heightSpinBox->text().toDouble();
 }
 QColor DoNewDialog::getBackColor()
 {

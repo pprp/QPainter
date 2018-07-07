@@ -70,8 +70,8 @@ void MainWindow::doNew()
         DoNewDialog dlg;
         if(dlg.exec() == QDialog::Accepted)
         {
-            int width = dlg.getWidth();
-            int height = dlg.getHeight();
+            double width = dlg.getWidth();
+            double height = dlg.getHeight();
             area->setImageSize(width,height);
             scrollArea->widget()->resize(width,height);
             area->setImageColor(dlg.getBackColor());
@@ -215,7 +215,8 @@ void MainWindow::createColorComboBox(QComboBox *comboBox)
 {
     QPixmap pix(16,16);
     QPainter painter(&pix);
-    painter.setRenderHint(QPainter::Antialiasing,true);
+    //painter.setRenderHint(QPainter::Antialiasing);
+    painter.setRenderHint(QPainter::SmoothPixmapTransform);
 
     painter.fillRect(0,0,16,16,QColor(Qt::black));
     comboBox->addItem(QIcon(pix),tr("黑色"),QColor(Qt::black));
@@ -259,7 +260,7 @@ void MainWindow::on_penStyleComboBox_currentIndexChanged(const QString &arg1)
     }
 }
 
-void MainWindow::on_penWidthspinBox_valueChanged(int width)
+void MainWindow::on_penWidthspinBox_valueChanged(double width)
 {
     area->setPenWidth(width);
 }

@@ -44,7 +44,7 @@ private slots:
     void on_actionAbout_Draw_triggered();
     void on_shapeComboBox_currentIndexChanged(const QString shape);
     void on_penStyleComboBox_currentIndexChanged(const QString &arg1);
-    void on_penWidthspinBox_valueChanged(int);
+    void on_penWidthspinBox_valueChanged(double);
     void on_penColorComboBox_currentIndexChanged(int);
     void on_brushColorComboBox_currentIndexChanged(int );
 

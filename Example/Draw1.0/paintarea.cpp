@@ -52,6 +52,10 @@ void PaintArea::paintEvent(QPaintEvent *){
 
     //重写事件函数painter.drawImage(0,0,image);
     painter.scale(scale,scale);
+   // painter.setRenderHint(QPainter::Antialiasing);
+   // painter.setRenderHints(QPainter::Antialiasing);
+    painter.setRenderHint(QPainter::Antialiasing);
+
 
     //解决图形重影问题
     if(isDrawing)//如果正在绘制图形,显示临时绘图区内容
@@ -65,6 +69,9 @@ void PaintArea::paintEvent(QPaintEvent *){
         {
             QImage copyImage=image;
             QPainter pp(&copyImage);
+          //  pp.setRenderHints(QPainter::Antialiasing);
+          //  pp.setRenderHints(QPainter::Antialiasing);
+            pp.setRenderHints(QPainter::SmoothPixmapTransform);
             //找到画布的中心位置
             QPointF center(copyImage.width()/2.0,copyImage.height()/2.0);
             pp.translate(center);
@@ -78,6 +85,7 @@ void PaintArea::paintEvent(QPaintEvent *){
         {
             QImage copyImage=image;
             QPainter pp(&copyImage);
+            pp.setRenderHint(QPainter::SmoothPixmapTransform);
             pp.shear(shear,shear);
             pp.drawImage(0,0,image);
             image=copyImage;
@@ -138,8 +146,6 @@ void PaintArea::paint(QImage &theImage)
     update();//进行更新界面显示
     */
     QPainter pp(&theImage);
-    pp.setRenderHint(QPainter::Antialiasing,true);
-    pp.setRenderHint(QPainter::SmoothPixmapTransform,true);
     QPen pen=QPen();
     pen.setColor(penColor);
     pen.setStyle(penStyle);
@@ -165,7 +171,9 @@ void PaintArea::paint(QImage &theImage)
     }
     case Line: //绘制直线
     {
-        pp.drawLine(lastPoint/scale,endPoint/scale);
+        QPainterPath *path = new QPainterPath;
+        path->lineTo(100,200);
+        pp.drawPath(*path);
         break;
     }
     case Rectangle: //绘制矩形
@@ -183,7 +191,7 @@ void PaintArea::paint(QImage &theImage)
     modified = true;
 }
 
-void PaintArea::setImageSize(int width, int height)
+void PaintArea::setImageSize(double width, double height)
 {
     QImage newImage(width,height,QImage::Format_RGB32);
     image=newImage;
@@ -267,7 +275,7 @@ void PaintArea::setPenStyle(Qt::PenStyle style)
 {
     penStyle=style;
 }
-void PaintArea::setPenWidth(int width)
+void PaintArea::setPenWidth(double width)
 {
     penWidth=width;
 }
