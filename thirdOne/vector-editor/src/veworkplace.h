@@ -3,7 +3,7 @@
 
 #include <QObject>
 #include <QGraphicsScene>
-
+#include "vetextitem.h"
 class QGraphicsSceneMouseEvent;
 class QKeyEvent;
 
@@ -56,6 +56,7 @@ private:
     int m_previousAction;
     QPointF m_previousPosition;
     bool m_leftMouseButtonPressed;
+    VETextItem * vti;
 };
 
 #endif // WORKPLACE_H

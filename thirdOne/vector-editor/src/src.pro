@@ -29,7 +29,8 @@ SOURCES += main.cpp\
     vepolyline.cpp \
     vepolylinesettings.cpp \
     dotsignal.cpp \
-    veworkplaceview.cpp
+    veworkplaceview.cpp \
+    vetextitem.cpp
 
 HEADERS  += mainwindow.h \
     svgreader.h \
@@ -41,7 +42,8 @@ HEADERS  += mainwindow.h \
     vepolyline.h \
     vepolylinesettings.h \
     dotsignal.h \
-    veworkplaceview.h
+    veworkplaceview.h \
+    vetextitem.h
 
 FORMS    += mainwindow.ui \
     verectanglesettings.ui \

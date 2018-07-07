@@ -79,7 +79,7 @@ void VERectangleSettings::setColor_1(const QColor &color)
         if(ui->comboBox->currentIndex() == 0){
             currentRectangle->setBrush(QBrush(m_color_1));
         } else {
-             setGradient(currentRectangle);
+            setGradient(currentRectangle);
         }
     }
     emit color_1Changed(m_color_1);
@@ -90,7 +90,7 @@ void VERectangleSettings::setColor_2(const QColor &color)
     m_color_2 = color;
     ui->color_2->setColor(color);
     if(currentRectangle != nullptr){
-         setGradient(currentRectangle);
+        setGradient(currentRectangle);
     }
     emit color_2Changed(m_color_2);
 }

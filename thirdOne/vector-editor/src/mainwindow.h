@@ -5,6 +5,7 @@
 
 class QGraphicsItem;
 class VEWorkplace;
+class VETextItem;
 
 namespace Ui {
 class MainWindow;
@@ -26,10 +27,7 @@ private slots:
     void selectItem(QGraphicsItem *item);
     void selectNewItem(QGraphicsItem *item);
     void slotHelp();
-    void on_butRectangle_clicked();
-    void on_toolButton_6_clicked();
-    void on_toolButton_7_clicked();
-    void on_toolButton_9_clicked();
+    //void on_butRectangle_clicked();
     void cut();
     void copy();
     void deleteSelected();
@@ -41,15 +39,18 @@ private slots:
     void clear();
     void selectAll();
     void on_actionExit_triggered();
-    void on_toolButton_10_clicked();
-    void on_cut_clicked();
-    void on_toolButton_3_clicked();
+    void on_toolButton_SaveAs_clicked();
+    void on_toolButton_ZoomIn_clicked();
+    void on_toolButton_ZoomOut_clicked();
+    void on_toolButton_text_clicked();
 
 private:
     Ui::MainWindow *ui;
     VEWorkplace *workplaceScene;
     QString path;
     QAction * cutAct;
+    VETextItem *tItem;
+
 };
 
 #endif // MAINWINDOW_H

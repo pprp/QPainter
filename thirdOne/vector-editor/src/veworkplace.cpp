@@ -120,8 +120,8 @@ void VEWorkplace::mouseMoveEvent(QGraphicsSceneMouseEvent *event)
             auto dy = event->scenePos().y() - m_previousPosition.y();
             VERectangle * rectangle = qgraphicsitem_cast<VERectangle *>(currentItem);
             rectangle->setRect((dx > 0) ? m_previousPosition.x() : event->scenePos().x(),
-                                   (dy > 0) ? m_previousPosition.y() : event->scenePos().y(),
-                                   qAbs(dx), qAbs(dy));
+                               (dy > 0) ? m_previousPosition.y() : event->scenePos().y(),
+                               qAbs(dx), qAbs(dy));
         }
         break;
     }
@@ -131,8 +131,8 @@ void VEWorkplace::mouseMoveEvent(QGraphicsSceneMouseEvent *event)
             auto dy = event->scenePos().y() - m_previousPosition.y();
             VESelectionRect * selection = qgraphicsitem_cast<VESelectionRect *>(currentItem);
             selection->setRect((dx > 0) ? m_previousPosition.x() : event->scenePos().x(),
-                                   (dy > 0) ? m_previousPosition.y() : event->scenePos().y(),
-                                   qAbs(dx), qAbs(dy));
+                               (dy > 0) ? m_previousPosition.y() : event->scenePos().y(),
+                               qAbs(dx), qAbs(dy));
         }
         break;
     }

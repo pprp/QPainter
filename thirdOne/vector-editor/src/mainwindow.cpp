@@ -16,7 +16,7 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
     workplaceScene = new VEWorkplace(this);
-    workplaceScene->setSceneRect(0,0,2000,2000);
+    workplaceScene->setSceneRect(0,0,1000,1000);
     ui->workplaceView->setScene(workplaceScene);
     ui->workplaceView->setViewportUpdateMode(QGraphicsView::BoundingRectViewportUpdate);
     ui->workplaceView->setDragMode(QGraphicsView::ScrollHandDrag);
@@ -55,6 +55,9 @@ MainWindow::MainWindow(QWidget *parent) :
     painter.drawPolyline(myPolygon1);
     painter.drawPolyline(myPolygon2);
     workplaceScene->setBackgroundBrush(pixmap);
+
+    //文本
+    tItem = new VETextItem;
 }
 
 MainWindow::~MainWindow()
@@ -218,15 +221,6 @@ void MainWindow::slotHelp()
                              trUtf8("欢迎来到我的极乐世界"));
 }
 
-void MainWindow::on_toolButton_6_clicked()
-{
-    workplaceScene->views()[0]->scale(1.2,1.2);
-}
-
-void MainWindow::on_toolButton_7_clicked()
-{
-    workplaceScene->views()[0]->scale(1/1.2,1/1.2);
-}
 void MainWindow::copy()
 {
     qDebug()<<"copy";
@@ -251,7 +245,7 @@ void MainWindow::paste()
 
 void MainWindow::save()
 {
-
+    this->saveAs();
 }
 
 void MainWindow::saveAs()
@@ -302,15 +296,22 @@ void MainWindow::on_actionExit_triggered()
     this->close();
 }
 
-void MainWindow::on_toolButton_10_clicked()
-{
-    workplaceScene->views()[0]->scale(1,1);
-    workplaceScene->views()[0]->scale(1,1);
-}
-
-
-
-void MainWindow::on_toolButton_3_clicked()
+void MainWindow::on_toolButton_SaveAs_clicked()
 {
     this->saveAs();
+}
+
+void MainWindow::on_toolButton_ZoomIn_clicked()
+{
+    workplaceScene->views()[0]->scale(1.2,1.2);
+}
+
+void MainWindow::on_toolButton_ZoomOut_clicked()
+{
+    workplaceScene->views()[0]->scale(1/1.2,1/1.2);
+}
+
+void MainWindow::on_toolButton_text_clicked()
+{
+
 }
