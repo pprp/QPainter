@@ -61,6 +61,12 @@ MainWindow::MainWindow(QWidget *parent) :
 
     //文本
     tItem = new VETextItem;
+
+   //时间部分
+    currentTimeLabel=new QLabel;
+    timer=new QTimer(this);
+    timer->start(1000);
+    connect(timer,SIGNAL(timeout()),this,SLOT(timeUpdate()));
 }
 //滚轮的放缩
 void MainWindow::wheelEvent(QWheelEvent *event)
@@ -74,6 +80,15 @@ void MainWindow::wheelEvent(QWheelEvent *event)
         workplaceScene->views()[0]->scale(1/1.2,1/1.2);
     }
 }
+
+void MainWindow::timeUpdate()
+{
+    QDateTime CurrentTime=QDateTime::currentDateTime();
+    QString TimeStr = CurrentTime.toString(" yyyy年-MM月-dd日 hh:mm:ss ");
+    currentTimeLabel->setText(TimeStr);
+    ui->statusBar->addWidget(currentTimeLabel);
+}
+
 
 MainWindow::~MainWindow()
 {
