@@ -59,6 +59,18 @@ MainWindow::MainWindow(QWidget *parent) :
     //文本
     tItem = new VETextItem;
 }
+//滚轮的放缩
+void MainWindow::wheelEvent(QWheelEvent *event)
+{
+    if(event->delta() > 0)
+    {
+        workplaceScene->views()[0]->scale(1.2,1.2);
+    }
+    else
+    {
+        workplaceScene->views()[0]->scale(1/1.2,1/1.2);
+    }
+}
 
 MainWindow::~MainWindow()
 {
@@ -70,7 +82,6 @@ void MainWindow::on_butSave_clicked()
 {
     QString newPath = QFileDialog::getSaveFileName(this, trUtf8("Save SVG"),
                                                    path, tr("SVG files (*.svg *.png *.bmp *.jpg)"));
-
     if (newPath.isEmpty())
         return;
 
@@ -91,7 +102,7 @@ void MainWindow::on_butSave_clicked()
 
 void MainWindow::on_butOpen_clicked()
 {
-    QString newPath = QFileDialog::getOpenFileName(this, trUtf8("Open SVG"),
+    QString newPath = QFileDialog::getOpenFileName(this, trUtf8("Open File"),
                                                    path, tr("Image files (*.svg *.png *.jpg *.bmp)"));
     if (newPath.isEmpty())
         return;
@@ -158,6 +169,7 @@ void MainWindow::checkSelection()
         break;
     }
 }
+
 
 void MainWindow::checkActionStates()
 {
@@ -250,7 +262,7 @@ void MainWindow::save()
 
 void MainWindow::saveAs()
 {    
-    QString newPath = QFileDialog::getSaveFileName(this, trUtf8("Save SVG"),
+    QString newPath = QFileDialog::getSaveFileName(this, trUtf8("Save As"),
                                                    path, tr("SVG files (*.svg *.png *.bmp *.jpg)"));
     if (newPath.isEmpty())
         return;
@@ -269,6 +281,7 @@ void MainWindow::saveAs()
 
 void MainWindow::newFile()
 {
+    this->saveAs();
     workplaceScene->clear();
 }
 
@@ -279,10 +292,13 @@ void MainWindow::open()
 
 void MainWindow::clear()
 {
+    workplaceScene->clear();
+    /*
     while(workplaceScene->items().count()>0)
     {
         workplaceScene->removeItem(workplaceScene->items()[0]);
     }
+    */
 }
 
 void MainWindow::selectAll()
@@ -313,5 +329,64 @@ void MainWindow::on_toolButton_ZoomOut_clicked()
 
 void MainWindow::on_toolButton_text_clicked()
 {
+    //QString a = ui->polylineSettings->
+}
 
+void MainWindow::on_actionNew_triggered()
+{
+    this->saveAs();
+    this->clear();
+}
+
+void MainWindow::on_toolButton_clear_clicked()
+{
+    while(workplaceScene->items().count()>0)
+    {
+        workplaceScene->removeItem(workplaceScene->items()[0]);
+    }
+}
+
+void MainWindow::on_actionOpen_triggered()
+{
+    QString newPath = QFileDialog::getOpenFileName(this, trUtf8("Open SVG"),
+                                                   path, tr("Image files (*.svg *.png *.jpg *.bmp)"));
+    if (newPath.isEmpty())
+        return;
+
+    path = newPath;
+    workplaceScene->clear();
+
+    workplaceScene->setSceneRect(SvgReader::getSizes(path));
+
+    foreach (QGraphicsItem *item, SvgReader::getElements(path)) {
+        switch (item->type()) {
+        case QGraphicsPathItem::Type: {
+            VEPolyline *polyline = qgraphicsitem_cast<VEPolyline*>(item);
+            workplaceScene->addItem(polyline);
+            connect(polyline, &VEPolyline::clicked, workplaceScene, &VEWorkplace::signalSelectItem);
+            connect(polyline, &VEPolyline::signalMove, workplaceScene, &VEWorkplace::slotMove);
+            break;
+        }
+        case QGraphicsRectItem::Type: {
+            VERectangle *rect = qgraphicsitem_cast<VERectangle*>(item);
+            workplaceScene->addItem(rect);
+            connect(rect, &VERectangle::clicked, workplaceScene, &VEWorkplace::signalSelectItem);
+            connect(rect, &VERectangle::signalMove, workplaceScene, &VEWorkplace::slotMove);
+            break;
+        }
+        default:
+            break;
+        }
+    }
+    this->saveAs();
+}
+
+void MainWindow::on_actionSave_triggered()
+{
+    this->save();
+}
+
+void MainWindow::on_actionSaveAs_triggered()
+{
+    this->saveAs();
 }

@@ -1,3 +1,4 @@
+
 #include "colorlabel.h"
 #include <QMouseEvent>
 

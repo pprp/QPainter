@@ -50,6 +50,7 @@ public slots:
 
 private slots:
     void comboBoxIndexChanged(int index);
+    //void on_borderWidth_valueChanged(int arg1);
 
 private:
     void setGradient(VERectangle *rectangle);

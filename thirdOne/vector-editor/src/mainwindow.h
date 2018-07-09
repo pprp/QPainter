@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QWheelEvent>
 
 class QGraphicsItem;
 class VEWorkplace;
@@ -27,7 +28,6 @@ private slots:
     void selectItem(QGraphicsItem *item);
     void selectNewItem(QGraphicsItem *item);
     void slotHelp();
-    //void on_butRectangle_clicked();
     void cut();
     void copy();
     void deleteSelected();
@@ -43,14 +43,19 @@ private slots:
     void on_toolButton_ZoomIn_clicked();
     void on_toolButton_ZoomOut_clicked();
     void on_toolButton_text_clicked();
-
+    void on_actionNew_triggered();
+    void on_toolButton_clear_clicked();
+    void on_actionOpen_triggered();
+    void on_actionSave_triggered();
+    void on_actionSaveAs_triggered();
+protected:
+    void wheelEvent(QWheelEvent *event);
 private:
     Ui::MainWindow *ui;
     VEWorkplace *workplaceScene;
     QString path;
     QAction * cutAct;
     VETextItem *tItem;
-
 };
 
 #endif // MAINWINDOW_H

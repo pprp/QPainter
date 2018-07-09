@@ -5,6 +5,7 @@
 #-------------------------------------------------
 
 QT       += core gui svg xml
+RC_ICONS = ico.ico
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -30,7 +31,8 @@ SOURCES += main.cpp\
     vepolylinesettings.cpp \
     dotsignal.cpp \
     veworkplaceview.cpp \
-    vetextitem.cpp
+    vetextitem.cpp \
+    vebeziercurve.cpp
 
 HEADERS  += mainwindow.h \
     svgreader.h \
@@ -43,7 +45,8 @@ HEADERS  += mainwindow.h \
     vepolylinesettings.h \
     dotsignal.h \
     veworkplaceview.h \
-    vetextitem.h
+    vetextitem.h \
+    vebeziercurve.h
 
 FORMS    += mainwindow.ui \
     verectanglesettings.ui \

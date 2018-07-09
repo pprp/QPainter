@@ -197,3 +197,5 @@ void VERectangleSettings::setGradient(VERectangle *rectangle)
     gradient.setColorAt(1.0, m_color_2);
     rectangle->setBrush(QBrush(gradient));
 }
+
+
