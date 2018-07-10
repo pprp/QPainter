@@ -10,7 +10,7 @@ PaintArea::PaintArea()
     angle=0;
     shear=0;
 
-    image=QImage(1000,800,QImage::Format_RGB32);
+    image=QImage(2000,2000,QImage::Format_RGB32);
 
     backColor=qRgb(255,255,255);
     image.fill(backColor);

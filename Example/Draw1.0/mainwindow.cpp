@@ -12,7 +12,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    resize(1200,960);
+    resize(2000,2000);
     area=new PaintArea;
     scrollArea=new QScrollArea;
     //设置背景色
@@ -20,7 +20,7 @@ MainWindow::MainWindow(QWidget *parent) :
     //将画布添加到滚动条中
     scrollArea->setWidget(area);
     //设置画布大小
-    scrollArea->widget()->setMinimumSize(800,600);
+    scrollArea->widget()->setMinimumSize(2000,2000);
     setCentralWidget(scrollArea);
     //对两个颜色组合框进行初始化
     createColorComboBox(ui->penColorComboBox);

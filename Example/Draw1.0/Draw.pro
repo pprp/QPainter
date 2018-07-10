@@ -32,3 +32,6 @@ FORMS    += mainwindow.ui \
 
 RESOURCES += \
     ../ourico/ourico/ico.qrc
+
+
+RC_ICONS = paint.ico
