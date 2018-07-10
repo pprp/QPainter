@@ -36,7 +36,7 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(workplaceScene, &VEWorkplace::currentActionChanged, this, &MainWindow::checkActionStates);
     connect(workplaceScene, &VEWorkplace::signalSelectItem, this, &MainWindow::selectItem);
     connect(workplaceScene, &VEWorkplace::signalNewSelectItem, this, &MainWindow::selectNewItem);
-
+    connect(tItem,SIGNAL(clickMark(int,QString)), this, SLOT(addDialog(int,QString)));
     //创建背景
     QPolygonF myPolygon1;
     myPolygon1 << QPointF(0,10) << QPointF(20,10);
@@ -364,10 +364,6 @@ void MainWindow::on_toolButton_ZoomOut_clicked()
     workplaceScene->views()[0]->scale(1/1.2,1/1.2);
 }
 
-void MainWindow::on_toolButton_text_clicked()
-{
-    //QString a = ui->polylineSettings->
-}
 
 void MainWindow::on_actionNew_triggered()
 {
@@ -432,4 +428,27 @@ void MainWindow::on_actionSave_triggered()
 void MainWindow::on_actionSaveAs_triggered()
 {
     this->saveAs();
+}
+
+void MainWindow::on_toolButton_text_clicked()
+{
+    tItem = new Dialog();
+    tItem->show();
+}
+
+void MainWindow::addDialog(int a, QString b)
+{
+    QGraphicsTextItem *pItem = new QGraphicsTextItem();
+    pItem->setPlainText(QString::fromLocal8Bit("A"));
+    QFont font = pItem->font();
+    font.setPixelSize(a);
+    font.setFamily(b);
+    pItem->setFont(font);
+    //pItem->setPos(500,500);
+    ui->workplaceView->setStyleSheet("border:none; background:transparent;");
+    ui->workplaceView->show();
+    pItem->setTextInteractionFlags(Qt::TextEditorInteraction);
+    //connect(pItem->document(), &QTextFrame::contentsChanged, [=]() {qDebug() << pItem->toPlainText();});
+
+
 }

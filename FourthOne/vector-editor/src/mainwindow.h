@@ -48,6 +48,7 @@ private slots:
     void on_actionOpen_triggered();
     void on_actionSave_triggered();
     void on_actionSaveAs_triggered();
+    void addDialog(int a, QString b);
 protected:
     void wheelEvent(QWheelEvent *event);
 private:
