@@ -10,6 +10,7 @@
 #include "vepolyline.h"
 #include "verectangle.h"
 #include "veellipse.h"
+#include "dialog.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -59,8 +60,7 @@ MainWindow::MainWindow(QWidget *parent) :
     painter.drawPolyline(myPolygon2);
     workplaceScene->setBackgroundBrush(pixmap);
 
-    //文本
-    tItem = new VETextItem;
+
 
    //时间部分
     currentTimeLabel=new QLabel;
