@@ -1,6 +1,6 @@
 #include "vebeziercurve.h"
 
-VEBezierCurve::VEBezierCurve()
-{
+//VEBezierCurve::VEBezierCurve()
+//{
 
-}
+//}

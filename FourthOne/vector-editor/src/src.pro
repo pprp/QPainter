@@ -34,7 +34,8 @@ SOURCES += main.cpp\
     vetextitem.cpp \
     vebeziercurve.cpp \
     veellipse.cpp \
-    veellipsesetting.cpp
+    veellipsesetting.cpp \
+    dialog.cpp
 
 HEADERS  += mainwindow.h \
     svgreader.h \
@@ -50,12 +51,14 @@ HEADERS  += mainwindow.h \
     vetextitem.h \
     vebeziercurve.h \
     veellipse.h \
-    veellipsesetting.h
+    veellipsesetting.h \
+    dialog.h
 
 FORMS    += mainwindow.ui \
     verectanglesettings.ui \
     vepolylinesettings.ui \
-    veellipsesettings.ui
+    veellipsesettings.ui \
+    dialog.ui
 
 RESOURCES += \
     icons.qrc
