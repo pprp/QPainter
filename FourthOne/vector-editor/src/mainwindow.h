@@ -3,6 +3,9 @@
 
 #include <QMainWindow>
 #include <QWheelEvent>
+#include <QLabel>
+#include <QTimer>
+#include <QDateTime>
 
 class QGraphicsItem;
 class VEWorkplace;
@@ -48,7 +51,12 @@ private slots:
     void on_actionOpen_triggered();
     void on_actionSave_triggered();
     void on_actionSaveAs_triggered();
+<<<<<<< HEAD
     void addDialog(int a, QString b);
+=======
+    void timeUpdate();
+
+>>>>>>> 3bd95971433d998575086cea7d84044a158377d3
 protected:
     void wheelEvent(QWheelEvent *event);
 private:
@@ -57,6 +65,9 @@ private:
     QString path;
     QAction * cutAct;
     VETextItem *tItem;
+
+    QTimer * timer;
+    QLabel * currentTimeLabel;
 };
 
 #endif // MAINWINDOW_H
