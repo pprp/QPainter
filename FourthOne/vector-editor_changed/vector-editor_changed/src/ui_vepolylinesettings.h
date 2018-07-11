@@ -42,11 +42,18 @@ public:
         gridLayout->setObjectName(QStringLiteral("gridLayout"));
         label_2 = new QLabel(VELineSettings);
         label_2->setObjectName(QStringLiteral("label_2"));
+        QFont font;
+        font.setFamily(QStringLiteral("Arial"));
+        font.setPointSize(11);
+        font.setBold(true);
+        font.setWeight(75);
+        label_2->setFont(font);
 
         gridLayout->addWidget(label_2, 1, 0, 1, 1);
 
         label = new QLabel(VELineSettings);
         label->setObjectName(QStringLiteral("label"));
+        label->setFont(font);
 
         gridLayout->addWidget(label, 0, 0, 1, 1);
 
@@ -76,8 +83,8 @@ public:
     void retranslateUi(QWidget *VELineSettings)
     {
         VELineSettings->setWindowTitle(QApplication::translate("VELineSettings", "Form", 0));
-        label_2->setText(QApplication::translate("VELineSettings", "width", 0));
-        label->setText(QApplication::translate("VELineSettings", "color", 0));
+        label_2->setText(QApplication::translate("VELineSettings", "<font color=\"white\">\345\256\275\345\272\246</font>", 0));
+        label->setText(QApplication::translate("VELineSettings", "<font color=\"white\">\351\242\234\350\211\262</font>", 0));
         lineColor->setText(QString());
     } // retranslateUi
 

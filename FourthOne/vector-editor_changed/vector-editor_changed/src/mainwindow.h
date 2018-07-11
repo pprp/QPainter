@@ -6,6 +6,7 @@
 #include <QLabel>
 #include <QTimer>
 #include <QDateTime>
+#include "showhelpdialog.h"
 
 class QGraphicsItem;
 class VEWorkplace;
@@ -30,7 +31,6 @@ private slots:
     void checkActionStates();
     void selectItem(QGraphicsItem *item);
     void selectNewItem(QGraphicsItem *item);
-    void slotHelp();
     void cut();
     void copy();
     void paste();
@@ -51,10 +51,12 @@ private slots:
     void on_actionSave_triggered();
     void on_actionSaveAs_triggered();
     void timeUpdate();
-    void on_toolButton_curveLine_clicked();
     void on_toolButton_Home_clicked();    
     void on_toolButton_pixmap_clicked();
     void on_toolButton_bezier_clicked();
+    void on_actionZoomIn_triggered();
+    void on_actionZoomOut_triggered();
+    void on_actionHelp_triggered();
 
 protected:
     void wheelEvent(QWheelEvent *event);

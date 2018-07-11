@@ -78,8 +78,16 @@
       </item>
       <item row="3" column="0">
        <widget class="QLabel" name="label_4">
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>11</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
         <property name="text">
-         <string>border width</string>
+         <string>&lt;font color=&quot;white&quot;&gt;宽度&lt;/font&gt;</string>
         </property>
        </widget>
       </item>
@@ -92,22 +100,46 @@
       </item>
       <item row="0" column="0">
        <widget class="QLabel" name="labelColor_1">
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>11</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
         <property name="text">
-         <string>background</string>
+         <string>&lt;font color=&quot;white&quot;&gt;颜色1&lt;/font&gt;</string>
         </property>
        </widget>
       </item>
       <item row="2" column="0">
        <widget class="QLabel" name="label_2">
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>11</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
         <property name="text">
-         <string>border color</string>
+         <string>&lt;font color=&quot;white&quot;&gt;边框颜色&lt;/font&gt;</string>
         </property>
        </widget>
       </item>
       <item row="1" column="0">
        <widget class="QLabel" name="labelColor_2">
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>11</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
         <property name="text">
-         <string>color 2</string>
+         <string>&lt;font color=&quot;white&quot;&gt;颜色2&lt;/font&gt;</string>
         </property>
        </widget>
       </item>

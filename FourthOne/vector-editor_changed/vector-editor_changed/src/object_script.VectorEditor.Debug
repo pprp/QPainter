@@ -18,6 +18,7 @@ INPUT(
 ./debug\basicshapeitem.o
 ./debug\complexshapeitem.o
 ./debug\handle.o
+./debug\showhelpdialog.o
 ./debug\qrc_icons.o
 ./debug\moc_mainwindow.o
 ./debug\moc_svgreader.o
@@ -32,4 +33,5 @@ INPUT(
 ./debug\moc_veworkplaceview.o
 ./debug\moc_veellipse.o
 ./debug\moc_veellipsesetting.o
+./debug\moc_showhelpdialog.o
 );

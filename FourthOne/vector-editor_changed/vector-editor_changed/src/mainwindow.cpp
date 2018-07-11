@@ -32,7 +32,6 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->polylineSettings->setVisible(false);
     ui->ellipseSettings->setVisible(false);
 
-    connect(ui->actionHelp, &QAction::triggered, this, &MainWindow::slotHelp);
     connect(ui->butLine, &QToolButton::clicked, [=](){workplaceScene->setCurrentAction(VEWorkplace::LineType);});
     connect(ui->butRectangle, &QToolButton::clicked, [=](){workplaceScene->setCurrentAction(VEWorkplace::RectangleType);});
     connect(ui->butDefault, &QToolButton::clicked, [=](){workplaceScene->setCurrentAction(VEWorkplace::DefaultType);});
@@ -109,7 +108,7 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_butSave_clicked()
 {
-    QString newPath = QFileDialog::getSaveFileName(this, trUtf8("Save SVG"),
+    QString newPath = QFileDialog::getSaveFileName(this, trUtf8("保存照片"),
                                                    path, tr("SVG files (*.svg *.png *.bmp *.jpg)"));
     if (newPath.isEmpty())
         return;
@@ -120,8 +119,8 @@ void MainWindow::on_butSave_clicked()
     generator.setFileName(path);
     generator.setSize(QSize(workplaceScene->width(), workplaceScene->height()));
     generator.setViewBox(QRect(0, 0, workplaceScene->width(), workplaceScene->height()));
-    generator.setTitle(trUtf8("Vector Editor"));
-    generator.setDescription(trUtf8("File created by Vector Editor."));
+    generator.setTitle(trUtf8("QPainter v1.1.0"));
+    generator.setDescription(trUtf8("File created by QPainter"));
 
     QPainter painter;
     painter.begin(&generator);
@@ -131,7 +130,7 @@ void MainWindow::on_butSave_clicked()
 
 void MainWindow::on_butOpen_clicked()
 {
-    QString newPath = QFileDialog::getOpenFileName(this, trUtf8("Open File"),
+    QString newPath = QFileDialog::getOpenFileName(this, trUtf8("打开文件"),
                                                    path, tr("Image files (*.svg *.png *.jpg *.bmp)"));
     if (newPath.isEmpty())
         return;
@@ -290,12 +289,6 @@ void MainWindow::selectNewItem(QGraphicsItem *item)
     }
 }
 
-void MainWindow::slotHelp()
-{
-    QMessageBox::information(this, trUtf8("Readme"),
-                             trUtf8("欢迎来到我的极乐世界"));
-}
-
 void MainWindow::copy()
 {
     qDebug()<<"copy";
@@ -320,7 +313,7 @@ void MainWindow::save()
 
 void MainWindow::saveAs()
 {    
-    QString newPath = QFileDialog::getSaveFileName(this, trUtf8("Save As"),
+    QString newPath = QFileDialog::getSaveFileName(this, trUtf8("另存为"),
                                                    path, tr("SVG files (*.svg *.png *.bmp *.jpg)"));
     if (newPath.isEmpty())
         return;
@@ -329,8 +322,8 @@ void MainWindow::saveAs()
     generator.setFileName(path);
     generator.setSize(QSize(workplaceScene->width(), workplaceScene->height()));
     generator.setViewBox(QRect(0, 0, workplaceScene->width(), workplaceScene->height()));
-    generator.setTitle(trUtf8("Vector Editor"));
-    generator.setDescription(trUtf8("File created by Vector Editor."));
+    generator.setTitle(trUtf8("QPainter"));
+    generator.setDescription(trUtf8("File created by QPainter."));
     QPainter painter;
     painter.begin(&generator);
     workplaceScene->render(&painter);
@@ -410,7 +403,7 @@ void MainWindow::on_toolButton_clear_clicked()
 
 void MainWindow::on_actionOpen_triggered()
 {
-    QString newPath = QFileDialog::getOpenFileName(this, trUtf8("Open SVG"),
+    QString newPath = QFileDialog::getOpenFileName(this, trUtf8("打开文件"),
                                                    path, tr("Image files (*.svg *.png *.jpg *.bmp)"));
     if (newPath.isEmpty())
         return;
@@ -458,12 +451,6 @@ void MainWindow::on_actionSaveAs_triggered()
 {
     this->saveAs();
 }
-
-void MainWindow::on_toolButton_curveLine_clicked()
-{
-//    workplaceScene->setChooseBezier(true);
-}
-
 void MainWindow::on_toolButton_Home_clicked()
 {
 
@@ -519,3 +506,23 @@ void MainWindow::on_toolButton_bezier_clicked()
 
 }
 
+
+void MainWindow::on_actionZoomIn_triggered()
+{
+    workplaceScene->views()[0]->scale(1.2,1.2);
+    record++;
+    judge = true;
+}
+
+void MainWindow::on_actionZoomOut_triggered()
+{
+    workplaceScene->views()[0]->scale(1/1.2,1/1.2);
+    record1++;
+    judge1 = true;
+}
+
+void MainWindow::on_actionHelp_triggered()
+{
+    ShowHelpDialog show;
+    show.exec();
+}

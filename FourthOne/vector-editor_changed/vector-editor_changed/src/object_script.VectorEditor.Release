@@ -18,6 +18,7 @@ INPUT(
 ./release\basicshapeitem.o
 ./release\complexshapeitem.o
 ./release\handle.o
+./release\showhelpdialog.o
 ./release\qrc_icons.o
 ./release\moc_mainwindow.o
 ./release\moc_svgreader.o
@@ -32,4 +33,5 @@ INPUT(
 ./release\moc_veworkplaceview.o
 ./release\moc_veellipse.o
 ./release\moc_veellipsesetting.o
+./release\moc_showhelpdialog.o
 );

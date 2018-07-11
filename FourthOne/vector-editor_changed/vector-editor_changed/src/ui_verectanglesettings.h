@@ -77,6 +77,12 @@ public:
 
         label_4 = new QLabel(fillingWidget);
         label_4->setObjectName(QStringLiteral("label_4"));
+        QFont font;
+        font.setFamily(QStringLiteral("Arial"));
+        font.setPointSize(11);
+        font.setBold(true);
+        font.setWeight(75);
+        label_4->setFont(font);
 
         gridLayout_2->addWidget(label_4, 3, 0, 1, 1);
 
@@ -87,16 +93,19 @@ public:
 
         labelColor_1 = new QLabel(fillingWidget);
         labelColor_1->setObjectName(QStringLiteral("labelColor_1"));
+        labelColor_1->setFont(font);
 
         gridLayout_2->addWidget(labelColor_1, 0, 0, 1, 1);
 
         label_2 = new QLabel(fillingWidget);
         label_2->setObjectName(QStringLiteral("label_2"));
+        label_2->setFont(font);
 
         gridLayout_2->addWidget(label_2, 2, 0, 1, 1);
 
         labelColor_2 = new QLabel(fillingWidget);
         labelColor_2->setObjectName(QStringLiteral("labelColor_2"));
+        labelColor_2->setFont(font);
 
         gridLayout_2->addWidget(labelColor_2, 1, 0, 1, 1);
 
@@ -123,11 +132,11 @@ public:
          << QApplication::translate("VERectangleSettings", "\346\270\220\345\217\230", 0)
         );
         borderColor->setText(QString());
-        label_4->setText(QApplication::translate("VERectangleSettings", "border width", 0));
+        label_4->setText(QApplication::translate("VERectangleSettings", "<font color=\"white\">\345\256\275\345\272\246</font>", 0));
         color_1->setText(QString());
-        labelColor_1->setText(QApplication::translate("VERectangleSettings", "background", 0));
-        label_2->setText(QApplication::translate("VERectangleSettings", "border color", 0));
-        labelColor_2->setText(QApplication::translate("VERectangleSettings", "color 2", 0));
+        labelColor_1->setText(QApplication::translate("VERectangleSettings", "<font color=\"white\">\351\242\234\350\211\2621</font>", 0));
+        label_2->setText(QApplication::translate("VERectangleSettings", "<font color=\"white\">\350\276\271\346\241\206\351\242\234\350\211\262</font>", 0));
+        labelColor_2->setText(QApplication::translate("VERectangleSettings", "<font color=\"white\">\351\242\234\350\211\2622</font>", 0));
         color_2->setText(QString());
     } // retranslateUi
 

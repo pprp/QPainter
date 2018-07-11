@@ -170,7 +170,7 @@ void VEEllipseSettings::comboBoxIndexChanged(int index)
     case 1:
         ui->color_2->setVisible(true);
         ui->labelColor_2->setVisible(true);
-        ui->labelColor_1->setText(trUtf8("color 1"));
+        ui->labelColor_1->setText(trUtf8("<font color='white'>颜色1</font>"));
         if(currentEllipse != nullptr){
             setGradient(currentEllipse);
         }
@@ -178,7 +178,7 @@ void VEEllipseSettings::comboBoxIndexChanged(int index)
     default:
         ui->color_2->setVisible(false);
         ui->labelColor_2->setVisible(false);
-        ui->labelColor_1->setText(trUtf8("background"));
+        ui->labelColor_1->setText(trUtf8("<font color='white'>背景</font>"));
         if(currentEllipse != nullptr){
             currentEllipse->setBrush(QBrush(m_color_1));
         }

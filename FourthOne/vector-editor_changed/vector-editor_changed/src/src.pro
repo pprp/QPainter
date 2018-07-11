@@ -37,7 +37,8 @@ SOURCES += main.cpp\
     baseitem.cpp \
     basicshapeitem.cpp \
     complexshapeitem.cpp \
-    handle.cpp
+    handle.cpp \
+    showhelpdialog.cpp
 
 HEADERS  += mainwindow.h \
     svgreader.h \
@@ -56,12 +57,14 @@ HEADERS  += mainwindow.h \
     baseitem.h \
     basicshapeitem.h \
     complexshapeitem.h \
-    handle.h
+    handle.h \
+    showhelpdialog.h
 
 FORMS    += mainwindow.ui \
     verectanglesettings.ui \
     vepolylinesettings.ui \
-    veellipsesettings.ui
+    veellipsesettings.ui \
+    showhelpdialog.ui
 
 RESOURCES += \
     icons.qrc
