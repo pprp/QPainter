@@ -67,6 +67,12 @@ MainWindow::MainWindow(QWidget *parent) :
     timer=new QTimer(this);
     timer->start(1000);
     connect(timer,SIGNAL(timeout()),this,SLOT(timeUpdate()));
+
+    //Home
+    judge = false;
+    judge1 = false;
+    record = 0;
+    record1 = 0;
 }
 //滚轮的放缩
 void MainWindow::wheelEvent(QWheelEvent *event)
@@ -367,11 +373,15 @@ void MainWindow::on_toolButton_SaveAs_clicked()
 void MainWindow::on_toolButton_ZoomIn_clicked()
 {
     workplaceScene->views()[0]->scale(1.2,1.2);
+    record++;
+    judge = true;
 }
 
 void MainWindow::on_toolButton_ZoomOut_clicked()
 {
     workplaceScene->views()[0]->scale(1/1.2,1/1.2);
+    record1++;
+    judge1 = true;
 }
 
 void MainWindow::on_toolButton_text_clicked()
@@ -451,4 +461,39 @@ void MainWindow::on_toolButton_curveLine_clicked()
 void MainWindow::on_toolButton_clicked()
 {
 
+}
+
+void MainWindow::on_toolButton_Home_clicked()
+{
+    if(this->judge == true && this->judge1 == false){
+        for(int i = 0;i<this->record;i++)
+        {
+            workplaceScene->views()[0]->scale(1/1.2,1/1.2);
+            update();
+        }
+    }else if(this->judge == false && this->judge1 == true){
+        for(int i = 0;i<this->record1;i++)
+        {
+            workplaceScene->views()[0]->scale(1.2,1.2);
+            update();
+        }
+    }else if(this->judge == true && this->judge1 == true){
+        if(this->record > this->record1){
+            for(int i = 0;i<(this->record - this->record1);i++)
+            {
+                workplaceScene->views()[0]->scale(1/1.2,1/1.2);
+                update();
+            }
+        }else if(this->record1 > this->record){
+            for(int i = 0;i<(this->record1 - this->record);i++)
+            {
+                workplaceScene->views()[0]->scale(1/1.2,1/1.2);
+                update();
+            }
+        }else{}
+    }else{}
+    this->record = 0;
+    this->record1 = 0;
+    this->judge = false;
+    this->judge1 = false;
 }

@@ -56,6 +56,8 @@ private slots:
 
     void on_toolButton_clicked();
 
+    void on_toolButton_Home_clicked();
+
 protected:
     void wheelEvent(QWheelEvent *event);
 private:
@@ -67,6 +69,11 @@ private:
 
     QTimer * timer;
     QLabel * currentTimeLabel;
+
+    int record;
+    int record1;
+    bool judge;
+    bool judge1;
 };
 
 #endif // MAINWINDOW_H

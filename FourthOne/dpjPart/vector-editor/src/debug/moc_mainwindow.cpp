@@ -19,8 +19,8 @@
 
 QT_BEGIN_MOC_NAMESPACE
 struct qt_meta_stringdata_MainWindow_t {
-    QByteArrayData data[32];
-    char stringdata[484];
+    QByteArrayData data[34];
+    char stringdata[550];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -42,32 +42,34 @@ QT_MOC_LITERAL(9, 114, 13),
 QT_MOC_LITERAL(10, 128, 8),
 QT_MOC_LITERAL(11, 137, 3),
 QT_MOC_LITERAL(12, 141, 4),
-QT_MOC_LITERAL(13, 146, 14),
-QT_MOC_LITERAL(14, 161, 5),
-QT_MOC_LITERAL(15, 167, 4),
-QT_MOC_LITERAL(16, 172, 6),
-QT_MOC_LITERAL(17, 179, 7),
-QT_MOC_LITERAL(18, 187, 4),
-QT_MOC_LITERAL(19, 192, 5),
-QT_MOC_LITERAL(20, 198, 9),
-QT_MOC_LITERAL(21, 208, 23),
-QT_MOC_LITERAL(22, 232, 28),
-QT_MOC_LITERAL(23, 261, 28),
-QT_MOC_LITERAL(24, 290, 29),
-QT_MOC_LITERAL(25, 320, 26),
-QT_MOC_LITERAL(26, 347, 22),
-QT_MOC_LITERAL(27, 370, 27),
-QT_MOC_LITERAL(28, 398, 23),
-QT_MOC_LITERAL(29, 422, 23),
-QT_MOC_LITERAL(30, 446, 25),
-QT_MOC_LITERAL(31, 472, 10)
+QT_MOC_LITERAL(13, 146, 5),
+QT_MOC_LITERAL(14, 152, 4),
+QT_MOC_LITERAL(15, 157, 6),
+QT_MOC_LITERAL(16, 164, 7),
+QT_MOC_LITERAL(17, 172, 4),
+QT_MOC_LITERAL(18, 177, 5),
+QT_MOC_LITERAL(19, 183, 9),
+QT_MOC_LITERAL(20, 193, 23),
+QT_MOC_LITERAL(21, 217, 28),
+QT_MOC_LITERAL(22, 246, 28),
+QT_MOC_LITERAL(23, 275, 29),
+QT_MOC_LITERAL(24, 305, 26),
+QT_MOC_LITERAL(25, 332, 22),
+QT_MOC_LITERAL(26, 355, 27),
+QT_MOC_LITERAL(27, 383, 23),
+QT_MOC_LITERAL(28, 407, 23),
+QT_MOC_LITERAL(29, 431, 25),
+QT_MOC_LITERAL(30, 457, 10),
+QT_MOC_LITERAL(31, 468, 31),
+QT_MOC_LITERAL(32, 500, 21),
+QT_MOC_LITERAL(33, 522, 26)
     },
     "MainWindow\0on_butSave_clicked\0\0"
     "on_butOpen_clicked\0checkSelection\0"
     "checkActionStates\0selectItem\0"
     "QGraphicsItem*\0item\0selectNewItem\0"
-    "slotHelp\0cut\0copy\0deleteSelected\0paste\0"
-    "save\0saveAs\0newFile\0open\0clear\0selectAll\0"
+    "slotHelp\0cut\0copy\0paste\0save\0saveAs\0"
+    "newFile\0open\0clear\0selectAll\0"
     "on_actionExit_triggered\0"
     "on_toolButton_SaveAs_clicked\0"
     "on_toolButton_ZoomIn_clicked\0"
@@ -77,6 +79,8 @@ QT_MOC_LITERAL(31, 472, 10)
     "on_toolButton_clear_clicked\0"
     "on_actionOpen_triggered\0on_actionSave_triggered\0"
     "on_actionSaveAs_triggered\0timeUpdate\0"
+    "on_toolButton_curveLine_clicked\0"
+    "on_toolButton_clicked\0on_toolButton_Home_clicked\0"
 };
 #undef QT_MOC_LITERAL
 
@@ -86,7 +90,7 @@ static const uint qt_meta_data_MainWindow[] = {
        7,       // revision
        0,       // classname
        0,    0, // classinfo
-      28,   14, // methods
+      30,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -94,34 +98,36 @@ static const uint qt_meta_data_MainWindow[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags
-       1,    0,  154,    2, 0x08,
-       3,    0,  155,    2, 0x08,
-       4,    0,  156,    2, 0x08,
-       5,    0,  157,    2, 0x08,
-       6,    1,  158,    2, 0x08,
-       9,    1,  161,    2, 0x08,
-      10,    0,  164,    2, 0x08,
-      11,    0,  165,    2, 0x08,
-      12,    0,  166,    2, 0x08,
-      13,    0,  167,    2, 0x08,
-      14,    0,  168,    2, 0x08,
-      15,    0,  169,    2, 0x08,
-      16,    0,  170,    2, 0x08,
-      17,    0,  171,    2, 0x08,
-      18,    0,  172,    2, 0x08,
-      19,    0,  173,    2, 0x08,
-      20,    0,  174,    2, 0x08,
-      21,    0,  175,    2, 0x08,
-      22,    0,  176,    2, 0x08,
-      23,    0,  177,    2, 0x08,
-      24,    0,  178,    2, 0x08,
-      25,    0,  179,    2, 0x08,
-      26,    0,  180,    2, 0x08,
-      27,    0,  181,    2, 0x08,
-      28,    0,  182,    2, 0x08,
-      29,    0,  183,    2, 0x08,
-      30,    0,  184,    2, 0x08,
-      31,    0,  185,    2, 0x08,
+       1,    0,  164,    2, 0x08,
+       3,    0,  165,    2, 0x08,
+       4,    0,  166,    2, 0x08,
+       5,    0,  167,    2, 0x08,
+       6,    1,  168,    2, 0x08,
+       9,    1,  171,    2, 0x08,
+      10,    0,  174,    2, 0x08,
+      11,    0,  175,    2, 0x08,
+      12,    0,  176,    2, 0x08,
+      13,    0,  177,    2, 0x08,
+      14,    0,  178,    2, 0x08,
+      15,    0,  179,    2, 0x08,
+      16,    0,  180,    2, 0x08,
+      17,    0,  181,    2, 0x08,
+      18,    0,  182,    2, 0x08,
+      19,    0,  183,    2, 0x08,
+      20,    0,  184,    2, 0x08,
+      21,    0,  185,    2, 0x08,
+      22,    0,  186,    2, 0x08,
+      23,    0,  187,    2, 0x08,
+      24,    0,  188,    2, 0x08,
+      25,    0,  189,    2, 0x08,
+      26,    0,  190,    2, 0x08,
+      27,    0,  191,    2, 0x08,
+      28,    0,  192,    2, 0x08,
+      29,    0,  193,    2, 0x08,
+      30,    0,  194,    2, 0x08,
+      31,    0,  195,    2, 0x08,
+      32,    0,  196,    2, 0x08,
+      33,    0,  197,    2, 0x08,
 
  // slots: parameters
     QMetaType::Void,
@@ -130,6 +136,8 @@ static const uint qt_meta_data_MainWindow[] = {
     QMetaType::Void,
     QMetaType::Void, 0x80000000 | 7,    8,
     QMetaType::Void, 0x80000000 | 7,    8,
+    QMetaType::Void,
+    QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
@@ -170,25 +178,27 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 6: _t->slotHelp(); break;
         case 7: _t->cut(); break;
         case 8: _t->copy(); break;
-        case 9: _t->deleteSelected(); break;
-        case 10: _t->paste(); break;
-        case 11: _t->save(); break;
-        case 12: _t->saveAs(); break;
-        case 13: _t->newFile(); break;
-        case 14: _t->open(); break;
-        case 15: _t->clear(); break;
-        case 16: _t->selectAll(); break;
-        case 17: _t->on_actionExit_triggered(); break;
-        case 18: _t->on_toolButton_SaveAs_clicked(); break;
-        case 19: _t->on_toolButton_ZoomIn_clicked(); break;
-        case 20: _t->on_toolButton_ZoomOut_clicked(); break;
-        case 21: _t->on_toolButton_text_clicked(); break;
-        case 22: _t->on_actionNew_triggered(); break;
-        case 23: _t->on_toolButton_clear_clicked(); break;
-        case 24: _t->on_actionOpen_triggered(); break;
-        case 25: _t->on_actionSave_triggered(); break;
-        case 26: _t->on_actionSaveAs_triggered(); break;
-        case 27: _t->timeUpdate(); break;
+        case 9: _t->paste(); break;
+        case 10: _t->save(); break;
+        case 11: _t->saveAs(); break;
+        case 12: _t->newFile(); break;
+        case 13: _t->open(); break;
+        case 14: _t->clear(); break;
+        case 15: _t->selectAll(); break;
+        case 16: _t->on_actionExit_triggered(); break;
+        case 17: _t->on_toolButton_SaveAs_clicked(); break;
+        case 18: _t->on_toolButton_ZoomIn_clicked(); break;
+        case 19: _t->on_toolButton_ZoomOut_clicked(); break;
+        case 20: _t->on_toolButton_text_clicked(); break;
+        case 21: _t->on_actionNew_triggered(); break;
+        case 22: _t->on_toolButton_clear_clicked(); break;
+        case 23: _t->on_actionOpen_triggered(); break;
+        case 24: _t->on_actionSave_triggered(); break;
+        case 25: _t->on_actionSaveAs_triggered(); break;
+        case 26: _t->timeUpdate(); break;
+        case 27: _t->on_toolButton_curveLine_clicked(); break;
+        case 28: _t->on_toolButton_clicked(); break;
+        case 29: _t->on_toolButton_Home_clicked(); break;
         default: ;
         }
     }
@@ -219,13 +229,13 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 28)
+        if (_id < 30)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 28;
+        _id -= 30;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 28)
+        if (_id < 30)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 28;
+        _id -= 30;
     }
     return _id;
 }

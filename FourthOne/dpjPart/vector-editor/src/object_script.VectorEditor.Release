@@ -12,9 +12,10 @@ INPUT(
 ./release\dotsignal.o
 ./release\veworkplaceview.o
 ./release\vetextitem.o
-./release\vebeziercurve.o
 ./release\veellipse.o
 ./release\veellipsesetting.o
+./release\duline.o
+./release\dubezier.o
 ./release\qrc_icons.o
 ./release\moc_mainwindow.o
 ./release\moc_svgreader.o

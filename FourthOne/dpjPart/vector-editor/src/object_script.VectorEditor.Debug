@@ -12,9 +12,10 @@ INPUT(
 ./debug\dotsignal.o
 ./debug\veworkplaceview.o
 ./debug\vetextitem.o
-./debug\vebeziercurve.o
 ./debug\veellipse.o
 ./debug\veellipsesetting.o
+./debug\duline.o
+./debug\dubezier.o
 ./debug\qrc_icons.o
 ./debug\moc_mainwindow.o
 ./debug\moc_svgreader.o
