@@ -34,8 +34,6 @@ SOURCES += main.cpp\
     vetextitem.cpp \
     veellipse.cpp \
     veellipsesetting.cpp \
-    duline.cpp \
-    dubezier.cpp \
     baseitem.cpp \
     basicshapeitem.cpp \
     complexshapeitem.cpp \
@@ -55,8 +53,6 @@ HEADERS  += mainwindow.h \
     vetextitem.h \
     veellipse.h \
     veellipsesetting.h \
-    duline.h \
-    dubezier.h \
     baseitem.h \
     basicshapeitem.h \
     complexshapeitem.h \

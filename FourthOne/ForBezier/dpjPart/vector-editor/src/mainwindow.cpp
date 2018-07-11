@@ -10,7 +10,6 @@
 #include "vepolyline.h"
 #include "verectangle.h"
 #include "veellipse.h"
-//#include <QStyleFactory>
 #include "basicshapeitem.h"
 #include "complexshapeitem.h"
 
@@ -460,7 +459,7 @@ void MainWindow::on_actionSaveAs_triggered()
 
 void MainWindow::on_toolButton_curveLine_clicked()
 {
-    workplaceScene->setChooseBezier(true);
+//    workplaceScene->setChooseBezier(true);
 }
 
 void MainWindow::on_toolButton_Home_clicked()

@@ -4,7 +4,6 @@
 #include <QObject>
 #include <QGraphicsScene>
 #include "vetextitem.h"
-#include "dubezier.h"
 class QGraphicsSceneMouseEvent;
 class QKeyEvent;
 class DuBezier;
@@ -34,11 +33,6 @@ public:
     void setCurrentAction(const int type);
     void setPreviousPosition(const QPointF previousPosition);
 
-    void setChooseBezier(bool on);
-    void setChooseLine(bool on);
-    bool getBezier()const {return chooseBezier;}
-    bool getLine()const {return chooseLine;}
-
 signals:
     void previousPositionChanged();
     void currentActionChanged(int);
@@ -65,11 +59,6 @@ private:
     QPointF m_previousPosition;
     bool m_leftMouseButtonPressed;
     VETextItem * vti;
-    //画贝塞尔曲线
-    bool pressFirst;
-    bool pressSecond;
-    bool chooseBezier;
-    bool chooseLine;//是否需要加上
 
     //点的确定
     QPointF mpto1;//第一个点
