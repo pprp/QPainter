@@ -77,7 +77,6 @@ RESOURCES += \
 OTHER_FILES += \
     ico.ico \
     VectorEditor_resource.rc \
-    Makefile \
     Makefile.Debug \
     Makefile.Release \
     object_script.VectorEditor.Debug \

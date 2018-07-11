@@ -462,13 +462,10 @@ void MainWindow::on_toolButton_curveLine_clicked()
 {
     workplaceScene->setChooseBezier(true);
 }
-void MainWindow::on_toolButton_clicked()
-{
-
-}
 
 void MainWindow::on_toolButton_Home_clicked()
 {
+
     if(this->judge == true && this->judge1 == false){
         for(int i = 0;i<this->record;i++)
         {
@@ -500,6 +497,8 @@ void MainWindow::on_toolButton_Home_clicked()
     this->record1 = 0;
     this->judge = false;
     this->judge1 = false;
+
+
 }
 
 void MainWindow::on_toolButton_pixmap_clicked()
@@ -511,12 +510,21 @@ void MainWindow::on_toolButton_pixmap_clicked()
 
 void MainWindow::on_toolButton_bezier_clicked()
 {
-    ComplexShapeItem * item2 = new ComplexShapeItem(workplaceScene);
-    item4->addPoint(QPointF(0,0),ComplexShapeItem::SEGEMENT_LINE);
-    item4->addPoint(QPointF(12,12),ComplexShapeItem::SEGEMENT_LINE);
-    item4->addPoint(QPointF(50,50),ComplexShapeItem::SEGEMENT_LINE);
-    item4->addPoint(QPointF(100,100),ComplexShapeItem::SEGEMENT_LINE);
-    item4->addPoint(QPointF(200,200),ComplexShapeItem::SEGEMENT_LINE);
-    item4->addPoint(QPointF(250,250),ComplexShapeItem::SEGEMENT_LINE);
-    item4->addPoint(QPointF(300,300),ComplexShapeItem::SEGEMENT_LINE);
+    ComplexShapeItem * item4 = new ComplexShapeItem(workplaceScene);
+    item4->addPoint(QPointF(400,400),ComplexShapeItem::SEGEMENT_LINE);
+    item4->addPoint(QPointF(412,412),ComplexShapeItem::SEGEMENT_LINE);
+    item4->addPoint(QPointF(450,450),ComplexShapeItem::SEGEMENT_LINE);
+    item4->addPoint(QPointF(500,500),ComplexShapeItem::SEGEMENT_LINE);
+//    item4->addPoint(QPointF(600,600),ComplexShapeItem::SEGEMENT_LINE);
+//    item4->addPoint(QPointF(650,650),ComplexShapeItem::SEGEMENT_LINE);
+//    item4->addPoint(QPointF(700,700),ComplexShapeItem::SEGEMENT_LINE);
 }
+/*
+
+void MainWindow::on_toolButton_ellipse_clicked()
+{
+    qDebug() << "this is ellipse drawing";
+    BasicShapesItem *item2 = new BasicShapesItem(12,12,200,200,BasicShapesItem::ITEM_ELLIPSE,workplaceScene);
+    item2->setPos(500,500);
+}
+*/

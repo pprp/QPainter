@@ -52,7 +52,6 @@ private slots:
     void on_actionSaveAs_triggered();
     void timeUpdate();
     void on_toolButton_curveLine_clicked();
-    void on_toolButton_clicked();
     void on_toolButton_Home_clicked();    
     void on_toolButton_pixmap_clicked();
     void on_toolButton_bezier_clicked();

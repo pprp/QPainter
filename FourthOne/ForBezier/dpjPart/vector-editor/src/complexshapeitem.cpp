@@ -36,7 +36,7 @@ void ComplexShapeItem::paint(QPainter *painter, const QStyleOptionGraphicsItem *
 // Replace this with add segment.
 void ComplexShapeItem::addPoint(QPointF point, SegmentType type) {
     QSettings settings;
-    int size = settings.value("drawing/hanleSize",10).toInt();
+    int size = settings.value("drawing/hanleSize",4).toInt();
     mHandles<<new Handle(point,size,Handle::HANDLE_SHAPE_CIRCLE,Handle::HANDLE_TYPE_CTRL);
     this->recalculateRect();
 }
@@ -62,6 +62,6 @@ void ComplexShapeItem::mouseReleaseEvent(QGraphicsSceneMouseEvent *event) {
 QRectF ComplexShapeItem::boundingRect() const {
     QSettings settings;
     //Adjust bounding rectangle to include the handles so clicking them is detected.
-    int size = settings.value("drawing/hanleSize",10).toInt();
+    int size = settings.value("drawing/hanleSize",4).toInt();
     return this->mRect.adjusted(-size/2,-size/2 - 50,size/2,size/2);
 }
