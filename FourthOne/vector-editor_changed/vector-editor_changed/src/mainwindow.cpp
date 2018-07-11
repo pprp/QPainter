@@ -63,8 +63,6 @@ MainWindow::MainWindow(QWidget *parent) :
     painter.drawPolyline(myPolygon2);
     workplaceScene->setBackgroundBrush(pixmap);
 
-    //文本
-    tItem = new VETextItem;
 
     //时间部分
     currentTimeLabel=new QLabel;
@@ -384,7 +382,8 @@ void MainWindow::on_toolButton_ZoomOut_clicked()
 
 void MainWindow::on_toolButton_text_clicked()
 {
-
+    txtItem = new TextItem();
+    workplaceScene->addItem(txtItem);
 }
 
 void MainWindow::on_actionNew_triggered()

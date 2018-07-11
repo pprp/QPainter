@@ -212,6 +212,24 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 31: _t->on_actionHelp_triggered(); break;
         default: ;
         }
+    } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
+        switch (_id) {
+        default: *reinterpret_cast<int*>(_a[0]) = -1; break;
+        case 4:
+            switch (*reinterpret_cast<int*>(_a[1])) {
+            default: *reinterpret_cast<int*>(_a[0]) = -1; break;
+            case 0:
+                *reinterpret_cast<int*>(_a[0]) = qRegisterMetaType< QGraphicsItem* >(); break;
+            }
+            break;
+        case 5:
+            switch (*reinterpret_cast<int*>(_a[1])) {
+            default: *reinterpret_cast<int*>(_a[0]) = -1; break;
+            case 0:
+                *reinterpret_cast<int*>(_a[0]) = qRegisterMetaType< QGraphicsItem* >(); break;
+            }
+            break;
+        }
     }
 }
 
@@ -245,7 +263,7 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
         _id -= 32;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
         if (_id < 32)
-            *reinterpret_cast<int*>(_a[0]) = -1;
+            qt_static_metacall(this, _c, _id, _a);
         _id -= 32;
     }
     return _id;

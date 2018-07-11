@@ -3,7 +3,7 @@
 
 #include <QObject>
 #include <QGraphicsScene>
-#include "vetextitem.h"
+
 class QGraphicsSceneMouseEvent;
 class QKeyEvent;
 class DuBezier;
@@ -58,8 +58,6 @@ private:
     int m_previousAction;
     QPointF m_previousPosition;
     bool m_leftMouseButtonPressed;
-    VETextItem * vti;
-
     //点的确定
     QPointF mpto1;//第一个点
     QPointF mpto2;//第二个点

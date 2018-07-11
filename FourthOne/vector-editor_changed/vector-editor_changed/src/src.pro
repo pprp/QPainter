@@ -31,14 +31,15 @@ SOURCES += main.cpp\
     vepolylinesettings.cpp \
     dotsignal.cpp \
     veworkplaceview.cpp \
-    vetextitem.cpp \
     veellipse.cpp \
     veellipsesetting.cpp \
     baseitem.cpp \
     basicshapeitem.cpp \
     complexshapeitem.cpp \
     handle.cpp \
-    showhelpdialog.cpp
+    showhelpdialog.cpp \
+    textdialog.cpp \
+    TextItem.cpp
 
 HEADERS  += mainwindow.h \
     svgreader.h \
@@ -51,20 +52,28 @@ HEADERS  += mainwindow.h \
     vepolylinesettings.h \
     dotsignal.h \
     veworkplaceview.h \
-    vetextitem.h \
     veellipse.h \
     veellipsesetting.h \
     baseitem.h \
     basicshapeitem.h \
     complexshapeitem.h \
     handle.h \
-    showhelpdialog.h
+    showhelpdialog.h \
+    textdialog.h \
+    TextItem.h \
+    ui_mainwindow.h \
+    ui_showhelpdialog.h \
+    ui_textdialog.h \
+    ui_veellipsesettings.h \
+    ui_vepolylinesettings.h \
+    ui_verectanglesettings.h
 
 FORMS    += mainwindow.ui \
     verectanglesettings.ui \
     vepolylinesettings.ui \
     veellipsesettings.ui \
-    showhelpdialog.ui
+    showhelpdialog.ui \
+    textdialog.ui
 
 RESOURCES += \
     icons.qrc
@@ -75,4 +84,5 @@ OTHER_FILES += \
     Makefile.Debug \
     Makefile.Release \
     object_script.VectorEditor.Debug \
-    object_script.VectorEditor.Release
+    object_script.VectorEditor.Release \
+    Makefile

@@ -11,7 +11,6 @@ INPUT(
 ./release\vepolylinesettings.o
 ./release\dotsignal.o
 ./release\veworkplaceview.o
-./release\vetextitem.o
 ./release\veellipse.o
 ./release\veellipsesetting.o
 ./release\baseitem.o
@@ -19,6 +18,8 @@ INPUT(
 ./release\complexshapeitem.o
 ./release\handle.o
 ./release\showhelpdialog.o
+./release\textdialog.o
+./release\TextItem.o
 ./release\qrc_icons.o
 ./release\moc_mainwindow.o
 ./release\moc_svgreader.o
@@ -34,4 +35,6 @@ INPUT(
 ./release\moc_veellipse.o
 ./release\moc_veellipsesetting.o
 ./release\moc_showhelpdialog.o
+./release\moc_textdialog.o
+./release\moc_TextItem.o
 );

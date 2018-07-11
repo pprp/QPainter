@@ -7,10 +7,11 @@
 #include <QTimer>
 #include <QDateTime>
 #include "showhelpdialog.h"
+#include "textdialog.h"
+#include "TextItem.h"
 
 class QGraphicsItem;
 class VEWorkplace;
-class VETextItem;
 
 namespace Ui {
 class MainWindow;
@@ -65,7 +66,8 @@ private:
     VEWorkplace *workplaceScene;
     QString path;
     QAction * cutAct;
-    VETextItem *tItem;
+
+    TextItem * txtItem;
 
     QTimer * timer;
     QLabel * currentTimeLabel;
