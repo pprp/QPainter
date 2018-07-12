@@ -24,7 +24,7 @@ ShowSvgDialog::~ShowSvgDialog()
 
 void ShowSvgDialog::slotOpenFile()
 {
-    QString name = QFileDialog::getOpenFileName(this, "打开", "/", "svg files(*.svg)");
+    QString name = QFileDialog::getOpenFileName(this, trUtf8("打开"), "/", "svg files(*.svg)");
     svgWindow->setFile(name);
 }
 

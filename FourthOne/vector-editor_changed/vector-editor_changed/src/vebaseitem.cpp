@@ -1,4 +1,4 @@
-#include "baseitem.h"
+#include "vebaseitem.h"
 #include <QUuid>
 #include <QSettings>
 #include <QGraphicsItem>
@@ -7,7 +7,7 @@
 #include <QDebug>
 #include "handle.h"
 
-BaseItem::BaseItem(QGraphicsScene *scene, QGraphicsItem *parent) : QGraphicsItem(parent),mCurrentHandle(0)
+VEBaseItem::VEBaseItem(QGraphicsScene *scene, QGraphicsItem *parent) : QGraphicsItem(parent),mCurrentHandle(0)
 {
     QUuid id;
     id = QUuid::createUuid();
@@ -18,23 +18,23 @@ BaseItem::BaseItem(QGraphicsScene *scene, QGraphicsItem *parent) : QGraphicsItem
         scene->addItem(this);
     }
 }
-void BaseItem::setId(QString id) {
+void VEBaseItem::setId(QString id) {
     this->mId = id;
 }
-QString BaseItem::id() {
+QString VEBaseItem::id() {
     return this->mId;
 }
-void BaseItem::setDrawBoundingRect(bool draw) {
+void VEBaseItem::setDrawBoundingRect(bool draw) {
     this->mDrawBoundingRect = draw;
 }
 
-QRectF BaseItem::boundingRect() const {
+QRectF VEBaseItem::boundingRect() const {
     QSettings settings;
     //Adjust bounding rectangle to include the handles so clicking them is detected.
     int size = settings.value("drawing/hanleSize",10).toInt();
     return this->mRect.adjusted(-size/2,-size/2 - 50,size/2,size/2);
 }
-QPainterPath BaseItem::shape() const {
+QPainterPath VEBaseItem::shape() const {
     QPainterPath path;
     path.setFillRule(Qt::WindingFill);
     if(this->isSelected()) {
@@ -54,7 +54,7 @@ QPainterPath BaseItem::shape() const {
     path.addRect(this->mRect);
     return path;
 }
-void BaseItem::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) {
+void VEBaseItem::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) {
     Q_UNUSED(option);
     Q_UNUSED(widget);
     //If the item is selected draw selection rectangle and handles.
@@ -100,7 +100,7 @@ void BaseItem::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, 
         painter->drawPoint(this->mOrigin);
     }
 }
-void BaseItem::mousePressEvent(QGraphicsSceneMouseEvent *event) {
+void VEBaseItem::mousePressEvent(QGraphicsSceneMouseEvent *event) {
     QGraphicsItem::mousePressEvent(event);
     if(event->buttons() == Qt::LeftButton) {
         //Detect which handle is clicked.
@@ -112,7 +112,7 @@ void BaseItem::mousePressEvent(QGraphicsSceneMouseEvent *event) {
     }
 }
 
-void BaseItem::mouseMoveEvent(QGraphicsSceneMouseEvent *event) {
+void VEBaseItem::mouseMoveEvent(QGraphicsSceneMouseEvent *event) {
     //Left mouse button is down.
     //TODO: Add grid support.
     if(event->buttons() == Qt::LeftButton && mCurrentHandle) {
@@ -223,15 +223,15 @@ void BaseItem::mouseMoveEvent(QGraphicsSceneMouseEvent *event) {
     }
 }
 
-void BaseItem::mouseReleaseEvent(QGraphicsSceneMouseEvent *event) {
+void VEBaseItem::mouseReleaseEvent(QGraphicsSceneMouseEvent *event) {
     QGraphicsItem::mouseReleaseEvent(event);
     //Reset handles states.
     this->mCurrentHandle = 0;
 }
 
-QVariant BaseItem::itemChange(GraphicsItemChange change, const QVariant &value) {
+QVariant VEBaseItem::itemChange(GraphicsItemChange change, const QVariant &value) {
     if (change == ItemPositionChange && scene()) {
-        // Value is the new position.
+        // Value 代表新的位置
         QSettings settings;
         int gridSize = settings.value("drawing/gridSize").toInt();
         bool gridEnabled = settings.value("drawing/gridEnabled").toBool();
@@ -251,7 +251,7 @@ QVariant BaseItem::itemChange(GraphicsItemChange change, const QVariant &value) 
     }
     return QGraphicsItem::itemChange(change, value);
 }
-void BaseItem::createHandles() {
+void VEBaseItem::createHandles() {
     QSettings settings;
     int size = settings.value("drawing/hanleSize",10).toInt();
     //Resizing rectangle.

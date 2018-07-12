@@ -2,7 +2,7 @@
 #include <QPainter>
 #include <QSettings>
 #include <QDebug>
-ComplexShapeItem::ComplexShapeItem(QGraphicsScene *scene,QGraphicsItem *parent):BaseItem(scene,parent)
+ComplexShapeItem::ComplexShapeItem(QGraphicsScene *scene,QGraphicsItem *parent):VEBaseItem(scene,parent)
 {
     this->setDrawBoundingRect(false);
 }
@@ -27,22 +27,23 @@ void ComplexShapeItem::paint(QPainter *painter, const QStyleOptionGraphicsItem *
                 painter->drawLine(line1);
                 painter->drawLine(line2);
             }
-            //qDebug()<<path.elementCount();
             //Skip used points.
             i = i+2;
         }
 
     }
     painter->drawPath(path);
-    BaseItem::paint(painter,option,widget);
+    VEBaseItem::paint(painter,option,widget);
 }
-// Replace this with add segment.
+//加点
 void ComplexShapeItem::addPoint(QPointF point, SegmentType type) {
+    Q_UNUSED(type);
     QSettings settings;
     int size = settings.value("drawing/hanleSize",4).toInt();
     mHandles<<new Handle(point,size,Handle::HANDLE_SHAPE_CIRCLE,Handle::HANDLE_TYPE_CTRL);
     this->recalculateRect();
 }
+
 void ComplexShapeItem::recalculateRect() {
     QList<qreal> listX;
     QList<qreal> listY;
@@ -58,7 +59,7 @@ void ComplexShapeItem::recalculateRect() {
     mRect = QRectF(topLeft,bottomRight);
 }
 void ComplexShapeItem::mouseReleaseEvent(QGraphicsSceneMouseEvent *event) {
-    BaseItem::mouseReleaseEvent(event);
+    VEBaseItem::mouseReleaseEvent(event);
     recalculateRect();
 }
 

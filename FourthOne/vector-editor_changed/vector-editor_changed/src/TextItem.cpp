@@ -33,7 +33,7 @@ TextItem::TextItem(QObject *parent) :
     text_item->setFont(myFont);
     text_item->setTextInteractionFlags(Qt::TextEditorInteraction);
     text_interaction = true;
-    text_item->setPlainText("请在这里编辑^_^");
+    text_item->setPlainText(trUtf8("请在这里编辑^_^"));
     text_rect = text_item->boundingRect();
     text_item->setPos(520, 520);
     //矩形框
@@ -93,7 +93,7 @@ void TextItem::mouseMoveEvent(QGraphicsSceneMouseEvent *event)
 void TextItem::contextMenuEvent(QGraphicsSceneContextMenuEvent *event)
 {
     QMenu menu; //显示文本和图标，但是不执行操作
-    QAction *edit_action = menu.addAction("编辑开关");
+    QAction *edit_action = menu.addAction(trUtf8("编辑开关"));
     QAction *selected_action = menu.exec(event->screenPos());
     if(selected_action == edit_action){
         if(text_interaction){

@@ -1,5 +1,5 @@
-#ifndef BASEITEM_H
-#define BASEITEM_H
+#ifndef VEBACEITEM_H
+#define VEBACEITEM_H
 
 #include <QGraphicsItem>
 #include <QGraphicsEllipseItem>
@@ -7,10 +7,10 @@
 #include <QGraphicsSceneMouseEvent>
 #include "handle.h"
 
-class BaseItem : public QGraphicsItem
+class VEBaseItem : public QGraphicsItem
 {
 public:
-    BaseItem(QGraphicsScene *scene = 0,QGraphicsItem *parent = 0);
+    VEBaseItem(QGraphicsScene *scene = 0,QGraphicsItem *parent = 0);
     virtual QRectF boundingRect() const;
     QPainterPath shape() const;
     virtual void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget);
@@ -33,4 +33,4 @@ private:
 };
 
 
-#endif // BASEITEM_H
+#endif // VEBACEITEM_H

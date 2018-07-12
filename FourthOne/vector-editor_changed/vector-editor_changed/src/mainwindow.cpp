@@ -10,7 +10,7 @@
 #include "vepolyline.h"
 #include "verectangle.h"
 #include "veellipse.h"
-#include "basicshapeitem.h"
+#include "vebasicshapeitem.h"
 #include "complexshapeitem.h"
 
 
@@ -92,7 +92,7 @@ void MainWindow::wheelEvent(QWheelEvent *event)
 void MainWindow::timeUpdate()
 {
     QDateTime CurrentTime=QDateTime::currentDateTime();
-    QString TimeStr = CurrentTime.toString(" yyyy年-MM月-dd日 hh:mm:ss ");
+    QString TimeStr = CurrentTime.toString(trUtf8("yyyy年-MM月-dd日 hh:mm:ss "));
     currentTimeLabel->setText(TimeStr);
     ui->statusBar->addWidget(currentTimeLabel);
 }
@@ -467,7 +467,7 @@ void MainWindow::on_toolButton_Home_clicked()
 
 void MainWindow::on_toolButton_pixmap_clicked()
 {
-    BasicShapesItem * item = new BasicShapesItem(12,12,200,200,BasicShapesItem::ITEM_PIXMAP,workplaceScene);
+    VEBasicShapesItem * item = new VEBasicShapesItem(12,12,200,200,VEBasicShapesItem::ITEM_PIXMAP,workplaceScene);
     item->setPos(500,500);
     item->setPixmap("://icons/QPainter.ico");
 }

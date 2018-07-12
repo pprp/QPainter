@@ -4,7 +4,7 @@
 #include <QScrollArea>
 #include "showsvg.h"
 
-// QScrollArea 是一个滚动区域，当图片放大超过主窗口的尺寸时，通过拖曳滚动条方式进行查看
+// QScrollArea滚动区域
 class SvgWindow : public QScrollArea
 {
     Q_OBJECT

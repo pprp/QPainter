@@ -11,7 +11,6 @@ VESelectionRect::VESelectionRect(QObject *parent) :
 
 VESelectionRect::~VESelectionRect()
 {
-
 }
 
 int VESelectionRect::type() const

@@ -185,22 +185,20 @@ void VERectangle::hoverLeaveEvent(QGraphicsSceneHoverEvent *event)
 
 void VERectangle::hoverMoveEvent(QGraphicsSceneHoverEvent *event)
 {
-    QPointF pt = event->pos();              // The current position of the mouse
-    qreal drx = pt.x() - rect().right();    // Distance between the mouse and the right
-    qreal dlx = pt.x() - rect().left();     // Distance between the mouse and the left
+    QPointF pt = event->pos();              // 当前位置
+    qreal drx = pt.x() - rect().right();    // 右侧
+    qreal dlx = pt.x() - rect().left();     // 左侧
 
-    qreal dby = pt.y() - rect().top();      // Distance between the mouse and the top
-    qreal dty = pt.y() - rect().bottom();   // Distance between the mouse and the bottom
+    qreal dby = pt.y() - rect().top();      // 上
+    qreal dty = pt.y() - rect().bottom();   // 下
 
-    // If the mouse position is within a radius of 7
-    // to a certain side( top, left, bottom or right)
-    // we set the Flag in the Corner Flags Register
+    //在半径为9以内就设置flag
 
     m_cornerFlags = 0;
-    if( dby < 7 && dby > -7 ) m_cornerFlags |= Top;       // Top side
-    if( dty < 7 && dty > -7 ) m_cornerFlags |= Bottom;    // Bottom side
-    if( drx < 7 && drx > -7 ) m_cornerFlags |= Right;     // Right side
-    if( dlx < 7 && dlx > -7 ) m_cornerFlags |= Left;      // Left side
+    if( dby < 9 && dby > -9 ) m_cornerFlags |= Top;       // Top side
+    if( dty < 9 && dty > -9 ) m_cornerFlags |= Bottom;    // Bottom side
+    if( drx < 9 && drx > -9 ) m_cornerFlags |= Right;     // Right side
+    if( dlx < 9 && dlx > -9 ) m_cornerFlags |= Left;      // Left side
 
     if(m_actionFlags == ResizeState){
         QPixmap p(":/icons/arrow-up-down.png");
@@ -267,25 +265,18 @@ QVariant VERectangle::itemChange(QGraphicsItem::GraphicsItemChange change, const
 void VERectangle::resizeLeft(const QPointF &pt)
 {
     QRectF tmpRect = rect();
-    // if the mouse is on the right side we return
     if( pt.x() > tmpRect.right() )
         return;
     qreal widthOffset =  ( pt.x() - tmpRect.right() );
-    // limit the minimum width
     if( widthOffset > -10 )
         return;
-    // if it's negative we set it to a positive width value
     if( widthOffset < 0 )
         tmpRect.setWidth( -widthOffset );
     else
         tmpRect.setWidth( widthOffset );
-    // Since it's a left side , the rectange will increase in size
-    // but keeps the topLeft as it was
     tmpRect.translate( rect().width() - tmpRect.width() , 0 );
     prepareGeometryChange();
-    // Set the ne geometry
     setRect( tmpRect );
-    // Update to see the result
     update();
     setPositionGrabbers();
 }
@@ -296,7 +287,7 @@ void VERectangle::resizeRight(const QPointF &pt)
     if( pt.x() < tmpRect.left() )
         return;
     qreal widthOffset =  ( pt.x() - tmpRect.left() );
-    if( widthOffset < 10 ) /// limit
+    if( widthOffset < 10 )
         return;
     if( widthOffset < 10)
         tmpRect.setWidth( -widthOffset );
@@ -314,7 +305,7 @@ void VERectangle::resizeBottom(const QPointF &pt)
     if( pt.y() < tmpRect.top() )
         return;
     qreal heightOffset =  ( pt.y() - tmpRect.top() );
-    if( heightOffset < 11 ) /// limit
+    if( heightOffset < 11 )
         return;
     if( heightOffset < 0)
         tmpRect.setHeight( -heightOffset );
@@ -332,7 +323,7 @@ void VERectangle::resizeTop(const QPointF &pt)
     if( pt.y() > tmpRect.bottom() )
         return;
     qreal heightOffset =  ( pt.y() - tmpRect.bottom() );
-    if( heightOffset > -11 ) /// limit
+    if( heightOffset > -11 )
         return;
     if( heightOffset < 0)
         tmpRect.setHeight( -heightOffset );
@@ -369,7 +360,6 @@ void VERectangle::rotateItem(const QPointF &pt)
 
     QLineF lineToTarget(center,corner);
     QLineF lineToCursor(center, pt);
-    // Angle to Cursor and Corner Target points
     qreal angleToTarget = ::acos(lineToTarget.dx() / lineToTarget.length());
     qreal angleToCursor = ::acos(lineToCursor.dx() / lineToCursor.length());
 
@@ -381,7 +371,6 @@ void VERectangle::rotateItem(const QPointF &pt)
         angleToCursor = TwoPi - angleToCursor;
     angleToCursor = normalizeAngle((Pi - angleToCursor) + Pi / 2);
 
-    // Result difference angle between Corner Target point and Cursor Point
     auto resultAngle = angleToTarget - angleToCursor;
 
     QTransform trans = transform();

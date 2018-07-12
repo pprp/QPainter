@@ -10,14 +10,11 @@ class VESelectionRect : public QObject, public QGraphicsRectItem
 public:
     explicit VESelectionRect(QObject *parent = 0);
     ~VESelectionRect();
-
     enum {
         Type = UserType + 1
     };
     int type() const override;
-
 signals:
-
 public slots:
 };
 

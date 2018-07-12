@@ -17,7 +17,7 @@ public:
     explicit TextItem(QObject *parent = 0);
     virtual ~TextItem();
     QRectF boundingRect(void) const;
-    //虚函数，不用但需存在
+    //不进行重写
     void paint(QPainter *painter,
                const QStyleOptionGraphicsItem *option,
                QWidget *widget);

@@ -27,18 +27,19 @@ public:
     ~MainWindow();
 
 private slots:
-    void on_butSave_clicked();
-    void on_butOpen_clicked();
-    void checkSelection();
-    void checkActionStates();
-    void selectItem(QGraphicsItem *item);
-    void selectNewItem(QGraphicsItem *item);
     void save();
     void saveAs();
     void newFile();
     void open();
     void clear();
     void selectAll();
+    void timeUpdate();
+    void on_butSave_clicked();
+    void on_butOpen_clicked();
+    void checkSelection();
+    void checkActionStates();
+    void selectItem(QGraphicsItem *item);
+    void selectNewItem(QGraphicsItem *item);
     void on_actionExit_triggered();
     void on_toolButton_SaveAs_clicked();
     void on_toolButton_ZoomIn_clicked();
@@ -49,16 +50,13 @@ private slots:
     void on_actionOpen_triggered();
     void on_actionSave_triggered();
     void on_actionSaveAs_triggered();
-    void timeUpdate();
     void on_toolButton_Home_clicked();    
     void on_toolButton_pixmap_clicked();
     void on_toolButton_bezier_clicked();
     void on_actionZoomIn_triggered();
     void on_actionZoomOut_triggered();
     void on_actionHelp_triggered();
-
     void on_toolButton_show_clicked();
-
 protected:
     void wheelEvent(QWheelEvent *event);
 private:

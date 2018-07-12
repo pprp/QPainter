@@ -1,8 +1,8 @@
 #ifndef COMPLEXSHAPEITEM_H
 #define COMPLEXSHAPEITEM_H
 
-#include "baseitem.h"
-class ComplexShapeItem : public BaseItem
+#include "vebaseitem.h"
+class ComplexShapeItem : public VEBaseItem
 {
 public:
     enum SegmentType {SEGEMENT_LINE,SEGEMENT_CURVE};

@@ -1,15 +1,15 @@
-#include "basicshapeitem.h"
+#include "vebasicshapeitem.h"
 #include <QPainter>
 #include <QGraphicsScene>
 #include "handle.h"
-BasicShapesItem::BasicShapesItem(qreal x, qreal y, qreal w, qreal h,ItemType type,QGraphicsScene *scene, QGraphicsItem *parent) : BaseItem(scene,parent)
+VEBasicShapesItem::VEBasicShapesItem(qreal x, qreal y, qreal w, qreal h,ItemType type,QGraphicsScene *scene, QGraphicsItem *parent) : VEBaseItem(scene,parent)
 {
     mRect.setRect(x,y,w,h);
     mType = type;
     createHandles();
 }
 
-void BasicShapesItem::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) {
+void VEBasicShapesItem::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) {
     //Fix coordinates for images.
     if(mRect.left() > mRect.right()) {
         qreal left = mRect.left();
@@ -42,14 +42,14 @@ void BasicShapesItem::paint(QPainter *painter, const QStyleOptionGraphicsItem *o
     default:
         break;
     }
-    BaseItem::paint(painter,option,widget);
+    VEBaseItem::paint(painter,option,widget);
     scene()->update();
 }
 
-void BasicShapesItem::setPixmap(QString path) {
+void VEBasicShapesItem::setPixmap(QString path) {
     this->mPixmap = QPixmap(path);
 }
 
-QRectF BasicShapesItem::boundingRect() const{
-    return BaseItem::boundingRect();
+QRectF VEBasicShapesItem::boundingRect() const{
+    return VEBaseItem::boundingRect();
 }

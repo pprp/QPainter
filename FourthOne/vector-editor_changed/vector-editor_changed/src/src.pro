@@ -33,16 +33,16 @@ SOURCES += main.cpp\
     veworkplaceview.cpp \
     veellipse.cpp \
     veellipsesetting.cpp \
-    baseitem.cpp \
-    basicshapeitem.cpp \
     complexshapeitem.cpp \
     handle.cpp \
     showhelpdialog.cpp \
     textdialog.cpp \
-    TextItem.cpp \
     showsvg.cpp \
     svgwindow.cpp \
-    showsvgdialog.cpp
+    showsvgdialog.cpp \
+    vebasicshapeitem.cpp \
+    vebaseitem.cpp \
+    textItem.cpp
 
 HEADERS  += mainwindow.h \
     svgreader.h \
@@ -57,13 +57,10 @@ HEADERS  += mainwindow.h \
     veworkplaceview.h \
     veellipse.h \
     veellipsesetting.h \
-    baseitem.h \
-    basicshapeitem.h \
     complexshapeitem.h \
     handle.h \
     showhelpdialog.h \
     textdialog.h \
-    TextItem.h \
     ui_mainwindow.h \
     ui_showhelpdialog.h \
     ui_textdialog.h \
@@ -72,7 +69,10 @@ HEADERS  += mainwindow.h \
     ui_verectanglesettings.h \
     showsvg.h \
     svgwindow.h \
-    showsvgdialog.h
+    showsvgdialog.h \
+    vebasicshapeitem.h \
+    vebaseitem.h \
+    textItem.h
 
 FORMS    += mainwindow.ui \
     verectanglesettings.ui \
