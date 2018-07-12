@@ -39,7 +39,10 @@ SOURCES += main.cpp\
     handle.cpp \
     showhelpdialog.cpp \
     textdialog.cpp \
-    TextItem.cpp
+    TextItem.cpp \
+    showsvg.cpp \
+    svgwindow.cpp \
+    showsvgdialog.cpp
 
 HEADERS  += mainwindow.h \
     svgreader.h \
@@ -66,14 +69,18 @@ HEADERS  += mainwindow.h \
     ui_textdialog.h \
     ui_veellipsesettings.h \
     ui_vepolylinesettings.h \
-    ui_verectanglesettings.h
+    ui_verectanglesettings.h \
+    showsvg.h \
+    svgwindow.h \
+    showsvgdialog.h
 
 FORMS    += mainwindow.ui \
     verectanglesettings.ui \
     vepolylinesettings.ui \
     veellipsesettings.ui \
     showhelpdialog.ui \
-    textdialog.ui
+    textdialog.ui \
+    showsvgdialog.ui
 
 RESOURCES += \
     icons.qrc

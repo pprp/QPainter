@@ -9,6 +9,7 @@
 #include "showhelpdialog.h"
 #include "textdialog.h"
 #include "TextItem.h"
+#include "showsvgdialog.h"
 
 class QGraphicsItem;
 class VEWorkplace;
@@ -32,9 +33,6 @@ private slots:
     void checkActionStates();
     void selectItem(QGraphicsItem *item);
     void selectNewItem(QGraphicsItem *item);
-    void cut();
-    void copy();
-    void paste();
     void save();
     void saveAs();
     void newFile();
@@ -58,6 +56,8 @@ private slots:
     void on_actionZoomIn_triggered();
     void on_actionZoomOut_triggered();
     void on_actionHelp_triggered();
+
+    void on_toolButton_show_clicked();
 
 protected:
     void wheelEvent(QWheelEvent *event);

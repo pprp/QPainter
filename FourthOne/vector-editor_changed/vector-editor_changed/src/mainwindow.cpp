@@ -129,7 +129,7 @@ void MainWindow::on_butSave_clicked()
 void MainWindow::on_butOpen_clicked()
 {
     QString newPath = QFileDialog::getOpenFileName(this, trUtf8("打开文件"),
-                                                   path, tr("Image files (*.svg *.png *.jpg *.bmp)"));
+                                                   path, tr("Image files (*.svg)"));
     if (newPath.isEmpty())
         return;
     path = newPath;
@@ -287,32 +287,10 @@ void MainWindow::selectNewItem(QGraphicsItem *item)
     }
 }
 
-void MainWindow::copy()
-{
-    qDebug()<<"copy";
-}
-
-void MainWindow::cut()
-{
-    qDebug() <<"cut";
-    copy();
-    //deleteSelected();
-}
-
-void MainWindow::paste()
-{
-
-}
-
-void MainWindow::save()
-{
-    this->saveAs();
-}
-
 void MainWindow::saveAs()
 {    
     QString newPath = QFileDialog::getSaveFileName(this, trUtf8("另存为"),
-                                                   path, tr("SVG files (*.svg *.png *.bmp *.jpg)"));
+                                                   path, tr("SVG files (*.svg)"));
     if (newPath.isEmpty())
         return;
     path = newPath;
@@ -342,12 +320,6 @@ void MainWindow::open()
 void MainWindow::clear()
 {
     workplaceScene->clear();
-    /*
-    while(workplaceScene->items().count()>0)
-    {
-        workplaceScene->removeItem(workplaceScene->items()[0]);
-    }
-    */
 }
 
 void MainWindow::selectAll()
@@ -359,6 +331,11 @@ void MainWindow::on_actionExit_triggered()
 {
     this->saveAs();
     this->close();
+}
+
+void MainWindow::save()
+{
+    this->saveAs();
 }
 
 void MainWindow::on_toolButton_SaveAs_clicked()
@@ -524,4 +501,10 @@ void MainWindow::on_actionHelp_triggered()
 {
     ShowHelpDialog show;
     show.exec();
+}
+
+void MainWindow::on_toolButton_show_clicked()
+{
+    ShowSvgDialog * newSSD = new ShowSvgDialog;
+    newSSD->exec();
 }

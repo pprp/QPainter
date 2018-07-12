@@ -118,5 +118,7 @@
         <file>icons/圆1.png</file>
         <file>icons/圆角矩形.png</file>
         <file>icons/直线.png</file>
+        <file>icons/show.png</file>
+        <file>icons/add_right.png</file>
     </qresource>
 </RCC>

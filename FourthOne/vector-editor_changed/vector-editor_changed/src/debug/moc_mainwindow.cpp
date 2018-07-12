@@ -19,8 +19,8 @@
 
 QT_BEGIN_MOC_NAMESPACE
 struct qt_meta_stringdata_MainWindow_t {
-    QByteArrayData data[36];
-    char stringdata[622];
+    QByteArrayData data[34];
+    char stringdata[634];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -39,39 +39,37 @@ QT_MOC_LITERAL(6, 83, 10),
 QT_MOC_LITERAL(7, 94, 14),
 QT_MOC_LITERAL(8, 109, 4),
 QT_MOC_LITERAL(9, 114, 13),
-QT_MOC_LITERAL(10, 128, 3),
-QT_MOC_LITERAL(11, 132, 4),
-QT_MOC_LITERAL(12, 137, 5),
-QT_MOC_LITERAL(13, 143, 4),
-QT_MOC_LITERAL(14, 148, 6),
-QT_MOC_LITERAL(15, 155, 7),
-QT_MOC_LITERAL(16, 163, 4),
-QT_MOC_LITERAL(17, 168, 5),
-QT_MOC_LITERAL(18, 174, 9),
-QT_MOC_LITERAL(19, 184, 23),
-QT_MOC_LITERAL(20, 208, 28),
-QT_MOC_LITERAL(21, 237, 28),
-QT_MOC_LITERAL(22, 266, 29),
-QT_MOC_LITERAL(23, 296, 26),
-QT_MOC_LITERAL(24, 323, 22),
-QT_MOC_LITERAL(25, 346, 27),
-QT_MOC_LITERAL(26, 374, 23),
-QT_MOC_LITERAL(27, 398, 23),
-QT_MOC_LITERAL(28, 422, 25),
-QT_MOC_LITERAL(29, 448, 10),
-QT_MOC_LITERAL(30, 459, 26),
-QT_MOC_LITERAL(31, 486, 28),
-QT_MOC_LITERAL(32, 515, 28),
-QT_MOC_LITERAL(33, 544, 25),
-QT_MOC_LITERAL(34, 570, 26),
-QT_MOC_LITERAL(35, 597, 23)
+QT_MOC_LITERAL(10, 128, 4),
+QT_MOC_LITERAL(11, 133, 6),
+QT_MOC_LITERAL(12, 140, 7),
+QT_MOC_LITERAL(13, 148, 4),
+QT_MOC_LITERAL(14, 153, 5),
+QT_MOC_LITERAL(15, 159, 9),
+QT_MOC_LITERAL(16, 169, 23),
+QT_MOC_LITERAL(17, 193, 28),
+QT_MOC_LITERAL(18, 222, 28),
+QT_MOC_LITERAL(19, 251, 29),
+QT_MOC_LITERAL(20, 281, 26),
+QT_MOC_LITERAL(21, 308, 22),
+QT_MOC_LITERAL(22, 331, 27),
+QT_MOC_LITERAL(23, 359, 23),
+QT_MOC_LITERAL(24, 383, 23),
+QT_MOC_LITERAL(25, 407, 25),
+QT_MOC_LITERAL(26, 433, 10),
+QT_MOC_LITERAL(27, 444, 26),
+QT_MOC_LITERAL(28, 471, 28),
+QT_MOC_LITERAL(29, 500, 28),
+QT_MOC_LITERAL(30, 529, 25),
+QT_MOC_LITERAL(31, 555, 26),
+QT_MOC_LITERAL(32, 582, 23),
+QT_MOC_LITERAL(33, 606, 26)
     },
     "MainWindow\0on_butSave_clicked\0\0"
     "on_butOpen_clicked\0checkSelection\0"
     "checkActionStates\0selectItem\0"
-    "QGraphicsItem*\0item\0selectNewItem\0cut\0"
-    "copy\0paste\0save\0saveAs\0newFile\0open\0"
-    "clear\0selectAll\0on_actionExit_triggered\0"
+    "QGraphicsItem*\0item\0selectNewItem\0"
+    "save\0saveAs\0newFile\0open\0clear\0selectAll\0"
+    "on_actionExit_triggered\0"
     "on_toolButton_SaveAs_clicked\0"
     "on_toolButton_ZoomIn_clicked\0"
     "on_toolButton_ZoomOut_clicked\0"
@@ -86,6 +84,7 @@ QT_MOC_LITERAL(35, 597, 23)
     "on_actionZoomIn_triggered\0"
     "on_actionZoomOut_triggered\0"
     "on_actionHelp_triggered\0"
+    "on_toolButton_show_clicked\0"
 };
 #undef QT_MOC_LITERAL
 
@@ -95,7 +94,7 @@ static const uint qt_meta_data_MainWindow[] = {
        7,       // revision
        0,       // classname
        0,    0, // classinfo
-      32,   14, // methods
+      30,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -103,38 +102,36 @@ static const uint qt_meta_data_MainWindow[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags
-       1,    0,  174,    2, 0x08,
-       3,    0,  175,    2, 0x08,
-       4,    0,  176,    2, 0x08,
-       5,    0,  177,    2, 0x08,
-       6,    1,  178,    2, 0x08,
-       9,    1,  181,    2, 0x08,
-      10,    0,  184,    2, 0x08,
-      11,    0,  185,    2, 0x08,
-      12,    0,  186,    2, 0x08,
-      13,    0,  187,    2, 0x08,
-      14,    0,  188,    2, 0x08,
-      15,    0,  189,    2, 0x08,
-      16,    0,  190,    2, 0x08,
-      17,    0,  191,    2, 0x08,
-      18,    0,  192,    2, 0x08,
-      19,    0,  193,    2, 0x08,
-      20,    0,  194,    2, 0x08,
-      21,    0,  195,    2, 0x08,
-      22,    0,  196,    2, 0x08,
-      23,    0,  197,    2, 0x08,
-      24,    0,  198,    2, 0x08,
-      25,    0,  199,    2, 0x08,
-      26,    0,  200,    2, 0x08,
-      27,    0,  201,    2, 0x08,
-      28,    0,  202,    2, 0x08,
-      29,    0,  203,    2, 0x08,
-      30,    0,  204,    2, 0x08,
-      31,    0,  205,    2, 0x08,
-      32,    0,  206,    2, 0x08,
-      33,    0,  207,    2, 0x08,
-      34,    0,  208,    2, 0x08,
-      35,    0,  209,    2, 0x08,
+       1,    0,  164,    2, 0x08,
+       3,    0,  165,    2, 0x08,
+       4,    0,  166,    2, 0x08,
+       5,    0,  167,    2, 0x08,
+       6,    1,  168,    2, 0x08,
+       9,    1,  171,    2, 0x08,
+      10,    0,  174,    2, 0x08,
+      11,    0,  175,    2, 0x08,
+      12,    0,  176,    2, 0x08,
+      13,    0,  177,    2, 0x08,
+      14,    0,  178,    2, 0x08,
+      15,    0,  179,    2, 0x08,
+      16,    0,  180,    2, 0x08,
+      17,    0,  181,    2, 0x08,
+      18,    0,  182,    2, 0x08,
+      19,    0,  183,    2, 0x08,
+      20,    0,  184,    2, 0x08,
+      21,    0,  185,    2, 0x08,
+      22,    0,  186,    2, 0x08,
+      23,    0,  187,    2, 0x08,
+      24,    0,  188,    2, 0x08,
+      25,    0,  189,    2, 0x08,
+      26,    0,  190,    2, 0x08,
+      27,    0,  191,    2, 0x08,
+      28,    0,  192,    2, 0x08,
+      29,    0,  193,    2, 0x08,
+      30,    0,  194,    2, 0x08,
+      31,    0,  195,    2, 0x08,
+      32,    0,  196,    2, 0x08,
+      33,    0,  197,    2, 0x08,
 
  // slots: parameters
     QMetaType::Void,
@@ -143,8 +140,6 @@ static const uint qt_meta_data_MainWindow[] = {
     QMetaType::Void,
     QMetaType::Void, 0x80000000 | 7,    8,
     QMetaType::Void, 0x80000000 | 7,    8,
-    QMetaType::Void,
-    QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
@@ -184,32 +179,30 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 3: _t->checkActionStates(); break;
         case 4: _t->selectItem((*reinterpret_cast< QGraphicsItem*(*)>(_a[1]))); break;
         case 5: _t->selectNewItem((*reinterpret_cast< QGraphicsItem*(*)>(_a[1]))); break;
-        case 6: _t->cut(); break;
-        case 7: _t->copy(); break;
-        case 8: _t->paste(); break;
-        case 9: _t->save(); break;
-        case 10: _t->saveAs(); break;
-        case 11: _t->newFile(); break;
-        case 12: _t->open(); break;
-        case 13: _t->clear(); break;
-        case 14: _t->selectAll(); break;
-        case 15: _t->on_actionExit_triggered(); break;
-        case 16: _t->on_toolButton_SaveAs_clicked(); break;
-        case 17: _t->on_toolButton_ZoomIn_clicked(); break;
-        case 18: _t->on_toolButton_ZoomOut_clicked(); break;
-        case 19: _t->on_toolButton_text_clicked(); break;
-        case 20: _t->on_actionNew_triggered(); break;
-        case 21: _t->on_toolButton_clear_clicked(); break;
-        case 22: _t->on_actionOpen_triggered(); break;
-        case 23: _t->on_actionSave_triggered(); break;
-        case 24: _t->on_actionSaveAs_triggered(); break;
-        case 25: _t->timeUpdate(); break;
-        case 26: _t->on_toolButton_Home_clicked(); break;
-        case 27: _t->on_toolButton_pixmap_clicked(); break;
-        case 28: _t->on_toolButton_bezier_clicked(); break;
-        case 29: _t->on_actionZoomIn_triggered(); break;
-        case 30: _t->on_actionZoomOut_triggered(); break;
-        case 31: _t->on_actionHelp_triggered(); break;
+        case 6: _t->save(); break;
+        case 7: _t->saveAs(); break;
+        case 8: _t->newFile(); break;
+        case 9: _t->open(); break;
+        case 10: _t->clear(); break;
+        case 11: _t->selectAll(); break;
+        case 12: _t->on_actionExit_triggered(); break;
+        case 13: _t->on_toolButton_SaveAs_clicked(); break;
+        case 14: _t->on_toolButton_ZoomIn_clicked(); break;
+        case 15: _t->on_toolButton_ZoomOut_clicked(); break;
+        case 16: _t->on_toolButton_text_clicked(); break;
+        case 17: _t->on_actionNew_triggered(); break;
+        case 18: _t->on_toolButton_clear_clicked(); break;
+        case 19: _t->on_actionOpen_triggered(); break;
+        case 20: _t->on_actionSave_triggered(); break;
+        case 21: _t->on_actionSaveAs_triggered(); break;
+        case 22: _t->timeUpdate(); break;
+        case 23: _t->on_toolButton_Home_clicked(); break;
+        case 24: _t->on_toolButton_pixmap_clicked(); break;
+        case 25: _t->on_toolButton_bezier_clicked(); break;
+        case 26: _t->on_actionZoomIn_triggered(); break;
+        case 27: _t->on_actionZoomOut_triggered(); break;
+        case 28: _t->on_actionHelp_triggered(); break;
+        case 29: _t->on_toolButton_show_clicked(); break;
         default: ;
         }
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
@@ -258,13 +251,13 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 32)
+        if (_id < 30)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 32;
+        _id -= 30;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 32)
+        if (_id < 30)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 32;
+        _id -= 30;
     }
     return _id;
 }

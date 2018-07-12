@@ -28,6 +28,7 @@
 #include "veworkplaceview.h"
 
 #include "veellipsesetting.h"
+
 QT_BEGIN_NAMESPACE
 
 class Ui_MainWindow
@@ -64,6 +65,7 @@ public:
     QSpacerItem *verticalSpacer;
     VERectangleSettings *rectangleSettings;
     VEEllipseSettings *ellipseSettings;
+    QToolButton *toolButton_show;
     VEWorkplaceView *workplaceView;
     QMenuBar *menuBar;
     QMenu *menu;
@@ -398,6 +400,15 @@ public:
 
         gridLayout_2->addWidget(ellipseSettings, 5, 0, 1, 3);
 
+        toolButton_show = new QToolButton(toolsWidget);
+        toolButton_show->setObjectName(QStringLiteral("toolButton_show"));
+        QIcon icon19;
+        icon19.addFile(QStringLiteral(":/icons/add_right.png"), QSize(), QIcon::Normal, QIcon::Off);
+        toolButton_show->setIcon(icon19);
+        toolButton_show->setIconSize(QSize(31, 31));
+
+        gridLayout_2->addWidget(toolButton_show, 4, 2, 1, 1);
+
         splitter->addWidget(toolsWidget);
         workplaceView = new VEWorkplaceView(splitter);
         workplaceView->setObjectName(QStringLiteral("workplaceView"));
@@ -474,6 +485,7 @@ public:
         butRectangle->setText(QApplication::translate("MainWindow", "...", 0));
         toolButton_clear->setText(QApplication::translate("MainWindow", "...", 0));
         toolButton_pixmap->setText(QApplication::translate("MainWindow", "...", 0));
+        toolButton_show->setText(QApplication::translate("MainWindow", "...", 0));
         menu->setTitle(QApplication::translate("MainWindow", "File", 0));
         menuHelp->setTitle(QApplication::translate("MainWindow", "Help", 0));
         menuTool->setTitle(QApplication::translate("MainWindow", "Tool", 0));
