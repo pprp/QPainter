@@ -52,7 +52,8 @@ A Painter for the our CPP intern made by QT
 董佩杰
 
 - 界面实现模块（主界面和辅助界面的搭建，时间显示，网格绘制）
-- 贝塞尔曲线，直线
+- 贝塞尔曲线
+- 矩形
 
 梁会
 
@@ -63,6 +64,6 @@ A Painter for the our CPP intern made by QT
 王政宁
 
 - 圆
-- 矩形
+- 直线
 - 文件处理模块（svg文件保存，打开，预览，另存为，新建）
 
