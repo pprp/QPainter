@@ -25,7 +25,6 @@ SOURCES += main.cpp\
     verectangle.cpp \
     veworkplace.cpp \
     verectanglesettings.cpp \
-    veselectionrect.cpp \
     colorlabel.cpp \
     vepolyline.cpp \
     vepolylinesettings.cpp \
@@ -42,14 +41,14 @@ SOURCES += main.cpp\
     vebasicshapeitem.cpp \
     vebaseitem.cpp \
     textItem.cpp \
-    vecomplexshapeitem.cpp
+    vecomplexshapeitem.cpp \
+    veselectionrect.cpp
 
 HEADERS  += mainwindow.h \
     svgreader.h \
     verectangle.h \
     veworkplace.h \
     verectanglesettings.h \
-    veselectionrect.h \
     colorlabel.h \
     vepolyline.h \
     vepolylinesettings.h \
@@ -72,7 +71,9 @@ HEADERS  += mainwindow.h \
     vebasicshapeitem.h \
     vebaseitem.h \
     textItem.h \
-    vecomplexshapeitem.h
+    vecomplexshapeitem.h \
+    ui_showsvgdialog.h \
+    veselectionrect.h
 
 FORMS    += mainwindow.ui \
     verectanglesettings.ui \

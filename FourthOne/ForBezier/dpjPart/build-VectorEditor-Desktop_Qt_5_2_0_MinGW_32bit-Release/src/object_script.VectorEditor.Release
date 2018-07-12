@@ -5,7 +5,6 @@ INPUT(
 ./release\verectangle.o
 ./release\veworkplace.o
 ./release\verectanglesettings.o
-./release\veselectionrect.o
 ./release\colorlabel.o
 ./release\vepolyline.o
 ./release\vepolylinesettings.o
@@ -23,13 +22,13 @@ INPUT(
 ./release\vebaseitem.o
 ./release\textItem.o
 ./release\vecomplexshapeitem.o
+./release\veselectionrect.o
 ./release\qrc_icons.o
 ./release\moc_mainwindow.o
 ./release\moc_svgreader.o
 ./release\moc_verectangle.o
 ./release\moc_veworkplace.o
 ./release\moc_verectanglesettings.o
-./release\moc_veselectionrect.o
 ./release\moc_colorlabel.o
 ./release\moc_vepolyline.o
 ./release\moc_vepolylinesettings.o
@@ -43,4 +42,5 @@ INPUT(
 ./release\moc_svgwindow.o
 ./release\moc_showsvgdialog.o
 ./release\moc_textItem.o
+./release\moc_veselectionrect.o
 );

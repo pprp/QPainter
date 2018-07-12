@@ -49,7 +49,6 @@ SOURCES       = ..\..\..\..\vector-editor_changed\vector-editor_changed\src\main
 		..\..\..\..\vector-editor_changed\vector-editor_changed\src\verectangle.cpp \
 		..\..\..\..\vector-editor_changed\vector-editor_changed\src\veworkplace.cpp \
 		..\..\..\..\vector-editor_changed\vector-editor_changed\src\verectanglesettings.cpp \
-		..\..\..\..\vector-editor_changed\vector-editor_changed\src\veselectionrect.cpp \
 		..\..\..\..\vector-editor_changed\vector-editor_changed\src\colorlabel.cpp \
 		..\..\..\..\vector-editor_changed\vector-editor_changed\src\vepolyline.cpp \
 		..\..\..\..\vector-editor_changed\vector-editor_changed\src\vepolylinesettings.cpp \
@@ -66,13 +65,13 @@ SOURCES       = ..\..\..\..\vector-editor_changed\vector-editor_changed\src\main
 		..\..\..\..\vector-editor_changed\vector-editor_changed\src\vebasicshapeitem.cpp \
 		..\..\..\..\vector-editor_changed\vector-editor_changed\src\vebaseitem.cpp \
 		..\..\..\..\vector-editor_changed\vector-editor_changed\src\textItem.cpp \
-		..\..\..\..\vector-editor_changed\vector-editor_changed\src\vecomplexshapeitem.cpp debug\qrc_icons.cpp \
+		..\..\..\..\vector-editor_changed\vector-editor_changed\src\vecomplexshapeitem.cpp \
+		..\..\..\..\vector-editor_changed\vector-editor_changed\src\veselectionrect.cpp debug\qrc_icons.cpp \
 		debug\moc_mainwindow.cpp \
 		debug\moc_svgreader.cpp \
 		debug\moc_verectangle.cpp \
 		debug\moc_veworkplace.cpp \
 		debug\moc_verectanglesettings.cpp \
-		debug\moc_veselectionrect.cpp \
 		debug\moc_colorlabel.cpp \
 		debug\moc_vepolyline.cpp \
 		debug\moc_vepolylinesettings.cpp \
@@ -85,14 +84,14 @@ SOURCES       = ..\..\..\..\vector-editor_changed\vector-editor_changed\src\main
 		debug\moc_showsvg.cpp \
 		debug\moc_svgwindow.cpp \
 		debug\moc_showsvgdialog.cpp \
-		debug\moc_textItem.cpp
+		debug\moc_textItem.cpp \
+		debug\moc_veselectionrect.cpp
 OBJECTS       = debug/main.o \
 		debug/mainwindow.o \
 		debug/svgreader.o \
 		debug/verectangle.o \
 		debug/veworkplace.o \
 		debug/verectanglesettings.o \
-		debug/veselectionrect.o \
 		debug/colorlabel.o \
 		debug/vepolyline.o \
 		debug/vepolylinesettings.o \
@@ -110,13 +109,13 @@ OBJECTS       = debug/main.o \
 		debug/vebaseitem.o \
 		debug/textItem.o \
 		debug/vecomplexshapeitem.o \
+		debug/veselectionrect.o \
 		debug/qrc_icons.o \
 		debug/moc_mainwindow.o \
 		debug/moc_svgreader.o \
 		debug/moc_verectangle.o \
 		debug/moc_veworkplace.o \
 		debug/moc_verectanglesettings.o \
-		debug/moc_veselectionrect.o \
 		debug/moc_colorlabel.o \
 		debug/moc_vepolyline.o \
 		debug/moc_vepolylinesettings.o \
@@ -129,7 +128,8 @@ OBJECTS       = debug/main.o \
 		debug/moc_showsvg.o \
 		debug/moc_svgwindow.o \
 		debug/moc_showsvgdialog.o \
-		debug/moc_textItem.o
+		debug/moc_textItem.o \
+		debug/moc_veselectionrect.o
 
 DIST          = 
 QMAKE_TARGET  = VectorEditor
@@ -173,7 +173,7 @@ dist:
 	$(ZIP) VectorEditor.zip $(SOURCES) $(DIST) ..\..\..\..\..\vector-editor_changed\vector-editor_changed\src\src.pro D:\Qt\5.2.0\mingw48_32\mkspecs\features\spec_pre.prf D:\Qt\5.2.0\mingw48_32\mkspecs\qdevice.pri D:\Qt\5.2.0\mingw48_32\mkspecs\features\device_config.prf D:\Qt\5.2.0\mingw48_32\mkspecs\common\shell-win32.conf D:\Qt\5.2.0\mingw48_32\mkspecs\qconfig.pri D:\Qt\5.2.0\mingw48_32\mkspecs\modules\qt_lib_axbase.pri D:\Qt\5.2.0\mingw48_32\mkspecs\modules\qt_lib_axbase_private.pri D:\Qt\5.2.0\mingw48_32\mkspecs\modules\qt_lib_axcontainer.pri D:\Qt\5.2.0\mingw48_32\mkspecs\modules\qt_lib_axcontainer_private.pri D:\Qt\5.2.0\mingw48_32\mkspecs\modules\qt_lib_axserver.pri D:\Qt\5.2.0\mingw48_32\mkspecs\modules\qt_lib_axserver_private.pri D:\Qt\5.2.0\mingw48_32\mkspecs\modules\qt_lib_bluetooth.pri D:\Qt\5.2.0\mingw48_32\mkspecs\modules\qt_lib_bluetooth_private.pri D:\Qt\5.2.0\mingw48_32\mkspecs\modules\qt_lib_bootstrap_private.pri D:\Qt\5.2.0\mingw48_32\mkspecs\modules\qt_lib_clucene_private.pri D:\Qt\5.2.0\mingw48_32\mkspecs\modules\qt_lib_concurrent.pri D:\Qt\5.2.0\mingw48_32\mkspecs\modules\qt_lib_concurrent_private.pri D:\Qt\5.2.0\mingw48_32\mkspecs\modules\qt_lib_core.pri D:\Qt\5.2.0\mingw48_32\mkspecs\modules\qt_lib_core_private.pri D:\Qt\5.2.0\mingw48_32\mkspecs\modules\qt_lib_declarative.pri D:\Qt\5.2.0\mingw48_32\mkspecs\modules\qt_lib_declarative_private.pri D:\Qt\5.2.0\mingw48_32\mkspecs\modules\qt_lib_designer.pri D:\Qt\5.2.0\mingw48_32\mkspecs\modules\qt_lib_designer_private.pri D:\Qt\5.2.0\mingw48_32\mkspecs\modules\qt_lib_designercomponents_private.pri D:\Qt\5.2.0\mingw48_32\mkspecs\modules\qt_lib_gui.pri D:\Qt\5.2.0\mingw48_32\mkspecs\modules\qt_lib_gui_private.pri D:\Qt\5.2.0\mingw48_32\mkspecs\modules\qt_lib_help.pri D:\Qt\5.2.0\mingw48_32\mkspecs\modules\qt_lib_help_private.pri D:\Qt\5.2.0\mingw48_32\mkspecs\modules\qt_lib_multimedia.pri D:\Qt\5.2.0\mingw48_32\mkspecs\modules\qt_lib_multimedia_private.pri D:\Qt\5.2.0\mingw48_32\mkspecs\modules\qt_lib_multimediawidgets.pri D:\Qt\5.2.0\mingw48_32\mkspecs\modules\qt_lib_multimediawidgets_private.pri D:\Qt\5.2.0\mingw48_32\mkspecs\modules\qt_lib_network.pri D:\Qt\5.2.0\mingw48_32\mkspecs\modules\qt_lib_network_private.pri D:\Qt\5.2.0\mingw48_32\mkspecs\modules\qt_lib_nfc.pri D:\Qt\5.2.0\mingw48_32\mkspecs\modules\qt_lib_nfc_private.pri D:\Qt\5.2.0\mingw48_32\mkspecs\modules\qt_lib_opengl.pri D:\Qt\5.2.0\mingw48_32\mkspecs\modules\qt_lib_opengl_private.pri D:\Qt\5.2.0\mingw48_32\mkspecs\modules\qt_lib_openglextensions.pri D:\Qt\5.2.0\mingw48_32\mkspecs\modules\qt_lib_openglextensions_private.pri D:\Qt\5.2.0\mingw48_32\mkspecs\modules\qt_lib_platformsupport_private.pri D:\Qt\5.2.0\mingw48_32\mkspecs\modules\qt_lib_positioning.pri D:\Qt\5.2.0\mingw48_32\mkspecs\modules\qt_lib_positioning_private.pri D:\Qt\5.2.0\mingw48_32\mkspecs\modules\qt_lib_printsupport.pri D:\Qt\5.2.0\mingw48_32\mkspecs\modules\qt_lib_printsupport_private.pri D:\Qt\5.2.0\mingw48_32\mkspecs\modules\qt_lib_qml.pri D:\Qt\5.2.0\mingw48_32\mkspecs\modules\qt_lib_qml_private.pri D:\Qt\5.2.0\mingw48_32\mkspecs\modules\qt_lib_qmldevtools_private.pri D:\Qt\5.2.0\mingw48_32\mkspecs\modules\qt_lib_qmltest.pri D:\Qt\5.2.0\mingw48_32\mkspecs\modules\qt_lib_qmltest_private.pri D:\Qt\5.2.0\mingw48_32\mkspecs\modules\qt_lib_qtmultimediaquicktools_private.pri D:\Qt\5.2.0\mingw48_32\mkspecs\modules\qt_lib_quick.pri D:\Qt\5.2.0\mingw48_32\mkspecs\modules\qt_lib_quick_private.pri D:\Qt\5.2.0\mingw48_32\mkspecs\modules\qt_lib_quickparticles_private.pri D:\Qt\5.2.0\mingw48_32\mkspecs\modules\qt_lib_script.pri D:\Qt\5.2.0\mingw48_32\mkspecs\modules\qt_lib_script_private.pri D:\Qt\5.2.0\mingw48_32\mkspecs\modules\qt_lib_scripttools.pri D:\Qt\5.2.0\mingw48_32\mkspecs\modules\qt_lib_scripttools_private.pri D:\Qt\5.2.0\mingw48_32\mkspecs\modules\qt_lib_sensors.pri D:\Qt\5.2.0\mingw48_32\mkspecs\modules\qt_lib_sensors_private.pri D:\Qt\5.2.0\mingw48_32\mkspecs\modules\qt_lib_serialport.pri D:\Qt\5.2.0\mingw48_32\mkspecs\modules\qt_lib_serialport_private.pri D:\Qt\5.2.0\mingw48_32\mkspecs\modules\qt_lib_sql.pri D:\Qt\5.2.0\mingw48_32\mkspecs\modules\qt_lib_sql_private.pri D:\Qt\5.2.0\mingw48_32\mkspecs\modules\qt_lib_svg.pri D:\Qt\5.2.0\mingw48_32\mkspecs\modules\qt_lib_svg_private.pri D:\Qt\5.2.0\mingw48_32\mkspecs\modules\qt_lib_testlib.pri D:\Qt\5.2.0\mingw48_32\mkspecs\modules\qt_lib_testlib_private.pri D:\Qt\5.2.0\mingw48_32\mkspecs\modules\qt_lib_uitools.pri D:\Qt\5.2.0\mingw48_32\mkspecs\modules\qt_lib_uitools_private.pri D:\Qt\5.2.0\mingw48_32\mkspecs\modules\qt_lib_webkit.pri D:\Qt\5.2.0\mingw48_32\mkspecs\modules\qt_lib_webkit_private.pri D:\Qt\5.2.0\mingw48_32\mkspecs\modules\qt_lib_webkitwidgets.pri D:\Qt\5.2.0\mingw48_32\mkspecs\modules\qt_lib_webkitwidgets_private.pri D:\Qt\5.2.0\mingw48_32\mkspecs\modules\qt_lib_widgets.pri D:\Qt\5.2.0\mingw48_32\mkspecs\modules\qt_lib_widgets_private.pri D:\Qt\5.2.0\mingw48_32\mkspecs\modules\qt_lib_winextras.pri D:\Qt\5.2.0\mingw48_32\mkspecs\modules\qt_lib_winextras_private.pri D:\Qt\5.2.0\mingw48_32\mkspecs\modules\qt_lib_xml.pri D:\Qt\5.2.0\mingw48_32\mkspecs\modules\qt_lib_xml_private.pri D:\Qt\5.2.0\mingw48_32\mkspecs\modules\qt_lib_xmlpatterns.pri D:\Qt\5.2.0\mingw48_32\mkspecs\modules\qt_lib_xmlpatterns_private.pri D:\Qt\5.2.0\mingw48_32\mkspecs\features\qt_functions.prf D:\Qt\5.2.0\mingw48_32\mkspecs\features\qt_config.prf D:\Qt\5.2.0\mingw48_32\mkspecs\win32-g++\qmake.conf D:\Qt\5.2.0\mingw48_32\mkspecs\features\spec_post.prf D:\Qt\5.2.0\mingw48_32\mkspecs\features\exclusive_builds.prf D:\Qt\5.2.0\mingw48_32\mkspecs\features\default_pre.prf D:\Qt\5.2.0\mingw48_32\mkspecs\features\win32\default_pre.prf D:\Qt\5.2.0\mingw48_32\mkspecs\features\resolve_config.prf D:\Qt\5.2.0\mingw48_32\mkspecs\features\exclusive_builds_post.prf D:\Qt\5.2.0\mingw48_32\mkspecs\features\default_post.prf D:\Qt\5.2.0\mingw48_32\mkspecs\features\build_pass.prf D:\Qt\5.2.0\mingw48_32\mkspecs\features\warn_on.prf D:\Qt\5.2.0\mingw48_32\mkspecs\features\c++11.prf D:\Qt\5.2.0\mingw48_32\mkspecs\features\win32\rtti.prf D:\Qt\5.2.0\mingw48_32\mkspecs\features\qt.prf D:\Qt\5.2.0\mingw48_32\mkspecs\features\resources.prf D:\Qt\5.2.0\mingw48_32\mkspecs\features\moc.prf D:\Qt\5.2.0\mingw48_32\mkspecs\features\win32\opengl.prf D:\Qt\5.2.0\mingw48_32\mkspecs\features\uic.prf D:\Qt\5.2.0\mingw48_32\mkspecs\features\win32\windows.prf D:\Qt\5.2.0\mingw48_32\mkspecs\features\testcase_targets.prf D:\Qt\5.2.0\mingw48_32\mkspecs\features\exceptions.prf D:\Qt\5.2.0\mingw48_32\mkspecs\features\yacc.prf D:\Qt\5.2.0\mingw48_32\mkspecs\features\lex.prf ..\..\..\..\vector-editor_changed\vector-editor_changed\src\src.pro ..\..\..\..\vector-editor_changed\vector-editor_changed\src\icons.qrc D:/Qt/5.2.0/mingw48_32/lib/Qt5Svgd.prl D:/Qt/5.2.0/mingw48_32/lib/Qt5Widgetsd.prl D:/Qt/5.2.0/mingw48_32/lib/Qt5Xmld.prl D:/Qt/5.2.0/mingw48_32/lib/Qt5Guid.prl D:/Qt/5.2.0/mingw48_32/lib/Qt5Cored.prl  RESOURCES HEADERS SOURCES OBJECTIVE_SOURCES FORMS YACCSOURCES YACCSOURCES LEXSOURCES 
 
 clean: compiler_clean 
-	-$(DEL_FILE) debug\main.o debug\mainwindow.o debug\svgreader.o debug\verectangle.o debug\veworkplace.o debug\verectanglesettings.o debug\veselectionrect.o debug\colorlabel.o debug\vepolyline.o debug\vepolylinesettings.o debug\dotsignal.o debug\veworkplaceview.o debug\veellipse.o debug\veellipsesetting.o debug\handle.o debug\showhelpdialog.o debug\textdialog.o debug\showsvg.o debug\svgwindow.o debug\showsvgdialog.o debug\vebasicshapeitem.o debug\vebaseitem.o debug\textItem.o debug\vecomplexshapeitem.o debug\qrc_icons.o debug\moc_mainwindow.o debug\moc_svgreader.o debug\moc_verectangle.o debug\moc_veworkplace.o debug\moc_verectanglesettings.o debug\moc_veselectionrect.o debug\moc_colorlabel.o debug\moc_vepolyline.o debug\moc_vepolylinesettings.o debug\moc_dotsignal.o debug\moc_veworkplaceview.o debug\moc_veellipse.o debug\moc_veellipsesetting.o debug\moc_showhelpdialog.o debug\moc_textdialog.o debug\moc_showsvg.o debug\moc_svgwindow.o debug\moc_showsvgdialog.o debug\moc_textItem.o
+	-$(DEL_FILE) debug\main.o debug\mainwindow.o debug\svgreader.o debug\verectangle.o debug\veworkplace.o debug\verectanglesettings.o debug\colorlabel.o debug\vepolyline.o debug\vepolylinesettings.o debug\dotsignal.o debug\veworkplaceview.o debug\veellipse.o debug\veellipsesetting.o debug\handle.o debug\showhelpdialog.o debug\textdialog.o debug\showsvg.o debug\svgwindow.o debug\showsvgdialog.o debug\vebasicshapeitem.o debug\vebaseitem.o debug\textItem.o debug\vecomplexshapeitem.o debug\veselectionrect.o debug\qrc_icons.o debug\moc_mainwindow.o debug\moc_svgreader.o debug\moc_verectangle.o debug\moc_veworkplace.o debug\moc_verectanglesettings.o debug\moc_colorlabel.o debug\moc_vepolyline.o debug\moc_vepolylinesettings.o debug\moc_dotsignal.o debug\moc_veworkplaceview.o debug\moc_veellipse.o debug\moc_veellipsesetting.o debug\moc_showhelpdialog.o debug\moc_textdialog.o debug\moc_showsvg.o debug\moc_svgwindow.o debug\moc_showsvgdialog.o debug\moc_textItem.o debug\moc_veselectionrect.o
 	-$(DEL_FILE) debug\VectorEditor_resource_res.o
 
 distclean: clean
@@ -190,99 +190,99 @@ compiler_rcc_make_all: debug/qrc_icons.cpp
 compiler_rcc_clean:
 	-$(DEL_FILE) debug\qrc_icons.cpp
 debug/qrc_icons.cpp: ../../../../vector-editor_changed/vector-editor_changed/src/icons.qrc \
-		../../../../vector-editor_changed/vector-editor_changed/src/icons/unselect.png \
-		../../../../vector-editor_changed/vector-editor_changed/src/icons/text.png \
-		../../../../vector-editor_changed/vector-editor_changed/src/icons/fill.png \
-		../../../../vector-editor_changed/vector-editor_changed/src/icons/cursor-sizef.png \
-		../../../../vector-editor_changed/vector-editor_changed/src/icons/unselectAll.png \
-		../../../../vector-editor_changed/vector-editor_changed/src/icons/cut.png \
-		../../../../vector-editor_changed/vector-editor_changed/src/icons/up.png \
-		../../../../vector-editor_changed/vector-editor_changed/src/icons/find.png \
-		../../../../vector-editor_changed/vector-editor_changed/src/icons/roundrect.png \
-		../../../../vector-editor_changed/vector-editor_changed/src/icons/canvas.ico \
-		../../../../vector-editor_changed/vector-editor_changed/src/icons/saveAs.png \
-		../../../../vector-editor_changed/vector-editor_changed/src/icons/path.png \
-		../../../../vector-editor_changed/vector-editor_changed/src/icons/polyline.png \
-		../../../../vector-editor_changed/vector-editor_changed/src/icons/open.png \
-		../../../../vector-editor_changed/vector-editor_changed/src/icons/eraser.png \
-		../../../../vector-editor_changed/vector-editor_changed/src/icons/copy.png \
 		../../../../vector-editor_changed/vector-editor_changed/src/icons/vector-rectangle.png \
-		../../../../vector-editor_changed/vector-editor_changed/src/icons/zoomOut.png \
-		../../../../vector-editor_changed/vector-editor_changed/src/icons/foreground.png \
-		../../../../vector-editor_changed/vector-editor_changed/src/icons/show.png \
-		../../../../vector-editor_changed/vector-editor_changed/src/icons/save.png \
-		../../../../vector-editor_changed/vector-editor_changed/src/icons/cursor-vsplit.png \
-		../../../../vector-editor_changed/vector-editor_changed/src/icons/cursor-cross.png \
-		../../../../vector-editor_changed/vector-editor_changed/src/icons/line.png \
-		../../../../vector-editor_changed/vector-editor_changed/src/icons/polygon.png \
-		../../../../vector-editor_changed/vector-editor_changed/src/icons/selectAll.png \
-		../../../../vector-editor_changed/vector-editor_changed/src/icons/pan.png \
-		../../../../vector-editor_changed/vector-editor_changed/src/icons/save.ico \
-		../../../../vector-editor_changed/vector-editor_changed/src/icons/cursor-forbidden.png \
 		../../../../vector-editor_changed/vector-editor_changed/src/icons/cursor-sizeall.png \
-		../../../../vector-editor_changed/vector-editor_changed/src/icons/exit.png \
-		../../../../vector-editor_changed/vector-editor_changed/src/icons/new.png \
-		../../../../vector-editor_changed/vector-editor_changed/src/icons/down.png \
-		../../../../vector-editor_changed/vector-editor_changed/src/icons/cursor-closedhand.png \
-		../../../../vector-editor_changed/vector-editor_changed/src/icons/bringtofront.png \
-		../../../../vector-editor_changed/vector-editor_changed/src/icons/circle.png \
-		../../../../vector-editor_changed/vector-editor_changed/src/icons/scene.ico \
-		../../../../vector-editor_changed/vector-editor_changed/src/icons/arrow-top-left.png \
-		../../../../vector-editor_changed/vector-editor_changed/src/icons/right.png \
-		../../../../vector-editor_changed/vector-editor_changed/src/icons/background.png \
-		../../../../vector-editor_changed/vector-editor_changed/src/icons/cursor-arrow.png \
-		../../../../vector-editor_changed/vector-editor_changed/src/icons/arrow-up-down.png \
-		../../../../vector-editor_changed/vector-editor_changed/src/icons/arrow.png \
-		../../../../vector-editor_changed/vector-editor_changed/src/icons/cursor-sizev.png \
-		../../../../vector-editor_changed/vector-editor_changed/src/icons/zoom_in.ico \
-		../../../../vector-editor_changed/vector-editor_changed/src/icons/cursor-sizeh.png \
-		../../../../vector-editor_changed/vector-editor_changed/src/icons/bezier.png \
-		../../../../vector-editor_changed/vector-editor_changed/src/icons/cursor-openhand.png \
-		../../../../vector-editor_changed/vector-editor_changed/src/icons/ico.qrc \
-		../../../../vector-editor_changed/vector-editor_changed/src/icons/undo.png \
-		../../../../vector-editor_changed/vector-editor_changed/src/icons/cursor-hsplit.png \
-		../../../../vector-editor_changed/vector-editor_changed/src/icons/rotate-right.png \
-		../../../../vector-editor_changed/vector-editor_changed/src/icons/qt.png \
+		../../../../vector-editor_changed/vector-editor_changed/src/icons/save.png \
 		../../../../vector-editor_changed/vector-editor_changed/src/icons/pencil.png \
-		../../../../vector-editor_changed/vector-editor_changed/src/icons/paste.png \
-		../../../../vector-editor_changed/vector-editor_changed/src/icons/add_right.png \
-		../../../../vector-editor_changed/vector-editor_changed/src/icons/folder-upload.png \
-		../../../../vector-editor_changed/vector-editor_changed/src/icons/fullExtent.png \
-		../../../../vector-editor_changed/vector-editor_changed/src/icons/NewShape.ico \
-		../../../../vector-editor_changed/vector-editor_changed/src/icons/content-save.png \
-		../../../../vector-editor_changed/vector-editor_changed/src/icons/paint.png \
-		../../../../vector-editor_changed/vector-editor_changed/src/icons/left.png \
-		../../../../vector-editor_changed/vector-editor_changed/src/icons/icon.qrc \
-		../../../../vector-editor_changed/vector-editor_changed/src/icons/edit.png \
-		../../../../vector-editor_changed/vector-editor_changed/src/icons/layer_add.ico \
-		../../../../vector-editor_changed/vector-editor_changed/src/icons/Draw.png \
-		../../../../vector-editor_changed/vector-editor_changed/src/icons/rotate.png \
-		../../../../vector-editor_changed/vector-editor_changed/src/icons/triangle.png \
-		../../../../vector-editor_changed/vector-editor_changed/src/icons/paint.ico \
-		../../../../vector-editor_changed/vector-editor_changed/src/icons/zoomIn.png \
-		../../../../vector-editor_changed/vector-editor_changed/src/icons/move.png \
+		../../../../vector-editor_changed/vector-editor_changed/src/icons/open.png \
+		../../../../vector-editor_changed/vector-editor_changed/src/icons/cursor-forbidden.png \
 		../../../../vector-editor_changed/vector-editor_changed/src/icons/goforward.png \
-		../../../../vector-editor_changed/vector-editor_changed/src/icons/ellipse.png \
+		../../../../vector-editor_changed/vector-editor_changed/src/icons/point.png \
+		../../../../vector-editor_changed/vector-editor_changed/src/icons/cursor-sizeb.png \
+		../../../../vector-editor_changed/vector-editor_changed/src/icons/line.png \
+		../../../../vector-editor_changed/vector-editor_changed/src/icons/sendtoback.png \
+		../../../../vector-editor_changed/vector-editor_changed/src/icons/triangle.png \
+		../../../../vector-editor_changed/vector-editor_changed/src/icons/cursor-vsplit.png \
+		../../../../vector-editor_changed/vector-editor_changed/src/icons/copy.png \
+		../../../../vector-editor_changed/vector-editor_changed/src/icons/show.png \
+		../../../../vector-editor_changed/vector-editor_changed/src/icons/vector-polyline.png \
+		../../../../vector-editor_changed/vector-editor_changed/src/icons/save.ico \
+		../../../../vector-editor_changed/vector-editor_changed/src/icons/exit.png \
 		../../../../vector-editor_changed/vector-editor_changed/src/icons/zoom_out.ico \
 		../../../../vector-editor_changed/vector-editor_changed/src/icons/QPainter.ico \
-		../../../../vector-editor_changed/vector-editor_changed/src/icons/arc.png \
-		../../../../vector-editor_changed/vector-editor_changed/src/icons/cursor-uparrow.png \
-		../../../../vector-editor_changed/vector-editor_changed/src/icons/redo.png \
-		../../../../vector-editor_changed/vector-editor_changed/src/icons/cursor-sizeb.png \
+		../../../../vector-editor_changed/vector-editor_changed/src/icons/down.png \
+		../../../../vector-editor_changed/vector-editor_changed/src/icons/rotate.png \
+		../../../../vector-editor_changed/vector-editor_changed/src/icons/cursor-sizef.png \
+		../../../../vector-editor_changed/vector-editor_changed/src/icons/arrow-top-left.png \
 		../../../../vector-editor_changed/vector-editor_changed/src/icons/select.png \
-		../../../../vector-editor_changed/vector-editor_changed/src/icons/sendtoback.png \
+		../../../../vector-editor_changed/vector-editor_changed/src/icons/ellipse.png \
+		../../../../vector-editor_changed/vector-editor_changed/src/icons/zoomIn.png \
+		../../../../vector-editor_changed/vector-editor_changed/src/icons/ico.qrc \
 		../../../../vector-editor_changed/vector-editor_changed/src/icons/rectangle.png \
-		../../../../vector-editor_changed/vector-editor_changed/src/icons/delete.png \
-		../../../../vector-editor_changed/vector-editor_changed/src/icons/point.png \
-		../../../../vector-editor_changed/vector-editor_changed/src/icons/vector-polyline.png \
 		../../../../vector-editor_changed/vector-editor_changed/src/icons/property.png \
+		../../../../vector-editor_changed/vector-editor_changed/src/icons/unselect.png \
+		../../../../vector-editor_changed/vector-editor_changed/src/icons/arrow-up-down.png \
+		../../../../vector-editor_changed/vector-editor_changed/src/icons/up.png \
+		../../../../vector-editor_changed/vector-editor_changed/src/icons/delete.png \
+		../../../../vector-editor_changed/vector-editor_changed/src/icons/unselectAll.png \
+		../../../../vector-editor_changed/vector-editor_changed/src/icons/foreground.png \
 		../../../../vector-editor_changed/vector-editor_changed/src/icons/canvas.png \
-		../../../../vector-editor_changed/vector-editor_changed/src/icons/goback.png
+		../../../../vector-editor_changed/vector-editor_changed/src/icons/goback.png \
+		../../../../vector-editor_changed/vector-editor_changed/src/icons/roundrect.png \
+		../../../../vector-editor_changed/vector-editor_changed/src/icons/polyline.png \
+		../../../../vector-editor_changed/vector-editor_changed/src/icons/cursor-hsplit.png \
+		../../../../vector-editor_changed/vector-editor_changed/src/icons/canvas.ico \
+		../../../../vector-editor_changed/vector-editor_changed/src/icons/undo.png \
+		../../../../vector-editor_changed/vector-editor_changed/src/icons/left.png \
+		../../../../vector-editor_changed/vector-editor_changed/src/icons/saveAs.png \
+		../../../../vector-editor_changed/vector-editor_changed/src/icons/arc.png \
+		../../../../vector-editor_changed/vector-editor_changed/src/icons/scene.ico \
+		../../../../vector-editor_changed/vector-editor_changed/src/icons/edit.png \
+		../../../../vector-editor_changed/vector-editor_changed/src/icons/cursor-cross.png \
+		../../../../vector-editor_changed/vector-editor_changed/src/icons/cursor-uparrow.png \
+		../../../../vector-editor_changed/vector-editor_changed/src/icons/right.png \
+		../../../../vector-editor_changed/vector-editor_changed/src/icons/eraser.png \
+		../../../../vector-editor_changed/vector-editor_changed/src/icons/arrow.png \
+		../../../../vector-editor_changed/vector-editor_changed/src/icons/folder-upload.png \
+		../../../../vector-editor_changed/vector-editor_changed/src/icons/background.png \
+		../../../../vector-editor_changed/vector-editor_changed/src/icons/selectAll.png \
+		../../../../vector-editor_changed/vector-editor_changed/src/icons/cursor-arrow.png \
+		../../../../vector-editor_changed/vector-editor_changed/src/icons/polygon.png \
+		../../../../vector-editor_changed/vector-editor_changed/src/icons/move.png \
+		../../../../vector-editor_changed/vector-editor_changed/src/icons/icon.qrc \
+		../../../../vector-editor_changed/vector-editor_changed/src/icons/cursor-sizev.png \
+		../../../../vector-editor_changed/vector-editor_changed/src/icons/zoomOut.png \
+		../../../../vector-editor_changed/vector-editor_changed/src/icons/Draw.png \
+		../../../../vector-editor_changed/vector-editor_changed/src/icons/bringtofront.png \
+		../../../../vector-editor_changed/vector-editor_changed/src/icons/cut.png \
+		../../../../vector-editor_changed/vector-editor_changed/src/icons/cursor-sizeh.png \
+		../../../../vector-editor_changed/vector-editor_changed/src/icons/paste.png \
+		../../../../vector-editor_changed/vector-editor_changed/src/icons/cursor-openhand.png \
+		../../../../vector-editor_changed/vector-editor_changed/src/icons/circle.png \
+		../../../../vector-editor_changed/vector-editor_changed/src/icons/redo.png \
+		../../../../vector-editor_changed/vector-editor_changed/src/icons/paint.png \
+		../../../../vector-editor_changed/vector-editor_changed/src/icons/fullExtent.png \
+		../../../../vector-editor_changed/vector-editor_changed/src/icons/content-save.png \
+		../../../../vector-editor_changed/vector-editor_changed/src/icons/cursor-closedhand.png \
+		../../../../vector-editor_changed/vector-editor_changed/src/icons/qt.png \
+		../../../../vector-editor_changed/vector-editor_changed/src/icons/new.png \
+		../../../../vector-editor_changed/vector-editor_changed/src/icons/rotate-right.png \
+		../../../../vector-editor_changed/vector-editor_changed/src/icons/path.png \
+		../../../../vector-editor_changed/vector-editor_changed/src/icons/text.png \
+		../../../../vector-editor_changed/vector-editor_changed/src/icons/zoom_in.ico \
+		../../../../vector-editor_changed/vector-editor_changed/src/icons/fill.png \
+		../../../../vector-editor_changed/vector-editor_changed/src/icons/paint.ico \
+		../../../../vector-editor_changed/vector-editor_changed/src/icons/NewShape.ico \
+		../../../../vector-editor_changed/vector-editor_changed/src/icons/add_right.png \
+		../../../../vector-editor_changed/vector-editor_changed/src/icons/pan.png \
+		../../../../vector-editor_changed/vector-editor_changed/src/icons/find.png \
+		../../../../vector-editor_changed/vector-editor_changed/src/icons/layer_add.ico \
+		../../../../vector-editor_changed/vector-editor_changed/src/icons/bezier.png
 	D:\Qt\5.2.0\mingw48_32\bin\rcc.exe -name icons ..\..\..\..\vector-editor_changed\vector-editor_changed\src\icons.qrc -o debug\qrc_icons.cpp
 
-compiler_moc_header_make_all: debug/moc_mainwindow.cpp debug/moc_svgreader.cpp debug/moc_verectangle.cpp debug/moc_veworkplace.cpp debug/moc_verectanglesettings.cpp debug/moc_veselectionrect.cpp debug/moc_colorlabel.cpp debug/moc_vepolyline.cpp debug/moc_vepolylinesettings.cpp debug/moc_dotsignal.cpp debug/moc_veworkplaceview.cpp debug/moc_veellipse.cpp debug/moc_veellipsesetting.cpp debug/moc_showhelpdialog.cpp debug/moc_textdialog.cpp debug/moc_showsvg.cpp debug/moc_svgwindow.cpp debug/moc_showsvgdialog.cpp debug/moc_textItem.cpp
+compiler_moc_header_make_all: debug/moc_mainwindow.cpp debug/moc_svgreader.cpp debug/moc_verectangle.cpp debug/moc_veworkplace.cpp debug/moc_verectanglesettings.cpp debug/moc_colorlabel.cpp debug/moc_vepolyline.cpp debug/moc_vepolylinesettings.cpp debug/moc_dotsignal.cpp debug/moc_veworkplaceview.cpp debug/moc_veellipse.cpp debug/moc_veellipsesetting.cpp debug/moc_showhelpdialog.cpp debug/moc_textdialog.cpp debug/moc_showsvg.cpp debug/moc_svgwindow.cpp debug/moc_showsvgdialog.cpp debug/moc_textItem.cpp debug/moc_veselectionrect.cpp
 compiler_moc_header_clean:
-	-$(DEL_FILE) debug\moc_mainwindow.cpp debug\moc_svgreader.cpp debug\moc_verectangle.cpp debug\moc_veworkplace.cpp debug\moc_verectanglesettings.cpp debug\moc_veselectionrect.cpp debug\moc_colorlabel.cpp debug\moc_vepolyline.cpp debug\moc_vepolylinesettings.cpp debug\moc_dotsignal.cpp debug\moc_veworkplaceview.cpp debug\moc_veellipse.cpp debug\moc_veellipsesetting.cpp debug\moc_showhelpdialog.cpp debug\moc_textdialog.cpp debug\moc_showsvg.cpp debug\moc_svgwindow.cpp debug\moc_showsvgdialog.cpp debug\moc_textItem.cpp
+	-$(DEL_FILE) debug\moc_mainwindow.cpp debug\moc_svgreader.cpp debug\moc_verectangle.cpp debug\moc_veworkplace.cpp debug\moc_verectanglesettings.cpp debug\moc_colorlabel.cpp debug\moc_vepolyline.cpp debug\moc_vepolylinesettings.cpp debug\moc_dotsignal.cpp debug\moc_veworkplaceview.cpp debug\moc_veellipse.cpp debug\moc_veellipsesetting.cpp debug\moc_showhelpdialog.cpp debug\moc_textdialog.cpp debug\moc_showsvg.cpp debug\moc_svgwindow.cpp debug\moc_showsvgdialog.cpp debug\moc_textItem.cpp debug\moc_veselectionrect.cpp
 debug/moc_mainwindow.cpp: D:/Qt/5.2.0/mingw48_32/include/QtWidgets/QMainWindow \
 		D:/Qt/5.2.0/mingw48_32/include/QtWidgets/qmainwindow.h \
 		D:/Qt/5.2.0/mingw48_32/include/QtWidgets/qwidget.h \
@@ -1110,102 +1110,6 @@ debug/moc_verectanglesettings.cpp: D:/Qt/5.2.0/mingw48_32/include/QtWidgets/QWid
 		D:/Qt/5.2.0/mingw48_32/include/QtGui/qtouchdevice.h \
 		../../../../vector-editor_changed/vector-editor_changed/src/verectanglesettings.h
 	D:\Qt\5.2.0\mingw48_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 $(INCPATH) ..\..\..\..\vector-editor_changed\vector-editor_changed\src\verectanglesettings.h -o debug\moc_verectanglesettings.cpp
-
-debug/moc_veselectionrect.cpp: D:/Qt/5.2.0/mingw48_32/include/QtCore/QObject \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qobject.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qobjectdefs.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qnamespace.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qglobal.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qconfig.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qfeatures.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qsystemdetection.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qprocessordetection.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qcompilerdetection.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qglobalstatic.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qatomic.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qbasicatomic.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qatomic_bootstrap.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qgenericatomic.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qatomic_msvc.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qatomic_integrity.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qoldbasicatomic.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qatomic_vxworks.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qatomic_power.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qatomic_alpha.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qatomic_armv7.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qatomic_armv6.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qatomic_armv5.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qatomic_bfin.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qatomic_ia64.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qatomic_mips.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qatomic_s390.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qatomic_sh4a.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qatomic_sparc.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qatomic_x86.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qatomic_cxx11.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qatomic_gcc.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qatomic_unix.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qmutex.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qlogging.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qflags.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qtypeinfo.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qtypetraits.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qsysinfo.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qobjectdefs_impl.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qstring.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qchar.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qbytearray.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qrefcount.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qarraydata.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qstringbuilder.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qlist.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qalgorithms.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qiterator.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qcoreevent.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qscopedpointer.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qmetatype.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qvarlengtharray.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qcontainerfwd.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qisenum.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qobject_impl.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtWidgets/QGraphicsRectItem \
-		D:/Qt/5.2.0/mingw48_32/include/QtWidgets/qgraphicsitem.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qvariant.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qmap.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qpair.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qdebug.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qhash.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qtextstream.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qiodevice.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qlocale.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qshareddata.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qvector.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qpoint.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qset.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qcontiguouscache.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qstringlist.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qdatastream.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qregexp.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qstringmatcher.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qrect.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qsize.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtGui/qpainterpath.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtGui/qmatrix.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtGui/qpolygon.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtGui/qregion.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtGui/qwindowdefs.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtGui/qwindowdefs_win.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qline.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtGui/qpixmap.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtGui/qpaintdevice.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtGui/qcolor.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtGui/qrgb.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qsharedpointer.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qsharedpointer_impl.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtGui/qimage.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtGui/qtransform.h \
-		../../../../vector-editor_changed/vector-editor_changed/src/veselectionrect.h
-	D:\Qt\5.2.0\mingw48_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 $(INCPATH) ..\..\..\..\vector-editor_changed\vector-editor_changed\src\veselectionrect.h -o debug\moc_veselectionrect.cpp
 
 debug/moc_colorlabel.cpp: D:/Qt/5.2.0/mingw48_32/include/QtWidgets/QLabel \
 		D:/Qt/5.2.0/mingw48_32/include/QtWidgets/qlabel.h \
@@ -3657,6 +3561,102 @@ debug/moc_textItem.cpp: D:/Qt/5.2.0/mingw48_32/include/QtGui/QCursor \
 		../../../../vector-editor_changed/vector-editor_changed/src/textItem.h
 	D:\Qt\5.2.0\mingw48_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 $(INCPATH) ..\..\..\..\vector-editor_changed\vector-editor_changed\src\textItem.h -o debug\moc_textItem.cpp
 
+debug/moc_veselectionrect.cpp: D:/Qt/5.2.0/mingw48_32/include/QtCore/QObject \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qobject.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qobjectdefs.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qnamespace.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qglobal.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qconfig.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qfeatures.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qsystemdetection.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qprocessordetection.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qcompilerdetection.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qglobalstatic.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qatomic.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qbasicatomic.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qatomic_bootstrap.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qgenericatomic.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qatomic_msvc.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qatomic_integrity.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qoldbasicatomic.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qatomic_vxworks.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qatomic_power.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qatomic_alpha.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qatomic_armv7.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qatomic_armv6.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qatomic_armv5.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qatomic_bfin.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qatomic_ia64.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qatomic_mips.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qatomic_s390.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qatomic_sh4a.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qatomic_sparc.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qatomic_x86.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qatomic_cxx11.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qatomic_gcc.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qatomic_unix.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qmutex.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qlogging.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qflags.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qtypeinfo.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qtypetraits.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qsysinfo.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qobjectdefs_impl.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qstring.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qchar.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qbytearray.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qrefcount.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qarraydata.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qstringbuilder.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qlist.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qalgorithms.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qiterator.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qcoreevent.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qscopedpointer.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qmetatype.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qvarlengtharray.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qcontainerfwd.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qisenum.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qobject_impl.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtWidgets/QGraphicsRectItem \
+		D:/Qt/5.2.0/mingw48_32/include/QtWidgets/qgraphicsitem.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qvariant.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qmap.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qpair.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qdebug.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qhash.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qtextstream.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qiodevice.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qlocale.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qshareddata.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qvector.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qpoint.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qset.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qcontiguouscache.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qstringlist.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qdatastream.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qregexp.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qstringmatcher.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qrect.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qsize.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtGui/qpainterpath.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtGui/qmatrix.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtGui/qpolygon.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtGui/qregion.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtGui/qwindowdefs.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtGui/qwindowdefs_win.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qline.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtGui/qpixmap.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtGui/qpaintdevice.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtGui/qcolor.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtGui/qrgb.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qsharedpointer.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qsharedpointer_impl.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtGui/qimage.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtGui/qtransform.h \
+		../../../../vector-editor_changed/vector-editor_changed/src/veselectionrect.h
+	D:\Qt\5.2.0\mingw48_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 $(INCPATH) ..\..\..\..\vector-editor_changed\vector-editor_changed\src\veselectionrect.h -o debug\moc_veselectionrect.cpp
+
 compiler_moc_source_make_all:
 compiler_moc_source_clean:
 compiler_uic_make_all: ui_mainwindow.h ui_verectanglesettings.h ui_vepolylinesettings.h ui_veellipsesettings.h ui_showhelpdialog.h ui_textdialog.h ui_showsvgdialog.h
@@ -4672,7 +4672,8 @@ debug/mainwindow.o: ../../../../vector-editor_changed/vector-editor_changed/src/
 		../../../../vector-editor_changed/vector-editor_changed/src/vebaseitem.h \
 		D:/Qt/5.2.0/mingw48_32/include/QtWidgets/QGraphicsSceneMouseEvent \
 		../../../../vector-editor_changed/vector-editor_changed/src/handle.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/QRectF
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/QRectF \
+		../../../../vector-editor_changed/vector-editor_changed/src/vecomplexshapeitem.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\mainwindow.o ..\..\..\..\vector-editor_changed\vector-editor_changed\src\mainwindow.cpp
 
 debug/svgreader.o: ../../../../vector-editor_changed/vector-editor_changed/src/svgreader.cpp ../../../../vector-editor_changed/vector-editor_changed/src/svgreader.h \
@@ -5216,106 +5217,6 @@ debug/verectanglesettings.o: ../../../../vector-editor_changed/vector-editor_cha
 		D:/Qt/5.2.0/mingw48_32/include/QtWidgets/QGraphicsRectItem \
 		D:/Qt/5.2.0/mingw48_32/include/QtWidgets/qgraphicsitem.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\verectanglesettings.o ..\..\..\..\vector-editor_changed\vector-editor_changed\src\verectanglesettings.cpp
-
-debug/veselectionrect.o: ../../../../vector-editor_changed/vector-editor_changed/src/veselectionrect.cpp ../../../../vector-editor_changed/vector-editor_changed/src/veselectionrect.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/QObject \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qobject.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qobjectdefs.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qnamespace.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qglobal.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qconfig.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qfeatures.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qsystemdetection.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qprocessordetection.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qcompilerdetection.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qglobalstatic.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qatomic.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qbasicatomic.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qatomic_bootstrap.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qgenericatomic.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qatomic_msvc.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qatomic_integrity.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qoldbasicatomic.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qatomic_vxworks.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qatomic_power.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qatomic_alpha.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qatomic_armv7.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qatomic_armv6.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qatomic_armv5.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qatomic_bfin.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qatomic_ia64.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qatomic_mips.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qatomic_s390.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qatomic_sh4a.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qatomic_sparc.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qatomic_x86.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qatomic_cxx11.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qatomic_gcc.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qatomic_unix.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qmutex.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qlogging.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qflags.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qtypeinfo.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qtypetraits.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qsysinfo.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qobjectdefs_impl.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qstring.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qchar.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qbytearray.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qrefcount.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qarraydata.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qstringbuilder.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qlist.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qalgorithms.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qiterator.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qcoreevent.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qscopedpointer.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qmetatype.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qvarlengtharray.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qcontainerfwd.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qisenum.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qobject_impl.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtWidgets/QGraphicsRectItem \
-		D:/Qt/5.2.0/mingw48_32/include/QtWidgets/qgraphicsitem.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qvariant.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qmap.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qpair.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qdebug.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qhash.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qtextstream.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qiodevice.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qlocale.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qshareddata.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qvector.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qpoint.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qset.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qcontiguouscache.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qstringlist.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qdatastream.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qregexp.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qstringmatcher.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qrect.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qsize.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtGui/qpainterpath.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtGui/qmatrix.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtGui/qpolygon.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtGui/qregion.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtGui/qwindowdefs.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtGui/qwindowdefs_win.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qline.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtGui/qpixmap.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtGui/qpaintdevice.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtGui/qcolor.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtGui/qrgb.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qsharedpointer.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qsharedpointer_impl.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtGui/qimage.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtGui/qtransform.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtGui/QPen \
-		D:/Qt/5.2.0/mingw48_32/include/QtGui/qpen.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtGui/qbrush.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtGui/QBrush
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\veselectionrect.o ..\..\..\..\vector-editor_changed\vector-editor_changed\src\veselectionrect.cpp
 
 debug/colorlabel.o: ../../../../vector-editor_changed/vector-editor_changed/src/colorlabel.cpp ../../../../vector-editor_changed/vector-editor_changed/src/colorlabel.h \
 		D:/Qt/5.2.0/mingw48_32/include/QtWidgets/QLabel \
@@ -8335,8 +8236,123 @@ debug/textItem.o: ../../../../vector-editor_changed/vector-editor_changed/src/te
 		D:/Qt/5.2.0/mingw48_32/include/QtGui/qtextformat.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\textItem.o ..\..\..\..\vector-editor_changed\vector-editor_changed\src\textItem.cpp
 
-debug/vecomplexshapeitem.o: ../../../../vector-editor_changed/vector-editor_changed/src/vecomplexshapeitem.cpp D:/Qt/5.2.0/mingw48_32/include/QtGui/QPainter \
+debug/vecomplexshapeitem.o: ../../../../vector-editor_changed/vector-editor_changed/src/vecomplexshapeitem.cpp ../../../../vector-editor_changed/vector-editor_changed/src/vecomplexshapeitem.h \
+		../../../../vector-editor_changed/vector-editor_changed/src/vebaseitem.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtWidgets/QGraphicsItem \
+		D:/Qt/5.2.0/mingw48_32/include/QtWidgets/qgraphicsitem.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qglobal.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qconfig.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qfeatures.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qsystemdetection.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qprocessordetection.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qcompilerdetection.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qglobalstatic.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qatomic.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qbasicatomic.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qatomic_bootstrap.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qgenericatomic.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qatomic_msvc.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qatomic_integrity.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qoldbasicatomic.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qatomic_vxworks.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qatomic_power.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qatomic_alpha.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qatomic_armv7.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qatomic_armv6.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qatomic_armv5.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qatomic_bfin.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qatomic_ia64.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qatomic_mips.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qatomic_s390.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qatomic_sh4a.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qatomic_sparc.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qatomic_x86.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qatomic_cxx11.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qatomic_gcc.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qatomic_unix.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qmutex.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qlogging.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qflags.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qtypeinfo.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qtypetraits.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qsysinfo.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qobject.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qobjectdefs.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qnamespace.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qobjectdefs_impl.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qstring.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qchar.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qbytearray.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qrefcount.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qarraydata.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qstringbuilder.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qlist.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qalgorithms.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qiterator.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qcoreevent.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qscopedpointer.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qmetatype.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qvarlengtharray.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qcontainerfwd.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qisenum.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qobject_impl.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qvariant.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qmap.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qpair.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qdebug.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qhash.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qtextstream.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qiodevice.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qlocale.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qshareddata.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qvector.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qpoint.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qset.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qcontiguouscache.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qstringlist.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qdatastream.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qregexp.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qstringmatcher.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qrect.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qsize.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtGui/qpainterpath.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtGui/qmatrix.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtGui/qpolygon.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtGui/qregion.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtGui/qwindowdefs.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtGui/qwindowdefs_win.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qline.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtGui/qpixmap.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtGui/qpaintdevice.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtGui/qcolor.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtGui/qrgb.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qsharedpointer.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qsharedpointer_impl.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtGui/qimage.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtGui/qtransform.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtWidgets/QGraphicsEllipseItem \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/QList \
+		D:/Qt/5.2.0/mingw48_32/include/QtWidgets/QGraphicsSceneMouseEvent \
+		D:/Qt/5.2.0/mingw48_32/include/QtWidgets/qgraphicssceneevent.h \
+		../../../../vector-editor_changed/vector-editor_changed/src/handle.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/QRectF \
+		D:/Qt/5.2.0/mingw48_32/include/QtGui/QPainter \
 		D:/Qt/5.2.0/mingw48_32/include/QtGui/qpainter.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtGui/qtextoption.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtGui/qpen.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtGui/qbrush.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtGui/qfontinfo.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtGui/qfont.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtGui/qfontmetrics.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/QSettings \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qsettings.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/QDebug
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\vecomplexshapeitem.o ..\..\..\..\vector-editor_changed\vector-editor_changed\src\vecomplexshapeitem.cpp
+
+debug/veselectionrect.o: ../../../../vector-editor_changed/vector-editor_changed/src/veselectionrect.cpp ../../../../vector-editor_changed/vector-editor_changed/src/veselectionrect.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/QObject \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qobject.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qobjectdefs.h \
 		D:/Qt/5.2.0/mingw48_32/include/QtCore/qnamespace.h \
 		D:/Qt/5.2.0/mingw48_32/include/QtCore/qglobal.h \
 		D:/Qt/5.2.0/mingw48_32/include/QtCore/qconfig.h \
@@ -8374,23 +8390,7 @@ debug/vecomplexshapeitem.o: ../../../../vector-editor_changed/vector-editor_chan
 		D:/Qt/5.2.0/mingw48_32/include/QtCore/qtypeinfo.h \
 		D:/Qt/5.2.0/mingw48_32/include/QtCore/qtypetraits.h \
 		D:/Qt/5.2.0/mingw48_32/include/QtCore/qsysinfo.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qrect.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qsize.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qpoint.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qscopedpointer.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtGui/qpixmap.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtGui/qpaintdevice.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtGui/qwindowdefs.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qobjectdefs.h \
 		D:/Qt/5.2.0/mingw48_32/include/QtCore/qobjectdefs_impl.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtGui/qwindowdefs_win.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtGui/qcolor.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtGui/qrgb.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qstringlist.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qalgorithms.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qdatastream.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qiodevice.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qobject.h \
 		D:/Qt/5.2.0/mingw48_32/include/QtCore/qstring.h \
 		D:/Qt/5.2.0/mingw48_32/include/QtCore/qchar.h \
 		D:/Qt/5.2.0/mingw48_32/include/QtCore/qbytearray.h \
@@ -8398,45 +8398,56 @@ debug/vecomplexshapeitem.o: ../../../../vector-editor_changed/vector-editor_chan
 		D:/Qt/5.2.0/mingw48_32/include/QtCore/qarraydata.h \
 		D:/Qt/5.2.0/mingw48_32/include/QtCore/qstringbuilder.h \
 		D:/Qt/5.2.0/mingw48_32/include/QtCore/qlist.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qalgorithms.h \
 		D:/Qt/5.2.0/mingw48_32/include/QtCore/qiterator.h \
 		D:/Qt/5.2.0/mingw48_32/include/QtCore/qcoreevent.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qscopedpointer.h \
 		D:/Qt/5.2.0/mingw48_32/include/QtCore/qmetatype.h \
 		D:/Qt/5.2.0/mingw48_32/include/QtCore/qvarlengtharray.h \
 		D:/Qt/5.2.0/mingw48_32/include/QtCore/qcontainerfwd.h \
 		D:/Qt/5.2.0/mingw48_32/include/QtCore/qisenum.h \
 		D:/Qt/5.2.0/mingw48_32/include/QtCore/qobject_impl.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qpair.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qregexp.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qstringmatcher.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qsharedpointer.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qshareddata.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qsharedpointer_impl.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qhash.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtGui/qimage.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtGui/qtransform.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtGui/qmatrix.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtGui/qpolygon.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qvector.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtGui/qregion.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qline.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtGui/qpainterpath.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtGui/qtextoption.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtGui/qpen.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtGui/qbrush.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtGui/qfontinfo.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtGui/qfont.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtGui/qfontmetrics.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/QSettings \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/qsettings.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtWidgets/QGraphicsRectItem \
+		D:/Qt/5.2.0/mingw48_32/include/QtWidgets/qgraphicsitem.h \
 		D:/Qt/5.2.0/mingw48_32/include/QtCore/qvariant.h \
 		D:/Qt/5.2.0/mingw48_32/include/QtCore/qmap.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qpair.h \
 		D:/Qt/5.2.0/mingw48_32/include/QtCore/qdebug.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qhash.h \
 		D:/Qt/5.2.0/mingw48_32/include/QtCore/qtextstream.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qiodevice.h \
 		D:/Qt/5.2.0/mingw48_32/include/QtCore/qlocale.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qshareddata.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qvector.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qpoint.h \
 		D:/Qt/5.2.0/mingw48_32/include/QtCore/qset.h \
 		D:/Qt/5.2.0/mingw48_32/include/QtCore/qcontiguouscache.h \
-		D:/Qt/5.2.0/mingw48_32/include/QtCore/QDebug
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\vecomplexshapeitem.o ..\..\..\..\vector-editor_changed\vector-editor_changed\src\vecomplexshapeitem.cpp
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qstringlist.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qdatastream.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qregexp.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qstringmatcher.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qrect.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qsize.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtGui/qpainterpath.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtGui/qmatrix.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtGui/qpolygon.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtGui/qregion.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtGui/qwindowdefs.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtGui/qwindowdefs_win.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qline.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtGui/qpixmap.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtGui/qpaintdevice.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtGui/qcolor.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtGui/qrgb.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qsharedpointer.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtCore/qsharedpointer_impl.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtGui/qimage.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtGui/qtransform.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtGui/QPen \
+		D:/Qt/5.2.0/mingw48_32/include/QtGui/qpen.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtGui/qbrush.h \
+		D:/Qt/5.2.0/mingw48_32/include/QtGui/QBrush
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\veselectionrect.o ..\..\..\..\vector-editor_changed\vector-editor_changed\src\veselectionrect.cpp
 
 debug/qrc_icons.o: debug/qrc_icons.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\qrc_icons.o debug\qrc_icons.cpp
@@ -8455,9 +8466,6 @@ debug/moc_veworkplace.o: debug/moc_veworkplace.cpp
 
 debug/moc_verectanglesettings.o: debug/moc_verectanglesettings.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\moc_verectanglesettings.o debug\moc_verectanglesettings.cpp
-
-debug/moc_veselectionrect.o: debug/moc_veselectionrect.cpp 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\moc_veselectionrect.o debug\moc_veselectionrect.cpp
 
 debug/moc_colorlabel.o: debug/moc_colorlabel.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\moc_colorlabel.o debug\moc_colorlabel.cpp
@@ -8497,6 +8505,9 @@ debug/moc_showsvgdialog.o: debug/moc_showsvgdialog.cpp
 
 debug/moc_textItem.o: debug/moc_textItem.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\moc_textItem.o debug\moc_textItem.cpp
+
+debug/moc_veselectionrect.o: debug/moc_veselectionrect.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\moc_veselectionrect.o debug\moc_veselectionrect.cpp
 
 ####### Install
 
