@@ -11,7 +11,7 @@
 #include "verectangle.h"
 #include "veellipse.h"
 #include "vebasicshapeitem.h"
-#include "complexshapeitem.h"
+#include "vecomplexshapeitem.h"
 
 
 MainWindow::MainWindow(QWidget *parent) :
@@ -474,11 +474,11 @@ void MainWindow::on_toolButton_pixmap_clicked()
 
 void MainWindow::on_toolButton_bezier_clicked()
 {
-    ComplexShapeItem * item4 = new ComplexShapeItem(workplaceScene);
-    item4->addPoint(QPointF(400,400),ComplexShapeItem::SEGEMENT_LINE);
-    item4->addPoint(QPointF(412,412),ComplexShapeItem::SEGEMENT_LINE);
-    item4->addPoint(QPointF(450,450),ComplexShapeItem::SEGEMENT_LINE);
-    item4->addPoint(QPointF(500,500),ComplexShapeItem::SEGEMENT_LINE);
+    VEComplexShapeItem * item4 = new VEComplexShapeItem(workplaceScene);
+    item4->addPoint(QPointF(400,400),VEComplexShapeItem::SEGEMENT_LINE);
+    item4->addPoint(QPointF(412,412),VEComplexShapeItem::SEGEMENT_LINE);
+    item4->addPoint(QPointF(450,450),VEComplexShapeItem::SEGEMENT_LINE);
+    item4->addPoint(QPointF(500,500),VEComplexShapeItem::SEGEMENT_LINE);
 
 }
 

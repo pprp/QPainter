@@ -1,12 +1,12 @@
-#include "complexshapeitem.h"
+#include "vecomplexshapeitem.h"
 #include <QPainter>
 #include <QSettings>
 #include <QDebug>
-ComplexShapeItem::ComplexShapeItem(QGraphicsScene *scene,QGraphicsItem *parent):VEBaseItem(scene,parent)
+VEComplexShapeItem::VEComplexShapeItem(QGraphicsScene *scene,QGraphicsItem *parent):VEBaseItem(scene,parent)
 {
     this->setDrawBoundingRect(false);
 }
-void ComplexShapeItem::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) {
+void VEComplexShapeItem::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) {
     QPen pen;
     pen.setWidth(2);
     painter->setPen(pen);
@@ -36,7 +36,7 @@ void ComplexShapeItem::paint(QPainter *painter, const QStyleOptionGraphicsItem *
     VEBaseItem::paint(painter,option,widget);
 }
 //加点
-void ComplexShapeItem::addPoint(QPointF point, SegmentType type) {
+void VEComplexShapeItem::addPoint(QPointF point, SegmentType type) {
     Q_UNUSED(type);
     QSettings settings;
     int size = settings.value("drawing/hanleSize",4).toInt();
@@ -44,7 +44,7 @@ void ComplexShapeItem::addPoint(QPointF point, SegmentType type) {
     this->recalculateRect();
 }
 
-void ComplexShapeItem::recalculateRect() {
+void VEComplexShapeItem::recalculateRect() {
     QList<qreal> listX;
     QList<qreal> listY;
     foreach (Handle *h, mHandles) {
@@ -58,12 +58,12 @@ void ComplexShapeItem::recalculateRect() {
     //qDebug()<<topLeft<<bottomRight;
     mRect = QRectF(topLeft,bottomRight);
 }
-void ComplexShapeItem::mouseReleaseEvent(QGraphicsSceneMouseEvent *event) {
+void VEComplexShapeItem::mouseReleaseEvent(QGraphicsSceneMouseEvent *event) {
     VEBaseItem::mouseReleaseEvent(event);
     recalculateRect();
 }
 
-QRectF ComplexShapeItem::boundingRect() const {
+QRectF VEComplexShapeItem::boundingRect() const {
     QSettings settings;
     //Adjust bounding rectangle to include the handles so clicking them is detected.
     int size = settings.value("drawing/hanleSize",4).toInt();

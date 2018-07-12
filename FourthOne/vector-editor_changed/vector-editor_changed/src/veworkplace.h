@@ -6,7 +6,6 @@
 
 class QGraphicsSceneMouseEvent;
 class QKeyEvent;
-class DuBezier;
 
 class VEWorkplace : public QGraphicsScene
 {
@@ -58,10 +57,6 @@ private:
     int m_previousAction;
     QPointF m_previousPosition;
     bool m_leftMouseButtonPressed;
-    //点的确定
-    QPointF mpto1;//第一个点
-    QPointF mpto2;//第二个点
-    QList<DuBezier*> mCurva;
 };
 
 #endif // WORKPLACE_H

@@ -13,7 +13,6 @@ INPUT(
 ./release\veworkplaceview.o
 ./release\veellipse.o
 ./release\veellipsesetting.o
-./release\complexshapeitem.o
 ./release\handle.o
 ./release\showhelpdialog.o
 ./release\textdialog.o
@@ -23,6 +22,7 @@ INPUT(
 ./release\vebasicshapeitem.o
 ./release\vebaseitem.o
 ./release\textItem.o
+./release\vecomplexshapeitem.o
 ./release\qrc_icons.o
 ./release\moc_mainwindow.o
 ./release\moc_svgreader.o

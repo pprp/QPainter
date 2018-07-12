@@ -22,11 +22,12 @@ protected:
     void mouseReleaseEvent(QGraphicsSceneMouseEvent *event);
     void mouseMoveEvent(QGraphicsSceneMouseEvent *event);
     void createHandles();
+    void setDrawBoundingRect(bool draw);
+
     QList<Handle *> mHandles;
     QRectF mRect;
     QPointF mOrigin;
     bool mDrawBoundingRect;
-    void setDrawBoundingRect(bool draw);
 private:
     Handle *mCurrentHandle;
     QString mId;

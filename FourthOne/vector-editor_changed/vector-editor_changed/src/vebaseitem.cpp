@@ -178,7 +178,7 @@ void VEBaseItem::mouseMoveEvent(QGraphicsSceneMouseEvent *event) {
             QGraphicsItem::mouseMoveEvent(event);
             break;
         }
-        //Update handle positions.
+        //更新坐标
         QPointF left(mRect.left(),mRect.top() + mRect.height()/2);
         QPointF right(mRect.right(),mRect.top() + mRect.height()/2);
         QPointF top(mRect.left()+mRect.width()/2,mRect.top());
