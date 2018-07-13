@@ -30,7 +30,7 @@ void VEBaseItem::setDrawBoundingRect(bool draw) {
 
 QRectF VEBaseItem::boundingRect() const {
     QSettings settings;
-    //Adjust bounding rectangle to include the handles so clicking them is detected.
+    //在移动的时候进行调整
     int size = settings.value("drawing/hanleSize",10).toInt();
     return this->mRect.adjusted(-size/2,-size/2 - 50,size/2,size/2);
 }
@@ -103,7 +103,7 @@ void VEBaseItem::paint(QPainter *painter, const QStyleOptionGraphicsItem *option
 void VEBaseItem::mousePressEvent(QGraphicsSceneMouseEvent *event) {
     QGraphicsItem::mousePressEvent(event);
     if(event->buttons() == Qt::LeftButton) {
-        //Detect which handle is clicked.
+        //检测控制点
         foreach (Handle *handle, mHandles) {
             if(handle->boundingRect().contains(event->pos())) {
                 this->mCurrentHandle = handle;
@@ -113,53 +113,52 @@ void VEBaseItem::mousePressEvent(QGraphicsSceneMouseEvent *event) {
 }
 
 void VEBaseItem::mouseMoveEvent(QGraphicsSceneMouseEvent *event) {
-    //Left mouse button is down.
-    //TODO: Add grid support.
+    //再按下左键的时候，可以
     if(event->buttons() == Qt::LeftButton && mCurrentHandle) {
         qreal dx = (mOrigin.x() - mRect.center().x()) / mRect.width();
         qreal dy = (mOrigin.y() - mRect.center().y()) / mRect.height();
         switch (mCurrentHandle->type()) {
         case Handle::HANDLE_TYPE_LEFT:
             this->mRect.setLeft(event->pos().x());
-            //Update the origin.
+            //更新点
             mOrigin.setX((dx * mRect.width()) + mRect.center().x());
             break;
         case Handle::HANDLE_TYPE_RIGHT:
             this->mRect.setRight(event->pos().x());
-            //Update the origin.
+            // 更新点的坐标
             mOrigin.setX((dx * mRect.width()) + mRect.center().x());
             break;
         case Handle::HANDLE_TYPE_TOP:
             this->mRect.setTop(event->pos().y());
-            //Update the origin.
+            // 更新点的坐标
             mOrigin.setY((dy * mRect.height()) + mRect.center().y());
             break;
         case Handle::HANDLE_TYPE_BOTTOM:
             this->mRect.setBottom(event->pos().y());
-            //Update the origin.
+            // 更新点的坐标
             mOrigin.setY((dy * mRect.height()) + mRect.center().y());
             break;
         case Handle::HANDLE_TYPE_TOPLEFT:
             this->mRect.setTopLeft(event->pos());
-            //Update the origin.
+            // 更新点的坐标
             mOrigin.setX((dx * mRect.width()) + mRect.center().x());
             mOrigin.setY((dy * mRect.height()) + mRect.center().y());
             break;
         case Handle::HANDLE_TYPE_TOPRIGHT:
             this->mRect.setTopRight(event->pos());
-            //Update the origin.
+            // 更新点的坐标
             mOrigin.setX((dx * mRect.width()) + mRect.center().x());
             mOrigin.setY((dy * mRect.height()) + mRect.center().y());
             break;
         case Handle::HANDLE_TYPE_BOTTOMLEFT:
             this->mRect.setBottomLeft(event->pos());
-            //Update the origin.
+            // 更新点的坐标
             mOrigin.setX((dx * mRect.width()) + mRect.center().x());
             mOrigin.setY((dy * mRect.height()) + mRect.center().y());
             break;
         case Handle::HANDLE_TYPE_BOTTOMRIGHT:
             this->mRect.setBottomRight(event->pos());
-            //Update the origin.
+            // 更新点的坐标
             mOrigin.setX((dx * mRect.width()) + mRect.center().x());
             mOrigin.setY((dy * mRect.height()) + mRect.center().y());
             break;

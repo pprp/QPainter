@@ -10,7 +10,7 @@ VEBasicShapesItem::VEBasicShapesItem(qreal x, qreal y, qreal w, qreal h,ItemType
 }
 
 void VEBasicShapesItem::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) {
-    //Fix coordinates for images.
+    //坐标修改
     if(mRect.left() > mRect.right()) {
         qreal left = mRect.left();
         qreal right = mRect.right();
@@ -23,7 +23,7 @@ void VEBasicShapesItem::paint(QPainter *painter, const QStyleOptionGraphicsItem 
         mRect.setTop(bottom);
         mRect.setBottom(top);
     }
-    //Enable antialiasing.
+    //反锯齿
     painter->setRenderHint(QPainter::Antialiasing, true);
     switch (mType) {
     case ITEM_RECTANGLE:

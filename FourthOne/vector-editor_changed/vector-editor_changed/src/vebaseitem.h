@@ -25,9 +25,9 @@ protected:
     void setDrawBoundingRect(bool draw);
 
     QList<Handle *> mHandles;
-    QRectF mRect;
-    QPointF mOrigin;
-    bool mDrawBoundingRect;
+    QRectF mRect;//矩形边框
+    QPointF mOrigin;//画原点
+    bool mDrawBoundingRect; //选择是否画边框
 private:
     Handle *mCurrentHandle;
     QString mId;

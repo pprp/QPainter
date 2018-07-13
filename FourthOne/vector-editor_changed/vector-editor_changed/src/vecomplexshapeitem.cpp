@@ -8,26 +8,21 @@ VEComplexShapeItem::VEComplexShapeItem(QGraphicsScene *scene,QGraphicsItem *pare
 }
 void VEComplexShapeItem::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) {
     QPen pen;
-    pen.setWidth(2);
+    pen.setWidth(4);
     painter->setPen(pen);
     QPainterPath path;
-    //path.moveTo(mHandles.at(10)->pos());
     for(int i=0 ; i < mHandles.size() ; i++) {
         if(i == 0) {
             path.moveTo(mHandles.at(0)->pos());
         } else {
-            //TODO: Check segment type.
-            //Create a cubic.
-            //path.quadTo();
             QLineF line1(path.currentPosition(),mHandles.at(i)->pos());
             QLineF line2(mHandles.at(i+1)->pos(),mHandles.at(i+2)->pos());
             path.cubicTo(mHandles.at(i)->pos(),mHandles.at(i+1)->pos(),mHandles.at(i+2)->pos());
             if(this->isSelected()) {
-                //Draw the handle lines.
+                //控制线
                 painter->drawLine(line1);
                 painter->drawLine(line2);
             }
-            //Skip used points.
             i = i+2;
         }
 

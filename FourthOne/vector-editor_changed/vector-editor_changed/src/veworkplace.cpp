@@ -172,6 +172,7 @@ void VEWorkplace::mouseMoveEvent(QGraphicsSceneMouseEvent *event)
         break;
     }
     }
+    update();
 
 }
 
