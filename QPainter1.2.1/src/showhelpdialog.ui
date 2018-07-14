@@ -6,12 +6,16 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>448</width>
-    <height>417</height>
+    <width>415</width>
+    <height>330</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="icons.qrc">
+    <normaloff>:/icons/ico.ico</normaloff>:/icons/ico.ico</iconset>
   </property>
   <property name="styleSheet">
    <string notr="true">QMainWindow{
@@ -113,8 +117,8 @@ background-color:#qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb
   <widget class="QLabel" name="label_5">
    <property name="geometry">
     <rect>
-     <x>30</x>
-     <y>280</y>
+     <x>40</x>
+     <y>180</y>
      <width>361</width>
      <height>91</height>
     </rect>
@@ -139,8 +143,8 @@ background-color:#qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb
   <widget class="QPushButton" name="pushButton_2">
    <property name="geometry">
     <rect>
-     <x>350</x>
-     <y>370</y>
+     <x>320</x>
+     <y>290</y>
      <width>75</width>
      <height>23</height>
     </rect>
@@ -162,58 +166,6 @@ background-color:#qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb
     <string>&lt;a style=&quot;color:blue;align:center;&quot; href=&quot;https://www.github.com/pprp/QPainter/&quot;&gt;项目地址&lt;/a&gt;</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_7">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>180</y>
-     <width>81</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Members:</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_8">
-   <property name="geometry">
-    <rect>
-     <x>130</x>
-     <y>180</y>
-     <width>61</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Dongpeijie</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_9">
-   <property name="geometry">
-    <rect>
-     <x>130</x>
-     <y>200</y>
-     <width>81</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Wangzhengning</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_10">
-   <property name="geometry">
-    <rect>
-     <x>130</x>
-     <y>220</y>
-     <width>54</width>
-     <height>12</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Lianghui</string>
-   </property>
-  </widget>
   <widget class="QLabel" name="label_11">
    <property name="geometry">
     <rect>
@@ -227,76 +179,11 @@ background-color:#qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb
     <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="label_12">
-   <property name="geometry">
-    <rect>
-     <x>210</x>
-     <y>180</y>
-     <width>54</width>
-     <height>12</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Teacher:</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_13">
-   <property name="geometry">
-    <rect>
-     <x>290</x>
-     <y>180</y>
-     <width>61</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Wangzepeng</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_14">
-   <property name="geometry">
-    <rect>
-     <x>290</x>
-     <y>200</y>
-     <width>54</width>
-     <height>12</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Yanglong</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_15">
-   <property name="geometry">
-    <rect>
-     <x>40</x>
-     <y>250</y>
-     <width>54</width>
-     <height>12</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>college</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_16">
-   <property name="geometry">
-    <rect>
-     <x>100</x>
-     <y>250</y>
-     <width>231</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>NWAFU Information Engineering College</string>
-   </property>
-  </widget>
   <widget class="QLabel" name="label_17">
    <property name="geometry">
     <rect>
-     <x>30</x>
-     <y>400</y>
+     <x>40</x>
+     <y>270</y>
      <width>261</width>
      <height>16</height>
     </rect>

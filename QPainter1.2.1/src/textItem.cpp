@@ -79,10 +79,12 @@ void TextItem::mousePressEvent(QGraphicsSceneMouseEvent *event)
 }
 void TextItem::hoverEnterEvent(QGraphicsSceneHoverEvent *event)
 {
+    Q_UNUSED(event);
     setCursor(Qt::OpenHandCursor);
 }
 void TextItem::hoverLeaveEvent(QGraphicsSceneHoverEvent *event)
 {
+    Q_UNUSED(event);
     setCursor(Qt::ArrowCursor);
 }
 void TextItem::mouseMoveEvent(QGraphicsSceneMouseEvent *event)

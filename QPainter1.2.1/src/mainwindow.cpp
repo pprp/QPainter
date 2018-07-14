@@ -508,3 +508,9 @@ void MainWindow::on_toolButton_show_clicked()
     ShowSvgDialog * newSSD = new ShowSvgDialog;
     newSSD->exec();
 }
+
+void MainWindow::on_actionDeveloper_triggered()
+{
+    CreatorDialog cd;
+    cd.exec();
+}

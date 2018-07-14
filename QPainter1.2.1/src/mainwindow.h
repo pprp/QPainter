@@ -10,6 +10,7 @@
 #include "textdialog.h"
 #include "TextItem.h"
 #include "showsvgdialog.h"
+#include "creatordialog.h"
 
 class QGraphicsItem;
 class VEWorkplace;
@@ -57,6 +58,8 @@ private slots:
     void on_actionZoomOut_triggered();
     void on_actionHelp_triggered();
     void on_toolButton_show_clicked();
+    void on_actionDeveloper_triggered();
+
 protected:
     void wheelEvent(QWheelEvent *event);
 private:

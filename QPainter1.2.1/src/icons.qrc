@@ -120,5 +120,8 @@
         <file>icons/直线.png</file>
         <file>icons/show.png</file>
         <file>icons/add_right.png</file>
+        <file>icons/ico.ico</file>
+        <file>icons/black.png</file>
+        <file>icons/black2.png</file>
     </qresource>
 </RCC>

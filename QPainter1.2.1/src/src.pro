@@ -44,7 +44,8 @@ SOURCES += main.cpp\
     vebaseitem.cpp \
     textItem.cpp \
     vecomplexshapeitem.cpp \
-    veselectionrect.cpp
+    veselectionrect.cpp \
+    creatordialog.cpp
 
 HEADERS  += mainwindow.h \
     svgreader.h \
@@ -75,7 +76,8 @@ HEADERS  += mainwindow.h \
     textItem.h \
     vecomplexshapeitem.h \
     ui_showsvgdialog.h \
-    veselectionrect.h
+    veselectionrect.h \
+    creatordialog.h
 
 FORMS    += mainwindow.ui \
     verectanglesettings.ui \
@@ -83,7 +85,8 @@ FORMS    += mainwindow.ui \
     veellipsesettings.ui \
     showhelpdialog.ui \
     textdialog.ui \
-    showsvgdialog.ui
+    showsvgdialog.ui \
+    creatordialog.ui
 
 RESOURCES += \
     icons.qrc

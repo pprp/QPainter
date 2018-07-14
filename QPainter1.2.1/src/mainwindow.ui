@@ -510,6 +510,7 @@ width:20px;
      <string>Help</string>
     </property>
     <addaction name="actionHelp"/>
+    <addaction name="actionDeveloper"/>
    </widget>
    <widget class="QMenu" name="menuTool">
     <property name="title">
@@ -617,6 +618,18 @@ width:20px;
    </property>
    <property name="shortcut">
     <string>Ctrl+-</string>
+   </property>
+  </action>
+  <action name="actionDeveloper">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/工具.png</normaloff>:/icons/工具.png</iconset>
+   </property>
+   <property name="text">
+    <string>Developer</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+D</string>
    </property>
   </action>
  </widget>
