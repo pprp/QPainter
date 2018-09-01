@@ -83,5 +83,6 @@ Wang Zhengning
 ### 需求分析&实施计划书
 
 - [矢量图&实施计划书](./矢量图软件需求分析.md)
-
 - [Release](https://github.com/pprp/QPainter/releases)
+
+#### 转载使用请引用本网址https://github.com/pprp/QPainter
