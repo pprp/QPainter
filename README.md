@@ -1,6 +1,6 @@
 # QPainter
 
-西北农林科技大学：CPP 实习项目
+nwafu：CPP 实习项目
 
 ## 1. Contributors
 
